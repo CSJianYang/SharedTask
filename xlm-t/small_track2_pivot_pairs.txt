@@ -1,1 +1,0 @@
-id-jv,id-ta,id-tl,jv-ta,jv-tl,ms-id,ms-ta,ms-tl,ta-id,ta-ms,ta-tl,tl-ta

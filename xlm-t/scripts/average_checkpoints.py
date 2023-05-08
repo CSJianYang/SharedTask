@@ -3,7 +3,7 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
-sys.path.append("..")
+
 import argparse
 import collections
 import os
@@ -61,6 +61,7 @@ def average_checkpoints(inputs):
                 # NOTE: clone() is needed in case of p is a shared parameter
             else:
                 params_dict[k] += p
+        print("Successfully load: {}".format(f))
 
     averaged_params = collections.OrderedDict()
     for k, v in params_dict.items():
