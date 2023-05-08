@@ -1,0 +1,69 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  service: amlk8s
+  #name: itpeastusv100cl
+  #name: itplabrr1cl1
+  #vc: resrchvc
+  name: itpwus2cpucl1     
+  vc: gcrcpu
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+jobs: 
+- name: small_task2_parallel_bt_split_v1_en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt-train2.5/train.en -output /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt2.5-split10/ -split-num 10
+- name: small_task2_parallel_bt_split_v1_id
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt-train2.5/train.id -output /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt2.5-split10/ -split-num 10
+- name: small_task2_parallel_bt_split_v1_jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt-train2.5/train.jv -output /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt2.5-split10/ -split-num 10
+- name: small_task2_parallel_bt_split_v1_ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt-train2.5/train.ms -output /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt2.5-split10/ -split-num 10
+- name: small_task2_parallel_bt_split_v1_ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt-train2.5/train.ta -output /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt2.5-split10/ -split-num 10
+- name: small_task2_parallel_bt_split_v1_tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt-train2.5/train.tl -output /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt2.5-split10/ -split-num 10
+
+

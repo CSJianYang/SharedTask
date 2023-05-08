@@ -1,0 +1,145 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  service: amlk8s
+  #name: itplabrr1cl1
+  #name: itpeastusv100cl
+  #name: itplabrl1cl1
+  #vc: resrchvc
+  #name: a100-scus
+  #service: amlk8s
+  #vc: language-itp-mt
+  #name: itpwus2cpucl1
+  #vc: gcrcpu
+  name: itp-p40-wus2
+  vc: language-itp-mtres
+  
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - lscpu
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:
+- name: filter_et-hr
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh et hr 
+- name: filter_et-hu
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh et hu 
+- name: filter_et-sr
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh et sr 
+- name: filter_et-mk
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh et mk 
+- name: filter_hr-hu
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh hr hu 
+- name: filter_hr-sr
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh hr sr 
+- name: filter_hr-mk
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh hr mk 
+- name: filter_hu-sr
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh hu sr 
+- name: filter_hu-mk
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh hu mk 
+- name: filter_sr-mk
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh sr mk 
+- name: filter_hr-et
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh hr et 
+- name: filter_hu-et
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh hu et 
+- name: filter_sr-et
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh sr et 
+- name: filter_mk-et
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh mk et 
+- name: filter_hu-hr
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh hu hr 
+- name: filter_sr-hr
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh sr hr 
+- name: filter_mk-hr
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh mk hr 
+- name: filter_sr-hu
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh sr hu 
+- name: filter_mk-hu
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh mk hu 
+- name: filter_mk-sr
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track1/filter_x2y_bt.sh mk sr 
+

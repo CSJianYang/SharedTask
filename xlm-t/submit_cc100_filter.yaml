@@ -1,0 +1,39 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+target:
+  #name: itplabrr1cl1
+  name: itpeastusv100cl
+  #name: itpeusp100cl
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: cc_100_filter
+  sku: G0
+  sku_count: 1
+  command:
+   - bash ./shells/preprocess/BT/cc100/filter.sh

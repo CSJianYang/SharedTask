@@ -1,0 +1,120 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  #name: itplabrr1cl1
+  name: itpeastusv100cl
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  #- python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+jobs: 
+#- name: concat_amen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/amh/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src amh -tgt enu -new-src am -new-tgt en
+#- name: concat_bnen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/bnb/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src bnb -tgt enu -new-src bn -new-tgt en
+#- name: concat_elen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#   - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/ell/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src ell -tgt enu -new-src el -new-tgt en 
+#- name: concat_faen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/far/enu_far_dedupe_train/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src far -tgt enu -new-src fa -new-tgt en 
+#- name: concat_huen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/hun/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src hun -tgt enu -new-src hu -new-tgt en 
+#- name: concat_iten
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/ita/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src ita -tgt enu -new-src it -new-tgt en 
+#- name: concat_jaen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/jpn/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src jpn -tgt enu -new-src ja -new-tgt en 
+#- name: concat_kaen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/kat/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src kat -tgt enu -new-src ka -new-tgt en 
+#- name: concat_lven
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/lvi/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src lvi -tgt enu -new-src lv -new-tgt en 
+#- name: concat_mlen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/mym/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src mym -tgt enu -new-src ml -new-tgt en 
+#- name: concat_plen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/plk/20210618/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src plk -tgt enu -new-src pl -new-tgt en 
+#- name: concat_pten
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/ptb/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src ptb -tgt enu -new-src pt -new-tgt en
+#- name: concat_roen
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/rom/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src rom -tgt enu -new-src pt -new-tgt en
+#- name: concat_sven
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/sve/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src sve -tgt enu -new-src sv -new-tgt en 
+#- name: concat_uken
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/ukr/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src ukr -tgt enu -new-src uk -new-tgt en 
+#- name: concat_uren
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/orig/urd/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src urd -tgt enu -new-src ur -new-tgt en 
+
+- name: concat_en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/concat_dir.py -input /mnt/input/SharedTask/large-scale/ZC50-Updated/mri_updated/ -output /mnt/input/SharedTask/large-scale/ZC50-Updated/train/ -src mri -tgt enu -new-src mi -new-tgt en 

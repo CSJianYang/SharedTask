@@ -1,0 +1,46 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  name: itpeastusv100cl
+  #name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:  
+- name: small_track1_binary_e2x_bt.sh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_e2x_bt.sh
+

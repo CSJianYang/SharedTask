@@ -1,0 +1,384 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itplabrr1cl1
+  #name: itpeastusv100cl
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+jobs:  
+- name: parallel_bt_split_af
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh af 160
+- name: parallel_bt_split_ar
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ar 160
+- name: parallel_bt_split_ast
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ast 160
+- name: parallel_bt_split_bn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh bn 160
+- name: parallel_bt_split_bs
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh bs 160
+- name: parallel_bt_split_bg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh bg 160
+- name: parallel_bt_split_ca
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ca 160
+- name: parallel_bt_split_cs
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh cs 160
+- name: parallel_bt_split_ku
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ku 160
+- name: parallel_bt_split_cy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh cy 160
+- name: parallel_bt_split_da
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh da 160
+- name: parallel_bt_split_de
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh de 160
+- name: parallel_bt_split_el
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh el 160
+- name: parallel_bt_split_et
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh et 160
+- name: parallel_bt_split_en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh en 160
+- name: parallel_bt_split_fa
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh fa 160
+- name: parallel_bt_split_fi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh fi 160
+- name: parallel_bt_split_fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh fr 160
+- name: parallel_bt_split_ga
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ga 160
+- name: parallel_bt_split_gl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh gl 160
+- name: parallel_bt_split_he
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh he 160
+- name: parallel_bt_split_hi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh hi 160
+- name: parallel_bt_split_hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh hr 160
+- name: parallel_bt_split_hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh hu 160
+- name: parallel_bt_split_hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh hy 160
+- name: parallel_bt_split_id
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh id 160
+- name: parallel_bt_split_is
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh is 160
+- name: parallel_bt_split_it
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh it 160
+- name: parallel_bt_split_jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh jv 160
+- name: parallel_bt_split_ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ja 160
+- name: parallel_bt_split_ka
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ka 160
+- name: parallel_bt_split_km
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh km 160
+- name: parallel_bt_split_ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ky 160
+- name: parallel_bt_split_ko
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ko 160
+- name: parallel_bt_split_lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh lv 160
+- name: parallel_bt_split_lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh lt 160
+- name: parallel_bt_split_lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh lb 160
+- name: parallel_bt_split_ml
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ml 160
+- name: parallel_bt_split_mr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh mr 160
+- name: parallel_bt_split_mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh mk 160
+- name: parallel_bt_split_mt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh mt 160
+- name: parallel_bt_split_mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh mn 160
+- name: parallel_bt_split_mi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh mi 160
+- name: parallel_bt_split_ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ms 160
+- name: parallel_bt_split_nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh nl 160
+- name: parallel_bt_split_no
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh no 160
+- name: parallel_bt_split_ny
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ny 160
+- name: parallel_bt_split_oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh oc 160
+- name: parallel_bt_split_pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh pl 160
+- name: parallel_bt_split_pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh pt 160
+- name: parallel_bt_split_ps
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ps 160
+- name: parallel_bt_split_ro
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ro 160
+- name: parallel_bt_split_ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ru 160
+- name: parallel_bt_split_sk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh sk 160
+- name: parallel_bt_split_sl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh sl 160
+- name: parallel_bt_split_sn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh sn 160
+- name: parallel_bt_split_so
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh so 160
+- name: parallel_bt_split_es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh es 160
+- name: parallel_bt_split_sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh sr 160
+- name: parallel_bt_split_sv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh sv 160
+- name: parallel_bt_split_sw
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh sw 160
+- name: parallel_bt_split_ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ta 160
+- name: parallel_bt_split_tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh tl 160
+- name: parallel_bt_split_th
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh th 160
+- name: parallel_bt_split_tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh tr 160
+- name: parallel_bt_split_uk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh uk 160
+- name: parallel_bt_split_umb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh umb 160
+- name: parallel_bt_split_ur
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh ur 160
+- name: parallel_bt_split_vi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh vi 160
+- name: parallel_bt_split_zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_split.sh zh 160
+
+

@@ -1,0 +1,80 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:
+#- name: binary_hr-en_0-10
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh hr en 80 0 10
+#- name: binary_hr-en_10-20
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh hr en 80 10 20
+- name: binary_hr-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh hr en 80 20 30
+#- name: binary_hr-en_30-40
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh hr en 80 30 40
+#- name: binary_hr-en_40-50
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh hr en 80 40 50
+#- name: binary_hr-en_50-60
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh hr en 80 50 60
+#- name: binary_hr-en_60-70
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh hr en 80 60 70
+#- name: binary_hr-en_70-80
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ru en 80 70 80
+
+
+
+
+
+

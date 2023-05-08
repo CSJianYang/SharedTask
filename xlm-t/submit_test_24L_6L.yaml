@@ -1,0 +1,558 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTaskTest
+
+target:
+  #name: itplabrr1cl1
+  #name: itpeastusv100cl
+  #service: amlk8s
+  #vc: resrchvc
+  #name: v100-8x-scus
+  #service: amlk8s
+  #vc: quantus
+  name: itpeusp40cl
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 40128
+  - python -m pip install --editable . --user
+  - git clone --single-branch --branch adding_spm_tokenized_bleu https://github.com/ngoyal2707/sacrebleu.git && cd sacrebleu && python setup.py install --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:  
+- name: test_af2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 af
+- name: test_am2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 am
+- name: test_ar2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ar
+- name: test_as2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 as
+- name: test_ast2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ast
+- name: test_az2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 az
+- name: test_be2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 be
+- name: test_bn2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 bn
+- name: test_bs2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 bs
+- name: test_bg2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 bg
+- name: test_ca2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ca
+- name: test_ceb2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ceb
+- name: test_cs2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 cs
+- name: test_ku2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ku
+- name: test_cy2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 cy
+- name: test_da2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 da
+- name: test_de2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 de
+- name: test_el2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 el
+- name: test_en2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 en
+- name: test_et2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 et
+- name: test_fa2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 fa
+- name: test_fi2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 fi
+- name: test_fr2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 fr
+- name: test_ff2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ff
+- name: test_ga2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ga
+- name: test_gl2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 gl
+- name: test_gu2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 gu
+- name: test_ha2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ha
+- name: test_he2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 he
+- name: test_hi2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 hi
+- name: test_hr2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 hr
+- name: test_hu2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 hu
+- name: test_hy2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 hy
+- name: test_ig2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ig
+- name: test_id2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 id
+- name: test_is2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 is
+- name: test_it2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 it
+- name: test_jv2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 jv
+- name: test_ja2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ja
+- name: test_kam2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 kam
+- name: test_kn2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 kn
+- name: test_ka2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ka
+- name: test_kk2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 kk
+- name: test_kea2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 kea
+- name: test_km2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 km
+- name: test_ky2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ky
+- name: test_ko2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ko
+- name: test_lo2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 lo
+- name: test_lv2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 lv
+- name: test_ln2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ln
+- name: test_lt2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 lt
+- name: test_lb2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 lb
+- name: test_lg2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 lg
+- name: test_luo2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 luo
+- name: test_ml2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ml
+- name: test_mr2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 mr
+- name: test_mk2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 mk
+- name: test_mt2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 mt
+- name: test_mn2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 mn
+- name: test_mi2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 mi
+- name: test_ms2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ms
+- name: test_my2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 my
+- name: test_nl2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 nl
+- name: test_no2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 no
+- name: test_ne2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ne
+- name: test_ns2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ns
+- name: test_ny2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ny
+- name: test_oc2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 oc
+- name: test_om2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 om
+- name: test_or2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 or
+- name: test_pa2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 pa
+- name: test_pl2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 pl
+- name: test_pt2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 pt
+- name: test_ps2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ps
+- name: test_ro2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ro
+- name: test_ru2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ru
+- name: test_sk2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 sk
+- name: test_sl2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 sl
+- name: test_sn2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 sn
+- name: test_sd2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 sd
+- name: test_so2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 so
+- name: test_es2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 es
+- name: test_sr2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 sr
+- name: test_sv2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 sv
+- name: test_sw2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 sw
+- name: test_ta2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ta
+- name: test_te2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 te
+- name: test_tg2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 tg
+- name: test_tl2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 tl
+- name: test_th2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 th
+- name: test_tr2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 tr
+- name: test_uk2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 uk
+- name: test_umb2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 umb
+- name: test_ur2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 ur
+- name: test_uz2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 uz
+- name: test_vi2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 vi
+- name: test_wo2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 wo
+- name: test_xh2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 xh
+- name: test_yo2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 yo
+- name: test_zh2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 zh
+- name: test_zt2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 zt
+- name: test_zu2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/FULL-v1/lr1e-4-deltalm-postnorm-24L-6L/checkpoint35.pt 128 4 zu
+

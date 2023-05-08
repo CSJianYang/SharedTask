@@ -1,0 +1,73 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  service: amlk8s
+  #name: itplabrr1cl1
+  #name: itpeastusv100cl
+  #name: itplabrl1cl1
+  #vc: resrchvc
+  #name: a100-scus
+  #service: amlk8s
+  #vc: language-itp-mt
+  #name: itpwus2cpucl1
+  #vc: gcrcpu
+  name: itp-p40-wus2
+  vc: language-itp-mtres
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:  
+- name: concat_x2y_bt_et
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/concat_x2y_bt.sh et
+- name: concat_x2y_bt_hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/concat_x2y_bt.sh hr
+- name: concat_x2y_bt_hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/concat_x2y_bt.sh hu
+- name: concat_x2y_bt_sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/concat_x2y_bt.sh sr
+- name: concat_x2y_bt_mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/concat_x2y_bt.sh mk

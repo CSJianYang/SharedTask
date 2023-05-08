@@ -1,0 +1,386 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itplabrr1cl1
+  name: itpeastusv100cl
+  #service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:
+- name: spm_parallel_bt_af
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh af
+- name: spm_parallel_bt_ar
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ar
+- name: spm_parallel_bt_ast
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ast
+- name: spm_parallel_bt_bn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh bn
+- name: spm_parallel_bt_bs
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh bs
+- name: spm_parallel_bt_bg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh bg
+- name: spm_parallel_bt_ca
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ca
+- name: spm_parallel_bt_cs
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh cs
+- name: spm_parallel_bt_ku
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ku
+- name: spm_parallel_bt_cy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh cy
+- name: spm_parallel_bt_da
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh da
+- name: spm_parallel_bt_de
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh de
+- name: spm_parallel_bt_el
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh el
+- name: spm_parallel_bt_et
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh et
+- name: spm_parallel_bt_en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh en
+- name: spm_parallel_bt_fa
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh fa
+- name: spm_parallel_bt_fi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh fi
+- name: spm_parallel_bt_fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh fr
+- name: spm_parallel_bt_ga
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ga
+- name: spm_parallel_bt_gl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh gl
+- name: spm_parallel_bt_he
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh he
+- name: spm_parallel_bt_hi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh hi
+- name: spm_parallel_bt_hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh hr
+- name: spm_parallel_bt_hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh hu
+- name: spm_parallel_bt_hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh hy
+- name: spm_parallel_bt_id
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh id
+- name: spm_parallel_bt_is
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh is
+- name: spm_parallel_bt_it
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh it
+- name: spm_parallel_bt_jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh jv
+- name: spm_parallel_bt_ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ja
+- name: spm_parallel_bt_ka
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ka
+- name: spm_parallel_bt_km
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh km
+- name: spm_parallel_bt_ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ky
+- name: spm_parallel_bt_ko
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ko
+- name: spm_parallel_bt_lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh lv
+- name: spm_parallel_bt_lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh lt
+- name: spm_parallel_bt_lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh lb
+- name: spm_parallel_bt_ml
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ml
+- name: spm_parallel_bt_mr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh mr
+- name: spm_parallel_bt_mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh mk
+- name: spm_parallel_bt_mt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh mt
+- name: spm_parallel_bt_mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh mn
+- name: spm_parallel_bt_mi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh mi
+- name: spm_parallel_bt_ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ms
+- name: spm_parallel_bt_nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh nl
+- name: spm_parallel_bt_no
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh no
+- name: spm_parallel_bt_ny
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ny
+- name: spm_parallel_bt_oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh oc
+- name: spm_parallel_bt_pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh pl
+- name: spm_parallel_bt_pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh pt
+- name: spm_parallel_bt_ps
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ps
+- name: spm_parallel_bt_ro
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ro
+- name: spm_parallel_bt_ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ru
+- name: spm_parallel_bt_sk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh sk
+- name: spm_parallel_bt_sl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh sl
+- name: spm_parallel_bt_sn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh sn
+- name: spm_parallel_bt_so
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh so
+- name: spm_parallel_bt_es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh es
+- name: spm_parallel_bt_sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh sr
+- name: spm_parallel_bt_sv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh sv
+- name: spm_parallel_bt_sw
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh sw
+- name: spm_parallel_bt_ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ta
+- name: spm_parallel_bt_tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh tl
+- name: spm_parallel_bt_th
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh th
+- name: spm_parallel_bt_tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh tr
+- name: spm_parallel_bt_uk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh uk
+- name: spm_parallel_bt_umb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh umb
+- name: spm_parallel_bt_ur
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh ur
+- name: spm_parallel_bt_vi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh vi
+- name: spm_parallel_bt_zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_spm_file.sh zh
+
+
+

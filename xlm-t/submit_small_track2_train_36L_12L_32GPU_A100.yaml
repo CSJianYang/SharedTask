@@ -1,0 +1,41 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  service: amlk8s
+  name: a100-8x-wus2
+  vc: quantus
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:
+- name: FT_36L_12L_small_track2
+  sku: G8
+  sku_count: 4
+  aml_mpirun:
+    communicator: OpenMpi
+  command:
+    - bash ./shells/aml/multi-node/small_task2/Filter_v1/32GPU/A100/FT_36L_12L.sh

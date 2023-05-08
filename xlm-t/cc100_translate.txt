@@ -1,0 +1,2610 @@
+- name: train.be0000-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0000 be0000.2en 32
+- name: train.be0001-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0001 be0001.2en 32
+- name: train.be0002-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0002 be0002.2en 32
+- name: train.be0003-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0003 be0003.2en 32
+- name: train.be0004-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0004 be0004.2en 32
+- name: train.be0005-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0005 be0005.2en 32
+- name: train.be0006-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0006 be0006.2en 32
+- name: train.be0007-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0007 be0007.2en 32
+- name: train.be0008-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0008 be0008.2en 32
+- name: train.be0009-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0009 be0009.2en 32
+- name: train.be0010-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0010 be0010.2en 32
+- name: train.be0011-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0011 be0011.2en 32
+- name: train.be0012-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0012 be0012.2en 32
+- name: train.be0013-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0013 be0013.2en 32
+- name: train.be0014-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0014 be0014.2en 32
+- name: train.be0015-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0015 be0015.2en 32
+- name: train.be0016-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0016 be0016.2en 32
+- name: train.be0017-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0017 be0017.2en 32
+- name: train.be0018-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0018 be0018.2en 32
+- name: train.be0019-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0019 be0019.2en 32
+- name: train.be0020-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0020 be0020.2en 32
+- name: train.be0021-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0021 be0021.2en 32
+- name: train.be0022-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0022 be0022.2en 32
+- name: train.be0023-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0023 be0023.2en 32
+- name: train.be0024-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0024 be0024.2en 32
+- name: train.be0025-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0025 be0025.2en 32
+- name: train.be0026-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0026 be0026.2en 32
+- name: train.be0027-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0027 be0027.2en 32
+- name: train.be0028-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0028 be0028.2en 32
+- name: train.be0029-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0029 be0029.2en 32
+- name: train.be0030-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0030 be0030.2en 32
+- name: train.be0031-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0031 be0031.2en 32
+- name: train.be0032-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0032 be0032.2en 32
+- name: train.be0033-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0033 be0033.2en 32
+- name: train.be0034-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0034 be0034.2en 32
+- name: train.be0035-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0035 be0035.2en 32
+- name: train.be0036-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0036 be0036.2en 32
+- name: train.be0037-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0037 be0037.2en 32
+- name: train.be0038-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0038 be0038.2en 32
+- name: train.be0039-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0039 be0039.2en 32
+- name: train.be0040-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0040 be0040.2en 32
+- name: train.be0041-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0041 be0041.2en 32
+- name: train.be0042-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0042 be0042.2en 32
+- name: train.be0043-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0043 be0043.2en 32
+- name: train.be0044-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0044 be0044.2en 32
+- name: train.be0045-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0045 be0045.2en 32
+- name: train.be0046-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0046 be0046.2en 32
+- name: train.be0047-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0047 be0047.2en 32
+- name: train.be0048-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0048 be0048.2en 32
+- name: train.be0049-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0049 be0049.2en 32
+- name: train.be0050-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0050 be0050.2en 32
+- name: train.be0051-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0051 be0051.2en 32
+- name: train.be0052-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0052 be0052.2en 32
+- name: train.be0053-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0053 be0053.2en 32
+- name: train.be0054-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0054 be0054.2en 32
+- name: train.be0055-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0055 be0055.2en 32
+- name: train.be0056-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0056 be0056.2en 32
+- name: train.be0057-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0057 be0057.2en 32
+- name: train.be0058-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0058 be0058.2en 32
+- name: train.be0059-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0059 be0059.2en 32
+- name: train.be0060-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0060 be0060.2en 32
+- name: train.be0061-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0061 be0061.2en 32
+- name: train.be0062-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0062 be0062.2en 32
+- name: train.be0063-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0063 be0063.2en 32
+- name: train.be0064-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0064 be0064.2en 32
+- name: train.be0065-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0065 be0065.2en 32
+- name: train.be0066-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0066 be0066.2en 32
+- name: train.be0067-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0067 be0067.2en 32
+- name: train.be0068-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0068 be0068.2en 32
+- name: train.be0069-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0069 be0069.2en 32
+- name: train.be0070-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0070 be0070.2en 32
+- name: train.be0071-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0071 be0071.2en 32
+- name: train.be0072-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0072 be0072.2en 32
+- name: train.be0073-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0073 be0073.2en 32
+- name: train.be0074-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0074 be0074.2en 32
+- name: train.be0075-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0075 be0075.2en 32
+- name: train.be0076-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0076 be0076.2en 32
+- name: train.be0077-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0077 be0077.2en 32
+- name: train.be0078-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0078 be0078.2en 32
+- name: train.be0079-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0079 be0079.2en 32
+- name: train.be0080-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0080 be0080.2en 32
+- name: train.be0081-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0081 be0081.2en 32
+- name: train.be0082-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0082 be0082.2en 32
+- name: train.be0083-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0083 be0083.2en 32
+- name: train.be0084-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0084 be0084.2en 32
+- name: train.be0085-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0085 be0085.2en 32
+- name: train.be0086-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0086 be0086.2en 32
+- name: train.be0087-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0087 be0087.2en 32
+- name: train.be0088-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0088 be0088.2en 32
+- name: train.be0089-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0089 be0089.2en 32
+- name: train.be0090-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0090 be0090.2en 32
+- name: train.be0091-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0091 be0091.2en 32
+- name: train.be0092-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0092 be0092.2en 32
+- name: train.be0093-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0093 be0093.2en 32
+- name: train.be0094-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0094 be0094.2en 32
+- name: train.be0095-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0095 be0095.2en 32
+- name: train.be0096-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0096 be0096.2en 32
+- name: train.be0097-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0097 be0097.2en 32
+- name: train.be0098-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0098 be0098.2en 32
+- name: train.be0099-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0099 be0099.2en 32
+- name: train.be0100-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0100 be0100.2en 32
+- name: train.be0101-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0101 be0101.2en 32
+- name: train.be0102-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0102 be0102.2en 32
+- name: train.be0103-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0103 be0103.2en 32
+- name: train.be0104-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0104 be0104.2en 32
+- name: train.be0105-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0105 be0105.2en 32
+- name: train.be0106-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0106 be0106.2en 32
+- name: train.be0107-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0107 be0107.2en 32
+- name: train.be0108-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0108 be0108.2en 32
+- name: train.be0109-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0109 be0109.2en 32
+- name: train.be0110-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0110 be0110.2en 32
+- name: train.be0111-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0111 be0111.2en 32
+- name: train.be0112-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0112 be0112.2en 32
+- name: train.be0113-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0113 be0113.2en 32
+- name: train.be0114-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0114 be0114.2en 32
+- name: train.be0115-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0115 be0115.2en 32
+- name: train.be0116-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0116 be0116.2en 32
+- name: train.be0117-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0117 be0117.2en 32
+- name: train.be0118-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0118 be0118.2en 32
+- name: train.be0119-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0119 be0119.2en 32
+- name: train.be0120-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0120 be0120.2en 32
+- name: train.be0121-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0121 be0121.2en 32
+- name: train.be0122-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0122 be0122.2en 32
+- name: train.be0123-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0123 be0123.2en 32
+- name: train.be0124-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0124 be0124.2en 32
+- name: train.be0125-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0125 be0125.2en 32
+- name: train.be0126-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0126 be0126.2en 32
+- name: train.be0127-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0127 be0127.2en 32
+- name: train.be0128-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0128 be0128.2en 32
+- name: train.be0129-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0129 be0129.2en 32
+- name: train.be0130-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0130 be0130.2en 32
+- name: train.be0131-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0131 be0131.2en 32
+- name: train.be0132-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0132 be0132.2en 32
+- name: train.be0133-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0133 be0133.2en 32
+- name: train.be0134-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0134 be0134.2en 32
+- name: train.be0135-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0135 be0135.2en 32
+- name: train.be0136-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0136 be0136.2en 32
+- name: train.be0137-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0137 be0137.2en 32
+- name: train.be0138-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0138 be0138.2en 32
+- name: train.be0139-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0139 be0139.2en 32
+- name: train.be0140-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0140 be0140.2en 32
+- name: train.be0141-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0141 be0141.2en 32
+- name: train.be0142-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0142 be0142.2en 32
+- name: train.be0143-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0143 be0143.2en 32
+- name: train.be0144-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0144 be0144.2en 32
+- name: train.be0145-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0145 be0145.2en 32
+- name: train.be0146-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0146 be0146.2en 32
+- name: train.be0147-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0147 be0147.2en 32
+- name: train.be0148-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0148 be0148.2en 32
+- name: train.be0149-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0149 be0149.2en 32
+- name: train.be0150-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0150 be0150.2en 32
+- name: train.be0151-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0151 be0151.2en 32
+- name: train.be0152-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0152 be0152.2en 32
+- name: train.be0153-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0153 be0153.2en 32
+- name: train.be0154-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0154 be0154.2en 32
+- name: train.be0155-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0155 be0155.2en 32
+- name: train.be0156-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0156 be0156.2en 32
+- name: train.be0157-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0157 be0157.2en 32
+- name: train.be0158-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0158 be0158.2en 32
+- name: train.be0159-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0159 be0159.2en 32
+- name: train.be0160-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0160 be0160.2en 32
+- name: train.be0161-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0161 be0161.2en 32
+- name: train.be0162-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0162 be0162.2en 32
+- name: train.be0163-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0163 be0163.2en 32
+- name: train.be0164-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0164 be0164.2en 32
+- name: train.be0165-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0165 be0165.2en 32
+- name: train.be0166-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0166 be0166.2en 32
+- name: train.be0167-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0167 be0167.2en 32
+- name: train.be0168-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0168 be0168.2en 32
+- name: train.be0169-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0169 be0169.2en 32
+- name: train.be0170-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0170 be0170.2en 32
+- name: train.be0171-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0171 be0171.2en 32
+- name: train.be0172-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0172 be0172.2en 32
+- name: train.be0173-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0173 be0173.2en 32
+- name: train.be0174-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0174 be0174.2en 32
+- name: train.be0175-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0175 be0175.2en 32
+- name: train.be0176-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0176 be0176.2en 32
+- name: train.be0177-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0177 be0177.2en 32
+- name: train.be0178-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0178 be0178.2en 32
+- name: train.be0179-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0179 be0179.2en 32
+- name: train.be0180-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0180 be0180.2en 32
+- name: train.be0181-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0181 be0181.2en 32
+- name: train.be0182-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0182 be0182.2en 32
+- name: train.be0183-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0183 be0183.2en 32
+- name: train.be0184-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0184 be0184.2en 32
+- name: train.be0185-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0185 be0185.2en 32
+- name: train.be0186-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0186 be0186.2en 32
+- name: train.be0187-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0187 be0187.2en 32
+- name: train.be0188-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0188 be0188.2en 32
+- name: train.be0189-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0189 be0189.2en 32
+- name: train.be0190-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0190 be0190.2en 32
+- name: train.be0191-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0191 be0191.2en 32
+- name: train.be0192-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0192 be0192.2en 32
+- name: train.be0193-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0193 be0193.2en 32
+- name: train.be0194-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0194 be0194.2en 32
+- name: train.be0195-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0195 be0195.2en 32
+- name: train.be0196-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0196 be0196.2en 32
+- name: train.be0197-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0197 be0197.2en 32
+- name: train.be0198-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0198 be0198.2en 32
+- name: train.be0199-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0199 be0199.2en 32
+- name: train.be0200-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0200 be0200.2en 32
+- name: train.be0201-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0201 be0201.2en 32
+- name: train.be0202-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0202 be0202.2en 32
+- name: train.be0203-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0203 be0203.2en 32
+- name: train.be0204-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0204 be0204.2en 32
+- name: train.be0205-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0205 be0205.2en 32
+- name: train.be0206-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0206 be0206.2en 32
+- name: train.be0207-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0207 be0207.2en 32
+- name: train.be0208-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0208 be0208.2en 32
+- name: train.be0209-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0209 be0209.2en 32
+- name: train.be0210-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0210 be0210.2en 32
+- name: train.be0211-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0211 be0211.2en 32
+- name: train.be0212-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0212 be0212.2en 32
+- name: train.be0213-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0213 be0213.2en 32
+- name: train.be0214-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0214 be0214.2en 32
+- name: train.be0215-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0215 be0215.2en 32
+- name: train.be0216-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0216 be0216.2en 32
+- name: train.be0217-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0217 be0217.2en 32
+- name: train.be0218-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0218 be0218.2en 32
+- name: train.be0219-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0219 be0219.2en 32
+- name: train.be0220-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0220 be0220.2en 32
+- name: train.be0221-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0221 be0221.2en 32
+- name: train.be0222-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0222 be0222.2en 32
+- name: train.be0223-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0223 be0223.2en 32
+- name: train.be0224-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0224 be0224.2en 32
+- name: train.be0225-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0225 be0225.2en 32
+- name: train.be0226-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0226 be0226.2en 32
+- name: train.be0227-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0227 be0227.2en 32
+- name: train.be0228-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0228 be0228.2en 32
+- name: train.be0229-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0229 be0229.2en 32
+- name: train.be0230-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0230 be0230.2en 32
+- name: train.be0231-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0231 be0231.2en 32
+- name: train.be0232-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0232 be0232.2en 32
+- name: train.be0233-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0233 be0233.2en 32
+- name: train.be0234-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0234 be0234.2en 32
+- name: train.be0235-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0235 be0235.2en 32
+- name: train.be0236-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0236 be0236.2en 32
+- name: train.be0237-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0237 be0237.2en 32
+- name: train.be0238-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0238 be0238.2en 32
+- name: train.be0239-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0239 be0239.2en 32
+- name: train.be0240-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0240 be0240.2en 32
+- name: train.be0241-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0241 be0241.2en 32
+- name: train.be0242-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0242 be0242.2en 32
+- name: train.be0243-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0243 be0243.2en 32
+- name: train.be0244-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0244 be0244.2en 32
+- name: train.be0245-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0245 be0245.2en 32
+- name: train.be0246-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0246 be0246.2en 32
+- name: train.be0247-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0247 be0247.2en 32
+- name: train.be0248-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0248 be0248.2en 32
+- name: train.be0249-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0249 be0249.2en 32
+- name: train.be0250-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0250 be0250.2en 32
+- name: train.be0251-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0251 be0251.2en 32
+- name: train.be0252-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0252 be0252.2en 32
+- name: train.be0253-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0253 be0253.2en 32
+- name: train.be0254-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0254 be0254.2en 32
+- name: train.be0255-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0255 be0255.2en 32
+- name: train.be0256-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0256 be0256.2en 32
+- name: train.be0257-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0257 be0257.2en 32
+- name: train.be0258-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0258 be0258.2en 32
+- name: train.be0259-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0259 be0259.2en 32
+- name: train.be0260-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0260 be0260.2en 32
+- name: train.be0261-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0261 be0261.2en 32
+- name: train.be0262-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0262 be0262.2en 32
+- name: train.be0263-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0263 be0263.2en 32
+- name: train.be0264-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0264 be0264.2en 32
+- name: train.be0265-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0265 be0265.2en 32
+- name: train.be0266-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0266 be0266.2en 32
+- name: train.be0267-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0267 be0267.2en 32
+- name: train.be0268-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0268 be0268.2en 32
+- name: train.be0269-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0269 be0269.2en 32
+- name: train.be0270-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0270 be0270.2en 32
+- name: train.be0271-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0271 be0271.2en 32
+- name: train.be0272-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0272 be0272.2en 32
+- name: train.be0273-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0273 be0273.2en 32
+- name: train.be0274-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0274 be0274.2en 32
+- name: train.be0275-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0275 be0275.2en 32
+- name: train.be0276-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0276 be0276.2en 32
+- name: train.be0277-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0277 be0277.2en 32
+- name: train.be0278-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0278 be0278.2en 32
+- name: train.be0279-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0279 be0279.2en 32
+- name: train.be0280-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0280 be0280.2en 32
+- name: train.be0281-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0281 be0281.2en 32
+- name: train.be0282-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0282 be0282.2en 32
+- name: train.be0283-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0283 be0283.2en 32
+- name: train.be0284-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0284 be0284.2en 32
+- name: train.be0285-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0285 be0285.2en 32
+- name: train.be0286-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0286 be0286.2en 32
+- name: train.be0287-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0287 be0287.2en 32
+- name: train.be0288-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0288 be0288.2en 32
+- name: train.be0289-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0289 be0289.2en 32
+- name: train.be0290-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0290 be0290.2en 32
+- name: train.be0291-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0291 be0291.2en 32
+- name: train.be0292-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0292 be0292.2en 32
+- name: train.be0293-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0293 be0293.2en 32
+- name: train.be0294-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0294 be0294.2en 32
+- name: train.be0295-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0295 be0295.2en 32
+- name: train.be0296-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0296 be0296.2en 32
+- name: train.be0297-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0297 be0297.2en 32
+- name: train.be0298-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0298 be0298.2en 32
+- name: train.be0299-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0299 be0299.2en 32
+- name: train.be0300-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0300 be0300.2en 32
+- name: train.be0301-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0301 be0301.2en 32
+- name: train.be0302-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0302 be0302.2en 32
+- name: train.be0303-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0303 be0303.2en 32
+- name: train.be0304-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0304 be0304.2en 32
+- name: train.be0305-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0305 be0305.2en 32
+- name: train.be0306-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0306 be0306.2en 32
+- name: train.be0307-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0307 be0307.2en 32
+- name: train.be0308-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0308 be0308.2en 32
+- name: train.be0309-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0309 be0309.2en 32
+- name: train.be0310-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0310 be0310.2en 32
+- name: train.be0311-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0311 be0311.2en 32
+- name: train.be0312-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0312 be0312.2en 32
+- name: train.be0313-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0313 be0313.2en 32
+- name: train.be0314-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0314 be0314.2en 32
+- name: train.be0315-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0315 be0315.2en 32
+- name: train.be0316-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0316 be0316.2en 32
+- name: train.be0317-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0317 be0317.2en 32
+- name: train.be0318-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0318 be0318.2en 32
+- name: train.be0319-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0319 be0319.2en 32
+- name: train.be0320-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0320 be0320.2en 32
+- name: train.be0321-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0321 be0321.2en 32
+- name: train.be0322-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0322 be0322.2en 32
+- name: train.be0323-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0323 be0323.2en 32
+- name: train.be0324-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0324 be0324.2en 32
+- name: train.be0325-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0325 be0325.2en 32
+- name: train.be0326-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0326 be0326.2en 32
+- name: train.be0327-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0327 be0327.2en 32
+- name: train.be0328-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0328 be0328.2en 32
+- name: train.be0329-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0329 be0329.2en 32
+- name: train.be0330-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0330 be0330.2en 32
+- name: train.be0331-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0331 be0331.2en 32
+- name: train.be0332-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0332 be0332.2en 32
+- name: train.be0333-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0333 be0333.2en 32
+- name: train.be0334-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0334 be0334.2en 32
+- name: train.be0335-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0335 be0335.2en 32
+- name: train.be0336-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0336 be0336.2en 32
+- name: train.be0337-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0337 be0337.2en 32
+- name: train.be0338-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0338 be0338.2en 32
+- name: train.be0339-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0339 be0339.2en 32
+- name: train.be0340-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0340 be0340.2en 32
+- name: train.be0341-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0341 be0341.2en 32
+- name: train.be0342-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0342 be0342.2en 32
+- name: train.be0343-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0343 be0343.2en 32
+- name: train.be0344-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0344 be0344.2en 32
+- name: train.be0345-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0345 be0345.2en 32
+- name: train.be0346-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0346 be0346.2en 32
+- name: train.be0347-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0347 be0347.2en 32
+- name: train.be0348-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0348 be0348.2en 32
+- name: train.be0349-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0349 be0349.2en 32
+- name: train.be0350-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0350 be0350.2en 32
+- name: train.be0351-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0351 be0351.2en 32
+- name: train.be0352-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0352 be0352.2en 32
+- name: train.be0353-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0353 be0353.2en 32
+- name: train.be0354-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0354 be0354.2en 32
+- name: train.be0355-be2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh be en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.be0355 be0355.2en 32
+- name: train.ff0000-ff2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ff en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ff0000 ff0000.2en 32
+- name: train.ff0001-ff2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ff en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ff0001 ff0001.2en 32
+- name: train.ku0000-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0000 ku0000.2en 32
+- name: train.ku0001-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0001 ku0001.2en 32
+- name: train.ku0002-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0002 ku0002.2en 32
+- name: train.ku0003-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0003 ku0003.2en 32
+- name: train.ku0004-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0004 ku0004.2en 32
+- name: train.ku0005-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0005 ku0005.2en 32
+- name: train.ku0006-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0006 ku0006.2en 32
+- name: train.ku0007-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0007 ku0007.2en 32
+- name: train.ku0008-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0008 ku0008.2en 32
+- name: train.ku0009-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0009 ku0009.2en 32
+- name: train.ku0010-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0010 ku0010.2en 32
+- name: train.ku0011-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0011 ku0011.2en 32
+- name: train.ku0012-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0012 ku0012.2en 32
+- name: train.ku0013-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0013 ku0013.2en 32
+- name: train.ku0014-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0014 ku0014.2en 32
+- name: train.ku0015-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0015 ku0015.2en 32
+- name: train.ku0016-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0016 ku0016.2en 32
+- name: train.ku0017-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0017 ku0017.2en 32
+- name: train.ku0018-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0018 ku0018.2en 32
+- name: train.ku0019-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0019 ku0019.2en 32
+- name: train.ku0020-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0020 ku0020.2en 32
+- name: train.ku0021-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0021 ku0021.2en 32
+- name: train.ku0022-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0022 ku0022.2en 32
+- name: train.ku0023-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0023 ku0023.2en 32
+- name: train.ku0024-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0024 ku0024.2en 32
+- name: train.ku0025-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0025 ku0025.2en 32
+- name: train.ku0026-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0026 ku0026.2en 32
+- name: train.ku0027-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0027 ku0027.2en 32
+- name: train.ku0028-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0028 ku0028.2en 32
+- name: train.ku0029-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0029 ku0029.2en 32
+- name: train.ku0030-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0030 ku0030.2en 32
+- name: train.ku0031-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0031 ku0031.2en 32
+- name: train.ku0032-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0032 ku0032.2en 32
+- name: train.ku0033-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0033 ku0033.2en 32
+- name: train.ku0034-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0034 ku0034.2en 32
+- name: train.ku0035-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0035 ku0035.2en 32
+- name: train.ku0036-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0036 ku0036.2en 32
+- name: train.ku0037-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0037 ku0037.2en 32
+- name: train.ku0038-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0038 ku0038.2en 32
+- name: train.ku0039-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0039 ku0039.2en 32
+- name: train.ku0040-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0040 ku0040.2en 32
+- name: train.ku0041-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0041 ku0041.2en 32
+- name: train.ku0042-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0042 ku0042.2en 32
+- name: train.ku0043-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0043 ku0043.2en 32
+- name: train.ku0044-ku2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ku en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ku0044 ku0044.2en 32
+- name: train.lo0000-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0000 lo0000.2en 32
+- name: train.lo0001-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0001 lo0001.2en 32
+- name: train.lo0002-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0002 lo0002.2en 32
+- name: train.lo0003-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0003 lo0003.2en 32
+- name: train.lo0004-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0004 lo0004.2en 32
+- name: train.lo0005-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0005 lo0005.2en 32
+- name: train.lo0006-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0006 lo0006.2en 32
+- name: train.lo0007-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0007 lo0007.2en 32
+- name: train.lo0008-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0008 lo0008.2en 32
+- name: train.lo0009-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0009 lo0009.2en 32
+- name: train.lo0010-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0010 lo0010.2en 32
+- name: train.lo0011-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0011 lo0011.2en 32
+- name: train.lo0012-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0012 lo0012.2en 32
+- name: train.lo0013-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0013 lo0013.2en 32
+- name: train.lo0014-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0014 lo0014.2en 32
+- name: train.lo0015-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0015 lo0015.2en 32
+- name: train.lo0016-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0016 lo0016.2en 32
+- name: train.lo0017-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0017 lo0017.2en 32
+- name: train.lo0018-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0018 lo0018.2en 32
+- name: train.lo0019-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0019 lo0019.2en 32
+- name: train.lo0020-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0020 lo0020.2en 32
+- name: train.lo0021-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0021 lo0021.2en 32
+- name: train.lo0022-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0022 lo0022.2en 32
+- name: train.lo0023-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0023 lo0023.2en 32
+- name: train.lo0024-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0024 lo0024.2en 32
+- name: train.lo0025-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0025 lo0025.2en 32
+- name: train.lo0026-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0026 lo0026.2en 32
+- name: train.lo0027-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0027 lo0027.2en 32
+- name: train.lo0028-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0028 lo0028.2en 32
+- name: train.lo0029-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0029 lo0029.2en 32
+- name: train.lo0030-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0030 lo0030.2en 32
+- name: train.lo0031-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0031 lo0031.2en 32
+- name: train.lo0032-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0032 lo0032.2en 32
+- name: train.lo0033-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0033 lo0033.2en 32
+- name: train.lo0034-lo2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh lo en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.lo0034 lo0034.2en 32
+- name: train.my0000-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0000 my0000.2en 32
+- name: train.my0001-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0001 my0001.2en 32
+- name: train.my0002-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0002 my0002.2en 32
+- name: train.my0003-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0003 my0003.2en 32
+- name: train.my0004-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0004 my0004.2en 32
+- name: train.my0005-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0005 my0005.2en 32
+- name: train.my0006-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0006 my0006.2en 32
+- name: train.my0007-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0007 my0007.2en 32
+- name: train.my0008-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0008 my0008.2en 32
+- name: train.my0009-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0009 my0009.2en 32
+- name: train.my0010-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0010 my0010.2en 32
+- name: train.my0011-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0011 my0011.2en 32
+- name: train.my0012-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0012 my0012.2en 32
+- name: train.my0013-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0013 my0013.2en 32
+- name: train.my0014-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0014 my0014.2en 32
+- name: train.my0015-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0015 my0015.2en 32
+- name: train.my0016-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0016 my0016.2en 32
+- name: train.my0017-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0017 my0017.2en 32
+- name: train.my0018-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0018 my0018.2en 32
+- name: train.my0019-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0019 my0019.2en 32
+- name: train.my0020-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0020 my0020.2en 32
+- name: train.my0021-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0021 my0021.2en 32
+- name: train.my0022-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0022 my0022.2en 32
+- name: train.my0023-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0023 my0023.2en 32
+- name: train.my0024-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0024 my0024.2en 32
+- name: train.my0025-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0025 my0025.2en 32
+- name: train.my0026-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0026 my0026.2en 32
+- name: train.my0027-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0027 my0027.2en 32
+- name: train.my0028-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0028 my0028.2en 32
+- name: train.my0029-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0029 my0029.2en 32
+- name: train.my0030-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0030 my0030.2en 32
+- name: train.my0031-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0031 my0031.2en 32
+- name: train.my0032-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0032 my0032.2en 32
+- name: train.my0033-my2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh my en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.my0033 my0033.2en 32
+- name: train.ns0000-ns2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ns en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ns0000 ns0000.2en 32
+- name: train.ns0001-ns2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh ns en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.ns0001 ns0001.2en 32
+- name: train.om0000-om2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh om en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.om0000 om0000.2en 32
+- name: train.om0001-om2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh om en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.om0001 om0001.2en 32
+- name: train.om0002-om2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh om en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.om0002 om0002.2en 32
+- name: train.om0003-om2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh om en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.om0003 om0003.2en 32
+- name: train.om0004-om2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh om en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.om0004 om0004.2en 32
+- name: train.om0005-om2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh om en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.om0005 om0005.2en 32
+- name: train.om0006-om2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh om en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.om0006 om0006.2en 32
+- name: train.om0007-om2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh om en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.om0007 om0007.2en 32
+- name: train.or0000-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0000 or0000.2en 32
+- name: train.or0001-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0001 or0001.2en 32
+- name: train.or0002-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0002 or0002.2en 32
+- name: train.or0003-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0003 or0003.2en 32
+- name: train.or0004-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0004 or0004.2en 32
+- name: train.or0005-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0005 or0005.2en 32
+- name: train.or0006-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0006 or0006.2en 32
+- name: train.or0007-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0007 or0007.2en 32
+- name: train.or0008-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0008 or0008.2en 32
+- name: train.or0009-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0009 or0009.2en 32
+- name: train.or0010-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0010 or0010.2en 32
+- name: train.or0011-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0011 or0011.2en 32
+- name: train.or0012-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0012 or0012.2en 32
+- name: train.or0013-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0013 or0013.2en 32
+- name: train.or0014-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0014 or0014.2en 32
+- name: train.or0015-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0015 or0015.2en 32
+- name: train.or0016-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0016 or0016.2en 32
+- name: train.or0017-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0017 or0017.2en 32
+- name: train.or0018-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0018 or0018.2en 32
+- name: train.or0019-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0019 or0019.2en 32
+- name: train.or0020-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0020 or0020.2en 32
+- name: train.or0021-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0021 or0021.2en 32
+- name: train.or0022-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0022 or0022.2en 32
+- name: train.or0023-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0023 or0023.2en 32
+- name: train.or0024-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0024 or0024.2en 32
+- name: train.or0025-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0025 or0025.2en 32
+- name: train.or0026-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0026 or0026.2en 32
+- name: train.or0027-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0027 or0027.2en 32
+- name: train.or0028-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0028 or0028.2en 32
+- name: train.or0029-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0029 or0029.2en 32
+- name: train.or0030-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0030 or0030.2en 32
+- name: train.or0031-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0031 or0031.2en 32
+- name: train.or0032-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0032 or0032.2en 32
+- name: train.or0033-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0033 or0033.2en 32
+- name: train.or0034-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0034 or0034.2en 32
+- name: train.or0035-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0035 or0035.2en 32
+- name: train.or0036-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0036 or0036.2en 32
+- name: train.or0037-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0037 or0037.2en 32
+- name: train.or0038-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0038 or0038.2en 32
+- name: train.or0039-or2en
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/translate_our.sh or en 4 /mnt/input/SharedTask/thunder/large_track/data/model/deltalm/bt/A100/lr1e-4-deltalm-postnorm/avg50_59.pt train.or0039 or0039.2en 32

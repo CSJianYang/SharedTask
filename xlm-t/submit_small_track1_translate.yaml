@@ -1,0 +1,352 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  
+  #service: amlk8s
+  #vc: quantus
+  #name: itpeastusv100cl
+  
+  #service: amlk8s
+  #name: v100-32gb-eus-2
+  #vc: language-itp-mtres
+  #name: v100-8x-eus-1
+  name: v100-8x-scus
+  service: amlk8s
+  vc: quantus
+  
+  #name: itplabrr1cl1
+  #service: amlk8s
+  #vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:
+- name: hu.tsv0043-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0043 hu0043.2et 48
+- name: hu.tsv0043-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0043 hu0043.2hr 48
+- name: hu.tsv0043-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0043 hu0043.2mk 48
+- name: hu.tsv0043-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0043 hu0043.2sr 48
+- name: hu.tsv0044-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0044 hu0044.2et 48
+- name: hu.tsv0044-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0044 hu0044.2hr 48
+- name: hu.tsv0044-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0044 hu0044.2mk 48
+- name: hu.tsv0044-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0044 hu0044.2sr 48
+- name: hu.tsv0045-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0045 hu0045.2et 48
+- name: hu.tsv0045-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0045 hu0045.2hr 48
+- name: hu.tsv0045-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0045 hu0045.2mk 48
+- name: hu.tsv0045-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0045 hu0045.2sr 48
+- name: hu.tsv0046-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0046 hu0046.2et 48
+- name: hu.tsv0046-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0046 hu0046.2hr 48
+- name: hu.tsv0046-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0046 hu0046.2mk 48
+- name: hu.tsv0046-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0046 hu0046.2sr 48
+- name: hu.tsv0047-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0047 hu0047.2et 48
+- name: hu.tsv0047-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0047 hu0047.2hr 48
+- name: hu.tsv0047-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0047 hu0047.2mk 48
+- name: hu.tsv0047-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0047 hu0047.2sr 48
+- name: hu.tsv0048-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0048 hu0048.2et 48
+- name: hu.tsv0048-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0048 hu0048.2hr 48
+- name: hu.tsv0048-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0048 hu0048.2mk 48
+- name: hu.tsv0048-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0048 hu0048.2sr 48
+- name: hu.tsv0049-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0049 hu0049.2et 48
+- name: hu.tsv0049-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0049 hu0049.2hr 48
+- name: hu.tsv0049-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0049 hu0049.2mk 48
+- name: hu.tsv0049-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0049 hu0049.2sr 48
+- name: hu.tsv0050-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0050 hu0050.2et 48
+- name: hu.tsv0050-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0050 hu0050.2hr 48
+- name: hu.tsv0050-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0050 hu0050.2mk 48
+- name: hu.tsv0050-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0050 hu0050.2sr 48
+- name: hu.tsv0051-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0051 hu0051.2et 48
+- name: hu.tsv0051-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0051 hu0051.2hr 48
+- name: hu.tsv0051-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0051 hu0051.2mk 48
+- name: hu.tsv0051-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0051 hu0051.2sr 48
+- name: hu.tsv0052-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0052 hu0052.2et 48
+- name: hu.tsv0052-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0052 hu0052.2hr 48
+- name: hu.tsv0052-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0052 hu0052.2mk 48
+- name: hu.tsv0052-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0052 hu0052.2sr 48
+- name: hu.tsv0053-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0053 hu0053.2et 48
+- name: hu.tsv0053-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0053 hu0053.2hr 48
+- name: hu.tsv0053-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0053 hu0053.2mk 48
+- name: hu.tsv0053-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0053 hu0053.2sr 48
+- name: hu.tsv0054-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0054 hu0054.2et 48
+- name: hu.tsv0054-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0054 hu0054.2hr 48
+- name: hu.tsv0054-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0054 hu0054.2mk 48
+- name: hu.tsv0054-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0054 hu0054.2sr 48
+- name: hu.tsv0055-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0055 hu0055.2et 48
+- name: hu.tsv0055-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0055 hu0055.2hr 48
+- name: hu.tsv0055-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0055 hu0055.2mk 48
+- name: hu.tsv0055-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0055 hu0055.2sr 48
+- name: hu.tsv0056-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0056 hu0056.2et 48
+- name: hu.tsv0056-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0056 hu0056.2hr 48
+- name: hu.tsv0056-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0056 hu0056.2mk 48
+- name: hu.tsv0056-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0056 hu0056.2sr 48
+- name: hu.tsv0057-hu2et
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu et 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0057 hu0057.2et 48
+- name: hu.tsv0057-hu2hr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu hr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0057 hu0057.2hr 48
+- name: hu.tsv0057-hu2mk
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu mk 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0057 hu0057.2mk 48
+- name: hu.tsv0057-hu2sr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/translate_our.sh hu sr 4 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/model/FT/avg4_8.pt hu.tsv0057 hu0057.2sr 48

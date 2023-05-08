@@ -1,0 +1,119 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itplabrr1cl1
+  #name: itpeastusv100cl
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  #- python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+jobs: 
+#- name: concat_am
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh am
+#- name: concat_bn
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh bn
+#- name: concat_el
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh el
+#- name: concat_fa
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh fa
+#- name: concat_hu
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh hu
+#- name: concat_it
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh it
+#- name: concat_ja
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh ja
+#- name: concat_ka
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh ka
+#- name: concat_lv
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh lv
+#- name: concat_ml
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh ml
+#- name: concat_pl
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh pl
+#- name: concat_pt
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh pt
+#- name: concat_ro
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh ro
+#- name: concat_sv
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh sv
+#- name: concat_uk
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh uk
+#- name: concat_ur
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/concat/filter_with_length.sh ur
+- name: concat_mi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/concat/filter_with_length.sh mi

@@ -1,0 +1,2006 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itpeastusv100cl
+  #name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: filter_v1_af-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/afen/train.af-en.af -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/afen/train.af-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/afen/train.af-en.af -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/afen/train.af-en.en 
+- name: filter_v1_af-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/aflb/train.af-lb.af -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/aflb/train.af-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/aflb/train.af-lb.af -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/aflb/train.af-lb.lb 
+- name: filter_v1_am-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/amen/train.am-en.am -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/amen/train.am-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/amen/train.am-en.am -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/amen/train.am-en.en 
+- name: filter_v1_ar-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/aren/train.ar-en.ar -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/aren/train.ar-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/aren/train.ar-en.ar -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/aren/train.ar-en.en 
+- name: filter_v1_ar-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/arkk/train.ar-kk.ar -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/arkk/train.ar-kk.kk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/arkk/train.ar-kk.ar -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/arkk/train.ar-kk.kk 
+- name: filter_v1_ar-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/arlb/train.ar-lb.ar -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/arlb/train.ar-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/arlb/train.ar-lb.ar -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/arlb/train.ar-lb.lb 
+- name: filter_v1_as-da
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/asda/train.as-da.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/asda/train.as-da.da -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asda/train.as-da.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asda/train.as-da.da 
+- name: filter_v1_as-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/asde/train.as-de.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/asde/train.as-de.de -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asde/train.as-de.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asde/train.as-de.de 
+- name: filter_v1_as-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/asen/train.as-en.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/asen/train.as-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asen/train.as-en.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asen/train.as-en.en 
+- name: filter_v1_as-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/asfr/train.as-fr.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/asfr/train.as-fr.fr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asfr/train.as-fr.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asfr/train.as-fr.fr 
+- name: filter_v1_as-hi
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ashi/train.as-hi.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ashi/train.as-hi.hi -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ashi/train.as-hi.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ashi/train.as-hi.hi 
+- name: filter_v1_as-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ashu/train.as-hu.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ashu/train.as-hu.hu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ashu/train.as-hu.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ashu/train.as-hu.hu 
+- name: filter_v1_as-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/asit/train.as-it.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/asit/train.as-it.it -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asit/train.as-it.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asit/train.as-it.it 
+- name: filter_v1_as-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/asja/train.as-ja.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/asja/train.as-ja.ja -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asja/train.as-ja.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asja/train.as-ja.ja 
+- name: filter_v1_as-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/astr/train.as-tr.as -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/astr/train.as-tr.tr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astr/train.as-tr.as -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astr/train.as-tr.tr 
+- name: filter_v1_ast-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/astde/train.ast-de.ast -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/astde/train.ast-de.de -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astde/train.ast-de.ast -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astde/train.ast-de.de 
+- name: filter_v1_ast-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/asten/train.ast-en.ast -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/asten/train.ast-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asten/train.ast-en.ast -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/asten/train.ast-en.en 
+- name: filter_v1_ast-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/astes/train.ast-es.ast -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/astes/train.ast-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astes/train.ast-es.ast -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astes/train.ast-es.es 
+- name: filter_v1_ast-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/astfr/train.ast-fr.ast -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/astfr/train.ast-fr.fr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astfr/train.ast-fr.ast -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astfr/train.ast-fr.fr 
+- name: filter_v1_ast-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/astja/train.ast-ja.ast -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/astja/train.ast-ja.ja -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astja/train.ast-ja.ast -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astja/train.ast-ja.ja 
+- name: filter_v1_ast-nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/astnl/train.ast-nl.ast -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/astnl/train.ast-nl.nl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astnl/train.ast-nl.ast -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astnl/train.ast-nl.nl 
+- name: filter_v1_ast-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/astpt/train.ast-pt.ast -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/astpt/train.ast-pt.pt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astpt/train.ast-pt.ast -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astpt/train.ast-pt.pt 
+- name: filter_v1_ast-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/astru/train.ast-ru.ast -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/astru/train.ast-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astru/train.ast-ru.ast -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/astru/train.ast-ru.ru 
+- name: filter_v1_az-bg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azbg/train.az-bg.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azbg/train.az-bg.bg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azbg/train.az-bg.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azbg/train.az-bg.bg 
+- name: filter_v1_az-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azde/train.az-de.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azde/train.az-de.de -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azde/train.az-de.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azde/train.az-de.de 
+- name: filter_v1_az-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azen/train.az-en.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azen/train.az-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azen/train.az-en.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azen/train.az-en.en 
+- name: filter_v1_az-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azes/train.az-es.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azes/train.az-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azes/train.az-es.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azes/train.az-es.es 
+- name: filter_v1_az-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azfr/train.az-fr.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azfr/train.az-fr.fr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azfr/train.az-fr.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azfr/train.az-fr.fr 
+- name: filter_v1_az-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azit/train.az-it.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azit/train.az-it.it -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azit/train.az-it.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azit/train.az-it.it 
+- name: filter_v1_az-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azja/train.az-ja.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azja/train.az-ja.ja -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azja/train.az-ja.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azja/train.az-ja.ja 
+- name: filter_v1_az-ko
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azko/train.az-ko.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azko/train.az-ko.ko -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azko/train.az-ko.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azko/train.az-ko.ko 
+- name: filter_v1_az-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azlt/train.az-lt.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azlt/train.az-lt.lt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azlt/train.az-lt.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azlt/train.az-lt.lt 
+- name: filter_v1_az-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azlv/train.az-lv.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azlv/train.az-lv.lv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azlv/train.az-lv.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azlv/train.az-lv.lv 
+- name: filter_v1_az-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azpt/train.az-pt.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azpt/train.az-pt.pt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azpt/train.az-pt.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azpt/train.az-pt.pt 
+- name: filter_v1_az-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azru/train.az-ru.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azru/train.az-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azru/train.az-ru.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azru/train.az-ru.ru 
+- name: filter_v1_az-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/aztr/train.az-tr.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/aztr/train.az-tr.tr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/aztr/train.az-tr.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/aztr/train.az-tr.tr 
+- name: filter_v1_az-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/azzh/train.az-zh.az -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/azzh/train.az-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azzh/train.az-zh.az -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/azzh/train.az-zh.zh 
+- name: filter_v1_be-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/been/train.be-en.be -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/been/train.be-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/been/train.be-en.be -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/been/train.be-en.en 
+- name: filter_v1_bg-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/bgen/train.bg-en.bg -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/bgen/train.bg-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/bgen/train.bg-en.bg -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/bgen/train.bg-en.en 
+- name: filter_v1_bn-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/bnen/train.bn-en.bn -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/bnen/train.bn-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/bnen/train.bn-en.bn -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/bnen/train.bn-en.en 
+- name: filter_v1_bs-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/bsen/train.bs-en.bs -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/bsen/train.bs-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/bsen/train.bs-en.bs -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/bsen/train.bs-en.en 
+- name: filter_v1_ca-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/caen/train.ca-en.ca -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/caen/train.ca-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/caen/train.ca-en.ca -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/caen/train.ca-en.en 
+- name: filter_v1_ceb-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ceben/train.ceb-en.ceb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ceben/train.ceb-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ceben/train.ceb-en.ceb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ceben/train.ceb-en.en 
+- name: filter_v1_cs-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/csen/train.cs-en.cs -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/csen/train.cs-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/csen/train.cs-en.cs -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/csen/train.cs-en.en 
+- name: filter_v1_cs-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/cslb/train.cs-lb.cs -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/cslb/train.cs-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/cslb/train.cs-lb.cs -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/cslb/train.cs-lb.lb 
+- name: filter_v1_cy-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/cyen/train.cy-en.cy -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/cyen/train.cy-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/cyen/train.cy-en.cy -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/cyen/train.cy-en.en 
+- name: filter_v1_da-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/daen/train.da-en.da -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/daen/train.da-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/daen/train.da-en.da -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/daen/train.da-en.en 
+- name: filter_v1_da-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/dalb/train.da-lb.da -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/dalb/train.da-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dalb/train.da-lb.da -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dalb/train.da-lb.lb 
+- name: filter_v1_de-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/deen/train.de-en.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/deen/train.de-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/deen/train.de-en.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/deen/train.de-en.en 
+- name: filter_v1_de-hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/dehy/train.de-hy.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/dehy/train.de-hy.hy -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dehy/train.de-hy.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dehy/train.de-hy.hy 
+- name: filter_v1_de-jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/dejv/train.de-jv.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/dejv/train.de-jv.jv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dejv/train.de-jv.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dejv/train.de-jv.jv 
+- name: filter_v1_de-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/dekk/train.de-kk.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/dekk/train.de-kk.kk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dekk/train.de-kk.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dekk/train.de-kk.kk 
+- name: filter_v1_de-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/dekm/train.de-km.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/dekm/train.de-km.km -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dekm/train.de-km.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/dekm/train.de-km.km 
+- name: filter_v1_de-ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/deky/train.de-ky.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/deky/train.de-ky.ky -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/deky/train.de-ky.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/deky/train.de-ky.ky 
+- name: filter_v1_de-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/delb/train.de-lb.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/delb/train.de-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/delb/train.de-lb.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/delb/train.de-lb.lb 
+- name: filter_v1_de-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/demn/train.de-mn.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/demn/train.de-mn.mn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/demn/train.de-mn.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/demn/train.de-mn.mn 
+- name: filter_v1_de-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/deoc/train.de-oc.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/deoc/train.de-oc.oc -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/deoc/train.de-oc.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/deoc/train.de-oc.oc 
+- name: filter_v1_de-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/detg/train.de-tg.de -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/detg/train.de-tg.tg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/detg/train.de-tg.de -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/detg/train.de-tg.tg 
+- name: filter_v1_el-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/elen/train.el-en.el -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/elen/train.el-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/elen/train.el-en.el -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/elen/train.el-en.en 
+- name: filter_v1_en-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/enzh/train.en-zh.en -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/enzh/train.en-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/enzh/train.en-zh.en -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/enzh/train.en-zh.zh 
+- name: filter_v1_es-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/esen/train.es-en.es -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/esen/train.es-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/esen/train.es-en.es -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/esen/train.es-en.en 
+- name: filter_v1_es-wo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/eswo/train.es-wo.es -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/eswo/train.es-wo.wo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/eswo/train.es-wo.es -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/eswo/train.es-wo.wo 
+- name: filter_v1_et-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/eten/train.et-en.et -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/eten/train.et-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/eten/train.et-en.et -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/eten/train.et-en.en 
+- name: filter_v1_et-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ethr/train.et-hr.et -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ethr/train.et-hr.hr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ethr/train.et-hr.et -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ethr/train.et-hr.hr 
+- name: filter_v1_et-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ethu/train.et-hu.et -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ethu/train.et-hu.hu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ethu/train.et-hu.et -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ethu/train.et-hu.hu 
+- name: filter_v1_et-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/etkk/train.et-kk.et -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/etkk/train.et-kk.kk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/etkk/train.et-kk.et -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/etkk/train.et-kk.kk 
+- name: filter_v1_et-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/etmk/train.et-mk.et -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/etmk/train.et-mk.mk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/etmk/train.et-mk.et -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/etmk/train.et-mk.mk 
+- name: filter_v1_et-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/etsr/train.et-sr.et -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/etsr/train.et-sr.sr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/etsr/train.et-sr.et -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/etsr/train.et-sr.sr 
+- name: filter_v1_fa-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/faen/train.fa-en.fa -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/faen/train.fa-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/faen/train.fa-en.fa -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/faen/train.fa-en.en 
+- name: filter_v1_ff-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ffen/train.ff-en.ff -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ffen/train.ff-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ffen/train.ff-en.ff -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ffen/train.ff-en.en 
+- name: filter_v1_ff-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ffes/train.ff-es.ff -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ffes/train.ff-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ffes/train.ff-es.ff -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ffes/train.ff-es.es 
+- name: filter_v1_ff-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ffit/train.ff-it.ff -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ffit/train.ff-it.it -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ffit/train.ff-it.ff -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ffit/train.ff-it.it 
+- name: filter_v1_fi-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/fien/train.fi-en.fi -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/fien/train.fi-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/fien/train.fi-en.fi -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/fien/train.fi-en.en 
+- name: filter_v1_fi-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/fikm/train.fi-km.fi -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/fikm/train.fi-km.km -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/fikm/train.fi-km.fi -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/fikm/train.fi-km.km 
+- name: filter_v1_fi-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/filb/train.fi-lb.fi -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/filb/train.fi-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/filb/train.fi-lb.fi -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/filb/train.fi-lb.lb 
+- name: filter_v1_fi-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/fioc/train.fi-oc.fi -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/fioc/train.fi-oc.oc -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/fioc/train.fi-oc.fi -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/fioc/train.fi-oc.oc 
+- name: filter_v1_fr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/fren/train.fr-en.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/fren/train.fr-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/fren/train.fr-en.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/fren/train.fr-en.en 
+- name: filter_v1_fr-ff
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frff/train.fr-ff.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frff/train.fr-ff.ff -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frff/train.fr-ff.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frff/train.fr-ff.ff 
+- name: filter_v1_fr-hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frhy/train.fr-hy.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frhy/train.fr-hy.hy -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frhy/train.fr-hy.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frhy/train.fr-hy.hy 
+- name: filter_v1_fr-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frkk/train.fr-kk.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frkk/train.fr-kk.kk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frkk/train.fr-kk.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frkk/train.fr-kk.kk 
+- name: filter_v1_fr-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frkm/train.fr-km.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frkm/train.fr-km.km -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frkm/train.fr-km.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frkm/train.fr-km.km 
+- name: filter_v1_fr-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frlb/train.fr-lb.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frlb/train.fr-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frlb/train.fr-lb.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frlb/train.fr-lb.lb 
+- name: filter_v1_fr-ln
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frln/train.fr-ln.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frln/train.fr-ln.ln -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frln/train.fr-ln.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frln/train.fr-ln.ln 
+- name: filter_v1_fr-lo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frlo/train.fr-lo.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frlo/train.fr-lo.lo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frlo/train.fr-lo.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frlo/train.fr-lo.lo 
+- name: filter_v1_fr-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frmn/train.fr-mn.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frmn/train.fr-mn.mn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frmn/train.fr-mn.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frmn/train.fr-mn.mn 
+- name: filter_v1_fr-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/froc/train.fr-oc.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/froc/train.fr-oc.oc -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/froc/train.fr-oc.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/froc/train.fr-oc.oc 
+- name: filter_v1_fr-sn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frsn/train.fr-sn.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frsn/train.fr-sn.sn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frsn/train.fr-sn.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frsn/train.fr-sn.sn 
+- name: filter_v1_fr-so
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frso/train.fr-so.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frso/train.fr-so.so -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frso/train.fr-so.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frso/train.fr-so.so 
+- name: filter_v1_fr-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frtg/train.fr-tg.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frtg/train.fr-tg.tg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frtg/train.fr-tg.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frtg/train.fr-tg.tg 
+- name: filter_v1_fr-wo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/frwo/train.fr-wo.fr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/frwo/train.fr-wo.wo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frwo/train.fr-wo.fr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/frwo/train.fr-wo.wo 
+- name: filter_v1_ga-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/gaen/train.ga-en.ga -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/gaen/train.ga-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/gaen/train.ga-en.ga -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/gaen/train.ga-en.en 
+- name: filter_v1_gl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/glen/train.gl-en.gl -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/glen/train.gl-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/glen/train.gl-en.gl -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/glen/train.gl-en.en 
+- name: filter_v1_gu-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/guen/train.gu-en.gu -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/guen/train.gu-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/guen/train.gu-en.gu -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/guen/train.gu-en.en 
+- name: filter_v1_gu-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/gues/train.gu-es.gu -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/gues/train.gu-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/gues/train.gu-es.gu -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/gues/train.gu-es.es 
+- name: filter_v1_ha-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/haen/train.ha-en.ha -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/haen/train.ha-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/haen/train.ha-en.ha -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/haen/train.ha-en.en 
+- name: filter_v1_he-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/heen/train.he-en.he -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/heen/train.he-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/heen/train.he-en.he -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/heen/train.he-en.en 
+- name: filter_v1_hi-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hien/train.hi-en.hi -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hien/train.hi-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hien/train.hi-en.hi -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hien/train.hi-en.en 
+- name: filter_v1_hr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hren/train.hr-en.hr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hren/train.hr-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hren/train.hr-en.hr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hren/train.hr-en.en 
+- name: filter_v1_hr-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hrhu/train.hr-hu.hr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hrhu/train.hr-hu.hu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hrhu/train.hr-hu.hr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hrhu/train.hr-hu.hu 
+- name: filter_v1_hr-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hrmk/train.hr-mk.hr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hrmk/train.hr-mk.mk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hrmk/train.hr-mk.hr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hrmk/train.hr-mk.mk 
+- name: filter_v1_hr-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hrsr/train.hr-sr.hr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hrsr/train.hr-sr.sr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hrsr/train.hr-sr.hr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hrsr/train.hr-sr.sr 
+- name: filter_v1_hu-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/huen/train.hu-en.hu -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/huen/train.hu-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/huen/train.hu-en.hu -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/huen/train.hu-en.en 
+- name: filter_v1_hu-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hulb/train.hu-lb.hu -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hulb/train.hu-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hulb/train.hu-lb.hu -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hulb/train.hu-lb.lb 
+- name: filter_v1_hu-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/humk/train.hu-mk.hu -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/humk/train.hu-mk.mk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/humk/train.hu-mk.hu -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/humk/train.hu-mk.mk 
+- name: filter_v1_hu-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/husr/train.hu-sr.hu -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/husr/train.hu-sr.sr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/husr/train.hu-sr.hu -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/husr/train.hu-sr.sr 
+- name: filter_v1_hy-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hyen/train.hy-en.hy -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hyen/train.hy-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hyen/train.hy-en.hy -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hyen/train.hy-en.en 
+- name: filter_v1_hy-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hyes/train.hy-es.hy -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hyes/train.hy-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hyes/train.hy-es.hy -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hyes/train.hy-es.es 
+- name: filter_v1_hy-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hyja/train.hy-ja.hy -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hyja/train.hy-ja.ja -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hyja/train.hy-ja.hy -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hyja/train.hy-ja.ja 
+- name: filter_v1_hy-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/hyzh/train.hy-zh.hy -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/hyzh/train.hy-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hyzh/train.hy-zh.hy -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/hyzh/train.hy-zh.zh 
+- name: filter_v1_id-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/iden/train.id-en.id -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/iden/train.id-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/iden/train.id-en.id -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/iden/train.id-en.en 
+- name: filter_v1_id-jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/idjv/train.id-jv.id -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/idjv/train.id-jv.jv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/idjv/train.id-jv.id -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/idjv/train.id-jv.jv 
+- name: filter_v1_id-ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/idms/train.id-ms.id -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/idms/train.id-ms.ms -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/idms/train.id-ms.id -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/idms/train.id-ms.ms 
+- name: filter_v1_id-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/idta/train.id-ta.id -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/idta/train.id-ta.ta -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/idta/train.id-ta.id -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/idta/train.id-ta.ta 
+- name: filter_v1_id-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/idtl/train.id-tl.id -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/idtl/train.id-tl.tl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/idtl/train.id-tl.id -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/idtl/train.id-tl.tl 
+- name: filter_v1_ig-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/igen/train.ig-en.ig -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/igen/train.ig-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/igen/train.ig-en.ig -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/igen/train.ig-en.en 
+- name: filter_v1_is-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/isen/train.is-en.is -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/isen/train.is-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/isen/train.is-en.is -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/isen/train.is-en.en 
+- name: filter_v1_it-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/iten/train.it-en.it -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/iten/train.it-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/iten/train.it-en.it -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/iten/train.it-en.en 
+- name: filter_v1_it-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/itkk/train.it-kk.it -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/itkk/train.it-kk.kk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/itkk/train.it-kk.it -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/itkk/train.it-kk.kk 
+- name: filter_v1_it-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/itlb/train.it-lb.it -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/itlb/train.it-lb.lb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/itlb/train.it-lb.it -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/itlb/train.it-lb.lb 
+- name: filter_v1_it-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/itoc/train.it-oc.it -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/itoc/train.it-oc.oc -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/itoc/train.it-oc.it -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/itoc/train.it-oc.oc 
+- name: filter_v1_ja-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jaen/train.ja-en.ja -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jaen/train.ja-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jaen/train.ja-en.ja -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jaen/train.ja-en.en 
+- name: filter_v1_ja-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jakm/train.ja-km.ja -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jakm/train.ja-km.km -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jakm/train.ja-km.ja -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jakm/train.ja-km.km 
+- name: filter_v1_ja-ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jaky/train.ja-ky.ja -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jaky/train.ja-ky.ky -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jaky/train.ja-ky.ja -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jaky/train.ja-ky.ky 
+- name: filter_v1_ja-lo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jalo/train.ja-lo.ja -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jalo/train.ja-lo.lo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jalo/train.ja-lo.ja -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jalo/train.ja-lo.lo 
+- name: filter_v1_ja-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jamn/train.ja-mn.ja -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jamn/train.ja-mn.mn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jamn/train.ja-mn.ja -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jamn/train.ja-mn.mn 
+- name: filter_v1_ja-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jaoc/train.ja-oc.ja -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jaoc/train.ja-oc.oc -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jaoc/train.ja-oc.ja -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jaoc/train.ja-oc.oc 
+- name: filter_v1_ja-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jatg/train.ja-tg.ja -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jatg/train.ja-tg.tg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jatg/train.ja-tg.ja -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jatg/train.ja-tg.tg 
+- name: filter_v1_ja-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jazh/train.ja-zh.ja -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jazh/train.ja-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jazh/train.ja-zh.ja -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jazh/train.ja-zh.zh 
+- name: filter_v1_jv-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jven/train.jv-en.jv -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jven/train.jv-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jven/train.jv-en.jv -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jven/train.jv-en.en 
+- name: filter_v1_jv-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jves/train.jv-es.jv -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jves/train.jv-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jves/train.jv-es.jv -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jves/train.jv-es.es 
+- name: filter_v1_jv-ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jvms/train.jv-ms.jv -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jvms/train.jv-ms.ms -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jvms/train.jv-ms.jv -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jvms/train.jv-ms.ms 
+- name: filter_v1_jv-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jvta/train.jv-ta.jv -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jvta/train.jv-ta.ta -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jvta/train.jv-ta.jv -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jvta/train.jv-ta.ta 
+- name: filter_v1_jv-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/jvtl/train.jv-tl.jv -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/jvtl/train.jv-tl.tl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jvtl/train.jv-tl.jv -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/jvtl/train.jv-tl.tl 
+- name: filter_v1_ka-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kaen/train.ka-en.ka -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kaen/train.ka-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kaen/train.ka-en.ka -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kaen/train.ka-en.en 
+- name: filter_v1_kam-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kamen/train.kam-en.kam -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kamen/train.kam-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kamen/train.kam-en.kam -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kamen/train.kam-en.en 
+- name: filter_v1_kea-af
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaaf/train.kea-af.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaaf/train.kea-af.af -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaaf/train.kea-af.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaaf/train.kea-af.af 
+- name: filter_v1_kea-am
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaam/train.kea-am.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaam/train.kea-am.am -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaam/train.kea-am.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaam/train.kea-am.am 
+- name: filter_v1_kea-ar
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaar/train.kea-ar.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaar/train.kea-ar.ar -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaar/train.kea-ar.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaar/train.kea-ar.ar 
+- name: filter_v1_kea-as
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaas/train.kea-as.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaas/train.kea-as.as -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaas/train.kea-as.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaas/train.kea-as.as 
+- name: filter_v1_kea-az
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaaz/train.kea-az.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaaz/train.kea-az.az -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaaz/train.kea-az.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaaz/train.kea-az.az 
+- name: filter_v1_kea-bg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keabg/train.kea-bg.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keabg/train.kea-bg.bg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keabg/train.kea-bg.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keabg/train.kea-bg.bg 
+- name: filter_v1_kea-ceb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaceb/train.kea-ceb.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaceb/train.kea-ceb.ceb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaceb/train.kea-ceb.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaceb/train.kea-ceb.ceb 
+- name: filter_v1_kea-cs
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keacs/train.kea-cs.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keacs/train.kea-cs.cs -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keacs/train.kea-cs.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keacs/train.kea-cs.cs 
+- name: filter_v1_kea-da
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keada/train.kea-da.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keada/train.kea-da.da -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keada/train.kea-da.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keada/train.kea-da.da 
+- name: filter_v1_kea-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keade/train.kea-de.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keade/train.kea-de.de -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keade/train.kea-de.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keade/train.kea-de.de 
+- name: filter_v1_kea-el
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keael/train.kea-el.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keael/train.kea-el.el -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keael/train.kea-el.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keael/train.kea-el.el 
+- name: filter_v1_kea-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaen/train.kea-en.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaen/train.kea-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaen/train.kea-en.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaen/train.kea-en.en 
+- name: filter_v1_kea-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaes/train.kea-es.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaes/train.kea-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaes/train.kea-es.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaes/train.kea-es.es 
+- name: filter_v1_kea-et
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaet/train.kea-et.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaet/train.kea-et.et -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaet/train.kea-et.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaet/train.kea-et.et 
+- name: filter_v1_kea-fa
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keafa/train.kea-fa.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keafa/train.kea-fa.fa -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keafa/train.kea-fa.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keafa/train.kea-fa.fa 
+- name: filter_v1_kea-fi
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keafi/train.kea-fi.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keafi/train.kea-fi.fi -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keafi/train.kea-fi.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keafi/train.kea-fi.fi 
+- name: filter_v1_kea-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keafr/train.kea-fr.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keafr/train.kea-fr.fr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keafr/train.kea-fr.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keafr/train.kea-fr.fr 
+- name: filter_v1_kea-ga
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaga/train.kea-ga.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaga/train.kea-ga.ga -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaga/train.kea-ga.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaga/train.kea-ga.ga 
+- name: filter_v1_kea-gl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keagl/train.kea-gl.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keagl/train.kea-gl.gl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keagl/train.kea-gl.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keagl/train.kea-gl.gl 
+- name: filter_v1_kea-gu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keagu/train.kea-gu.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keagu/train.kea-gu.gu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keagu/train.kea-gu.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keagu/train.kea-gu.gu 
+- name: filter_v1_kea-ha
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaha/train.kea-ha.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaha/train.kea-ha.ha -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaha/train.kea-ha.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaha/train.kea-ha.ha 
+- name: filter_v1_kea-he
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keahe/train.kea-he.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keahe/train.kea-he.he -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahe/train.kea-he.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahe/train.kea-he.he 
+- name: filter_v1_kea-hi
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keahi/train.kea-hi.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keahi/train.kea-hi.hi -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahi/train.kea-hi.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahi/train.kea-hi.hi 
+- name: filter_v1_kea-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keahr/train.kea-hr.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keahr/train.kea-hr.hr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahr/train.kea-hr.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahr/train.kea-hr.hr 
+- name: filter_v1_kea-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keahu/train.kea-hu.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keahu/train.kea-hu.hu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahu/train.kea-hu.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahu/train.kea-hu.hu 
+- name: filter_v1_kea-hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keahy/train.kea-hy.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keahy/train.kea-hy.hy -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahy/train.kea-hy.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keahy/train.kea-hy.hy 
+- name: filter_v1_kea-id
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaid/train.kea-id.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaid/train.kea-id.id -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaid/train.kea-id.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaid/train.kea-id.id 
+- name: filter_v1_kea-ig
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaig/train.kea-ig.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaig/train.kea-ig.ig -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaig/train.kea-ig.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaig/train.kea-ig.ig 
+- name: filter_v1_kea-is
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keais/train.kea-is.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keais/train.kea-is.is -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keais/train.kea-is.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keais/train.kea-is.is 
+- name: filter_v1_kea-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keait/train.kea-it.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keait/train.kea-it.it -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keait/train.kea-it.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keait/train.kea-it.it 
+- name: filter_v1_kea-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaja/train.kea-ja.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaja/train.kea-ja.ja -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaja/train.kea-ja.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaja/train.kea-ja.ja 
+- name: filter_v1_kea-ka
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaka/train.kea-ka.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaka/train.kea-ka.ka -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaka/train.kea-ka.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaka/train.kea-ka.ka 
+- name: filter_v1_kea-kam
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keakam/train.kea-kam.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keakam/train.kea-kam.kam -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keakam/train.kea-kam.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keakam/train.kea-kam.kam 
+- name: filter_v1_kea-kn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keakn/train.kea-kn.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keakn/train.kea-kn.kn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keakn/train.kea-kn.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keakn/train.kea-kn.kn 
+- name: filter_v1_kea-ko
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keako/train.kea-ko.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keako/train.kea-ko.ko -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keako/train.kea-ko.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keako/train.kea-ko.ko 
+- name: filter_v1_kea-ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaky/train.kea-ky.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaky/train.kea-ky.ky -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaky/train.kea-ky.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaky/train.kea-ky.ky 
+- name: filter_v1_kea-lg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kealg/train.kea-lg.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kealg/train.kea-lg.lg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealg/train.kea-lg.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealg/train.kea-lg.lg 
+- name: filter_v1_kea-ln
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kealn/train.kea-ln.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kealn/train.kea-ln.ln -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealn/train.kea-ln.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealn/train.kea-ln.ln 
+- name: filter_v1_kea-lo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kealo/train.kea-lo.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kealo/train.kea-lo.lo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealo/train.kea-lo.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealo/train.kea-lo.lo 
+- name: filter_v1_kea-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kealt/train.kea-lt.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kealt/train.kea-lt.lt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealt/train.kea-lt.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealt/train.kea-lt.lt 
+- name: filter_v1_kea-luo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kealuo/train.kea-luo.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kealuo/train.kea-luo.luo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealuo/train.kea-luo.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealuo/train.kea-luo.luo 
+- name: filter_v1_kea-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kealv/train.kea-lv.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kealv/train.kea-lv.lv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealv/train.kea-lv.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kealv/train.kea-lv.lv 
+- name: filter_v1_kea-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keamk/train.kea-mk.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keamk/train.kea-mk.mk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keamk/train.kea-mk.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keamk/train.kea-mk.mk 
+- name: filter_v1_kea-ml
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaml/train.kea-ml.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaml/train.kea-ml.ml -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaml/train.kea-ml.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaml/train.kea-ml.ml 
+- name: filter_v1_kea-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keamn/train.kea-mn.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keamn/train.kea-mn.mn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keamn/train.kea-mn.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keamn/train.kea-mn.mn 
+- name: filter_v1_kea-mr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keamr/train.kea-mr.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keamr/train.kea-mr.mr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keamr/train.kea-mr.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keamr/train.kea-mr.mr 
+- name: filter_v1_kea-my
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keamy/train.kea-my.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keamy/train.kea-my.my -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keamy/train.kea-my.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keamy/train.kea-my.my 
+- name: filter_v1_kea-ne
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keane/train.kea-ne.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keane/train.kea-ne.ne -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keane/train.kea-ne.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keane/train.kea-ne.ne 
+- name: filter_v1_kea-nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keanl/train.kea-nl.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keanl/train.kea-nl.nl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keanl/train.kea-nl.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keanl/train.kea-nl.nl 
+- name: filter_v1_kea-no
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keano/train.kea-no.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keano/train.kea-no.no -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keano/train.kea-no.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keano/train.kea-no.no 
+- name: filter_v1_kea-ny
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keany/train.kea-ny.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keany/train.kea-ny.ny -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keany/train.kea-ny.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keany/train.kea-ny.ny 
+- name: filter_v1_kea-om
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaom/train.kea-om.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaom/train.kea-om.om -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaom/train.kea-om.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaom/train.kea-om.om 
+- name: filter_v1_kea-or
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaor/train.kea-or.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaor/train.kea-or.or -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaor/train.kea-or.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaor/train.kea-or.or 
+- name: filter_v1_kea-pa
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keapa/train.kea-pa.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keapa/train.kea-pa.pa -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keapa/train.kea-pa.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keapa/train.kea-pa.pa 
+- name: filter_v1_kea-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keapl/train.kea-pl.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keapl/train.kea-pl.pl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keapl/train.kea-pl.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keapl/train.kea-pl.pl 
+- name: filter_v1_kea-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keapt/train.kea-pt.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keapt/train.kea-pt.pt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keapt/train.kea-pt.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keapt/train.kea-pt.pt 
+- name: filter_v1_kea-ro
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kearo/train.kea-ro.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kearo/train.kea-ro.ro -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kearo/train.kea-ro.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kearo/train.kea-ro.ro 
+- name: filter_v1_kea-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kearu/train.kea-ru.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kearu/train.kea-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kearu/train.kea-ru.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kearu/train.kea-ru.ru 
+- name: filter_v1_kea-sk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keask/train.kea-sk.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keask/train.kea-sk.sk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keask/train.kea-sk.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keask/train.kea-sk.sk 
+- name: filter_v1_kea-sl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keasl/train.kea-sl.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keasl/train.kea-sl.sl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keasl/train.kea-sl.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keasl/train.kea-sl.sl 
+- name: filter_v1_kea-sn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keasn/train.kea-sn.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keasn/train.kea-sn.sn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keasn/train.kea-sn.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keasn/train.kea-sn.sn 
+- name: filter_v1_kea-sv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keasv/train.kea-sv.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keasv/train.kea-sv.sv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keasv/train.kea-sv.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keasv/train.kea-sv.sv 
+- name: filter_v1_kea-sw
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keasw/train.kea-sw.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keasw/train.kea-sw.sw -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keasw/train.kea-sw.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keasw/train.kea-sw.sw 
+- name: filter_v1_kea-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keata/train.kea-ta.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keata/train.kea-ta.ta -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keata/train.kea-ta.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keata/train.kea-ta.ta 
+- name: filter_v1_kea-te
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keate/train.kea-te.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keate/train.kea-te.te -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keate/train.kea-te.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keate/train.kea-te.te 
+- name: filter_v1_kea-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keatg/train.kea-tg.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keatg/train.kea-tg.tg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keatg/train.kea-tg.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keatg/train.kea-tg.tg 
+- name: filter_v1_kea-th
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keath/train.kea-th.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keath/train.kea-th.th -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keath/train.kea-th.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keath/train.kea-th.th 
+- name: filter_v1_kea-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keatl/train.kea-tl.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keatl/train.kea-tl.tl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keatl/train.kea-tl.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keatl/train.kea-tl.tl 
+- name: filter_v1_kea-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keatr/train.kea-tr.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keatr/train.kea-tr.tr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keatr/train.kea-tr.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keatr/train.kea-tr.tr 
+- name: filter_v1_kea-uk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keauk/train.kea-uk.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keauk/train.kea-uk.uk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keauk/train.kea-uk.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keauk/train.kea-uk.uk 
+- name: filter_v1_kea-vi
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keavi/train.kea-vi.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keavi/train.kea-vi.vi -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keavi/train.kea-vi.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keavi/train.kea-vi.vi 
+- name: filter_v1_kea-xh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keaxh/train.kea-xh.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keaxh/train.kea-xh.xh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaxh/train.kea-xh.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keaxh/train.kea-xh.xh 
+- name: filter_v1_kea-yo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keayo/train.kea-yo.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keayo/train.kea-yo.yo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keayo/train.kea-yo.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keayo/train.kea-yo.yo 
+- name: filter_v1_kea-zu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/keazu/train.kea-zu.kea -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/keazu/train.kea-zu.zu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keazu/train.kea-zu.kea -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/keazu/train.kea-zu.zu 
+- name: filter_v1_kk-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kken/train.kk-en.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kken/train.kk-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kken/train.kk-en.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kken/train.kk-en.en 
+- name: filter_v1_kk-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kkes/train.kk-es.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kkes/train.kk-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkes/train.kk-es.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkes/train.kk-es.es 
+- name: filter_v1_kk-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kklt/train.kk-lt.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kklt/train.kk-lt.lt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kklt/train.kk-lt.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kklt/train.kk-lt.lt 
+- name: filter_v1_kk-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kklv/train.kk-lv.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kklv/train.kk-lv.lv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kklv/train.kk-lv.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kklv/train.kk-lv.lv 
+- name: filter_v1_kk-ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kkms/train.kk-ms.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kkms/train.kk-ms.ms -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkms/train.kk-ms.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkms/train.kk-ms.ms 
+- name: filter_v1_kk-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kkpl/train.kk-pl.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kkpl/train.kk-pl.pl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkpl/train.kk-pl.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkpl/train.kk-pl.pl 
+- name: filter_v1_kk-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kkru/train.kk-ru.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kkru/train.kk-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkru/train.kk-ru.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkru/train.kk-ru.ru 
+- name: filter_v1_kk-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kktr/train.kk-tr.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kktr/train.kk-tr.tr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kktr/train.kk-tr.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kktr/train.kk-tr.tr 
+- name: filter_v1_kk-uz
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kkuz/train.kk-uz.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kkuz/train.kk-uz.uz -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkuz/train.kk-uz.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkuz/train.kk-uz.uz 
+- name: filter_v1_kk-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kkzh/train.kk-zh.kk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kkzh/train.kk-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkzh/train.kk-zh.kk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kkzh/train.kk-zh.zh 
+- name: filter_v1_km-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kmen/train.km-en.km -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kmen/train.km-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmen/train.km-en.km -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmen/train.km-en.en 
+- name: filter_v1_km-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kmes/train.km-es.km -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kmes/train.km-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmes/train.km-es.km -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmes/train.km-es.es 
+- name: filter_v1_km-ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kmms/train.km-ms.km -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kmms/train.km-ms.ms -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmms/train.km-ms.km -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmms/train.km-ms.ms 
+- name: filter_v1_km-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kmpl/train.km-pl.km -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kmpl/train.km-pl.pl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmpl/train.km-pl.km -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmpl/train.km-pl.pl 
+- name: filter_v1_km-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kmru/train.km-ru.km -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kmru/train.km-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmru/train.km-ru.km -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmru/train.km-ru.ru 
+- name: filter_v1_km-vi
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kmvi/train.km-vi.km -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kmvi/train.km-vi.vi -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmvi/train.km-vi.km -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmvi/train.km-vi.vi 
+- name: filter_v1_km-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kmzh/train.km-zh.km -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kmzh/train.km-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmzh/train.km-zh.km -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kmzh/train.km-zh.zh 
+- name: filter_v1_kn-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/knen/train.kn-en.kn -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/knen/train.kn-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/knen/train.kn-en.kn -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/knen/train.kn-en.en 
+- name: filter_v1_ko-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/koen/train.ko-en.ko -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/koen/train.ko-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/koen/train.ko-en.ko -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/koen/train.ko-en.en 
+- name: filter_v1_ko-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/komn/train.ko-mn.ko -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/komn/train.ko-mn.mn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/komn/train.ko-mn.ko -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/komn/train.ko-mn.mn 
+- name: filter_v1_ko-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kozh/train.ko-zh.ko -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kozh/train.ko-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kozh/train.ko-zh.ko -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kozh/train.ko-zh.zh 
+- name: filter_v1_ku-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kuen/train.ku-en.ku -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kuen/train.ku-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kuen/train.ku-en.ku -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kuen/train.ku-en.en 
+- name: filter_v1_ky-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kyen/train.ky-en.ky -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kyen/train.ky-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kyen/train.ky-en.ky -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kyen/train.ky-en.en 
+- name: filter_v1_ky-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kylt/train.ky-lt.ky -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kylt/train.ky-lt.lt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kylt/train.ky-lt.ky -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kylt/train.ky-lt.lt 
+- name: filter_v1_ky-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kylv/train.ky-lv.ky -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kylv/train.ky-lv.lv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kylv/train.ky-lv.ky -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kylv/train.ky-lv.lv 
+- name: filter_v1_ky-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kyru/train.ky-ru.ky -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kyru/train.ky-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kyru/train.ky-ru.ky -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kyru/train.ky-ru.ru 
+- name: filter_v1_ky-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/kytr/train.ky-tr.ky -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/kytr/train.ky-tr.tr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kytr/train.ky-tr.ky -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/kytr/train.ky-tr.tr 
+- name: filter_v1_lb-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lben/train.lb-en.lb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lben/train.lb-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lben/train.lb-en.lb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lben/train.lb-en.en 
+- name: filter_v1_lb-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lbes/train.lb-es.lb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lbes/train.lb-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbes/train.lb-es.lb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbes/train.lb-es.es 
+- name: filter_v1_lb-nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lbnl/train.lb-nl.lb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lbnl/train.lb-nl.nl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbnl/train.lb-nl.lb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbnl/train.lb-nl.nl 
+- name: filter_v1_lb-no
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lbno/train.lb-no.lb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lbno/train.lb-no.no -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbno/train.lb-no.lb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbno/train.lb-no.no 
+- name: filter_v1_lb-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lbpt/train.lb-pt.lb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lbpt/train.lb-pt.pt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbpt/train.lb-pt.lb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbpt/train.lb-pt.pt 
+- name: filter_v1_lb-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lbru/train.lb-ru.lb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lbru/train.lb-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbru/train.lb-ru.lb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbru/train.lb-ru.ru 
+- name: filter_v1_lb-sv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lbsv/train.lb-sv.lb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lbsv/train.lb-sv.sv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbsv/train.lb-sv.lb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbsv/train.lb-sv.sv 
+- name: filter_v1_lb-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lbzh/train.lb-zh.lb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lbzh/train.lb-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbzh/train.lb-zh.lb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lbzh/train.lb-zh.zh 
+- name: filter_v1_lg-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lgen/train.lg-en.lg -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lgen/train.lg-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lgen/train.lg-en.lg -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lgen/train.lg-en.en 
+- name: filter_v1_ln-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lnen/train.ln-en.ln -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lnen/train.ln-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lnen/train.ln-en.ln -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lnen/train.ln-en.en 
+- name: filter_v1_ln-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lnes/train.ln-es.ln -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lnes/train.ln-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lnes/train.ln-es.ln -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lnes/train.ln-es.es 
+- name: filter_v1_ln-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lnzh/train.ln-zh.ln -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lnzh/train.ln-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lnzh/train.ln-zh.ln -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lnzh/train.ln-zh.zh 
+- name: filter_v1_lo-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/loen/train.lo-en.lo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/loen/train.lo-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/loen/train.lo-en.lo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/loen/train.lo-en.en 
+- name: filter_v1_lo-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lozh/train.lo-zh.lo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lozh/train.lo-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lozh/train.lo-zh.lo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lozh/train.lo-zh.zh 
+- name: filter_v1_lt-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lten/train.lt-en.lt -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lten/train.lt-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lten/train.lt-en.lt -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lten/train.lt-en.en 
+- name: filter_v1_luo-af
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoaf/train.luo-af.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoaf/train.luo-af.af -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoaf/train.luo-af.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoaf/train.luo-af.af 
+- name: filter_v1_luo-am
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoam/train.luo-am.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoam/train.luo-am.am -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoam/train.luo-am.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoam/train.luo-am.am 
+- name: filter_v1_luo-ar
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoar/train.luo-ar.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoar/train.luo-ar.ar -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoar/train.luo-ar.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoar/train.luo-ar.ar 
+- name: filter_v1_luo-az
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoaz/train.luo-az.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoaz/train.luo-az.az -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoaz/train.luo-az.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoaz/train.luo-az.az 
+- name: filter_v1_luo-bg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luobg/train.luo-bg.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luobg/train.luo-bg.bg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luobg/train.luo-bg.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luobg/train.luo-bg.bg 
+- name: filter_v1_luo-bn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luobn/train.luo-bn.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luobn/train.luo-bn.bn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luobn/train.luo-bn.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luobn/train.luo-bn.bn 
+- name: filter_v1_luo-ceb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoceb/train.luo-ceb.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoceb/train.luo-ceb.ceb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoceb/train.luo-ceb.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoceb/train.luo-ceb.ceb 
+- name: filter_v1_luo-cs
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luocs/train.luo-cs.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luocs/train.luo-cs.cs -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luocs/train.luo-cs.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luocs/train.luo-cs.cs 
+- name: filter_v1_luo-cy
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luocy/train.luo-cy.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luocy/train.luo-cy.cy -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luocy/train.luo-cy.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luocy/train.luo-cy.cy 
+- name: filter_v1_luo-da
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoda/train.luo-da.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoda/train.luo-da.da -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoda/train.luo-da.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoda/train.luo-da.da 
+- name: filter_v1_luo-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luode/train.luo-de.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luode/train.luo-de.de -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luode/train.luo-de.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luode/train.luo-de.de 
+- name: filter_v1_luo-el
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoel/train.luo-el.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoel/train.luo-el.el -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoel/train.luo-el.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoel/train.luo-el.el 
+- name: filter_v1_luo-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoen/train.luo-en.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoen/train.luo-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoen/train.luo-en.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoen/train.luo-en.en 
+- name: filter_v1_luo-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoes/train.luo-es.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoes/train.luo-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoes/train.luo-es.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoes/train.luo-es.es 
+- name: filter_v1_luo-et
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoet/train.luo-et.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoet/train.luo-et.et -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoet/train.luo-et.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoet/train.luo-et.et 
+- name: filter_v1_luo-fa
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luofa/train.luo-fa.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luofa/train.luo-fa.fa -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luofa/train.luo-fa.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luofa/train.luo-fa.fa 
+- name: filter_v1_luo-fi
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luofi/train.luo-fi.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luofi/train.luo-fi.fi -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luofi/train.luo-fi.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luofi/train.luo-fi.fi 
+- name: filter_v1_luo-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luofr/train.luo-fr.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luofr/train.luo-fr.fr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luofr/train.luo-fr.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luofr/train.luo-fr.fr 
+- name: filter_v1_luo-gu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luogu/train.luo-gu.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luogu/train.luo-gu.gu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luogu/train.luo-gu.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luogu/train.luo-gu.gu 
+- name: filter_v1_luo-ha
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoha/train.luo-ha.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoha/train.luo-ha.ha -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoha/train.luo-ha.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoha/train.luo-ha.ha 
+- name: filter_v1_luo-he
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luohe/train.luo-he.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luohe/train.luo-he.he -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohe/train.luo-he.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohe/train.luo-he.he 
+- name: filter_v1_luo-hi
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luohi/train.luo-hi.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luohi/train.luo-hi.hi -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohi/train.luo-hi.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohi/train.luo-hi.hi 
+- name: filter_v1_luo-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luohr/train.luo-hr.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luohr/train.luo-hr.hr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohr/train.luo-hr.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohr/train.luo-hr.hr 
+- name: filter_v1_luo-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luohu/train.luo-hu.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luohu/train.luo-hu.hu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohu/train.luo-hu.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohu/train.luo-hu.hu 
+- name: filter_v1_luo-hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luohy/train.luo-hy.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luohy/train.luo-hy.hy -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohy/train.luo-hy.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luohy/train.luo-hy.hy 
+- name: filter_v1_luo-id
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoid/train.luo-id.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoid/train.luo-id.id -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoid/train.luo-id.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoid/train.luo-id.id 
+- name: filter_v1_luo-ig
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoig/train.luo-ig.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoig/train.luo-ig.ig -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoig/train.luo-ig.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoig/train.luo-ig.ig 
+- name: filter_v1_luo-is
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luois/train.luo-is.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luois/train.luo-is.is -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luois/train.luo-is.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luois/train.luo-is.is 
+- name: filter_v1_luo-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoit/train.luo-it.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoit/train.luo-it.it -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoit/train.luo-it.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoit/train.luo-it.it 
+- name: filter_v1_luo-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoja/train.luo-ja.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoja/train.luo-ja.ja -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoja/train.luo-ja.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoja/train.luo-ja.ja 
+- name: filter_v1_luo-jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luojv/train.luo-jv.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luojv/train.luo-jv.jv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luojv/train.luo-jv.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luojv/train.luo-jv.jv 
+- name: filter_v1_luo-ka
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoka/train.luo-ka.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoka/train.luo-ka.ka -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoka/train.luo-ka.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoka/train.luo-ka.ka 
+- name: filter_v1_luo-kam
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luokam/train.luo-kam.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luokam/train.luo-kam.kam -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luokam/train.luo-kam.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luokam/train.luo-kam.kam 
+- name: filter_v1_luo-kea
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luokea/train.luo-kea.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luokea/train.luo-kea.kea -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luokea/train.luo-kea.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luokea/train.luo-kea.kea 
+- name: filter_v1_luo-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luokm/train.luo-km.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luokm/train.luo-km.km -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luokm/train.luo-km.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luokm/train.luo-km.km 
+- name: filter_v1_luo-kn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luokn/train.luo-kn.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luokn/train.luo-kn.kn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luokn/train.luo-kn.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luokn/train.luo-kn.kn 
+- name: filter_v1_luo-ko
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoko/train.luo-ko.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoko/train.luo-ko.ko -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoko/train.luo-ko.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoko/train.luo-ko.ko 
+- name: filter_v1_luo-ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoky/train.luo-ky.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoky/train.luo-ky.ky -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoky/train.luo-ky.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoky/train.luo-ky.ky 
+- name: filter_v1_luo-lg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luolg/train.luo-lg.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luolg/train.luo-lg.lg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luolg/train.luo-lg.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luolg/train.luo-lg.lg 
+- name: filter_v1_luo-ln
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoln/train.luo-ln.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoln/train.luo-ln.ln -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoln/train.luo-ln.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoln/train.luo-ln.ln 
+- name: filter_v1_luo-lo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luolo/train.luo-lo.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luolo/train.luo-lo.lo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luolo/train.luo-lo.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luolo/train.luo-lo.lo 
+- name: filter_v1_luo-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luolt/train.luo-lt.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luolt/train.luo-lt.lt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luolt/train.luo-lt.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luolt/train.luo-lt.lt 
+- name: filter_v1_luo-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luolv/train.luo-lv.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luolv/train.luo-lv.lv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luolv/train.luo-lv.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luolv/train.luo-lv.lv 
+- name: filter_v1_luo-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luomk/train.luo-mk.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luomk/train.luo-mk.mk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomk/train.luo-mk.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomk/train.luo-mk.mk 
+- name: filter_v1_luo-ml
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoml/train.luo-ml.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoml/train.luo-ml.ml -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoml/train.luo-ml.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoml/train.luo-ml.ml 
+- name: filter_v1_luo-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luomn/train.luo-mn.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luomn/train.luo-mn.mn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomn/train.luo-mn.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomn/train.luo-mn.mn 
+- name: filter_v1_luo-mr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luomr/train.luo-mr.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luomr/train.luo-mr.mr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomr/train.luo-mr.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomr/train.luo-mr.mr 
+- name: filter_v1_luo-mt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luomt/train.luo-mt.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luomt/train.luo-mt.mt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomt/train.luo-mt.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomt/train.luo-mt.mt 
+- name: filter_v1_luo-my
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luomy/train.luo-my.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luomy/train.luo-my.my -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomy/train.luo-my.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luomy/train.luo-my.my 
+- name: filter_v1_luo-ne
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luone/train.luo-ne.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luone/train.luo-ne.ne -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luone/train.luo-ne.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luone/train.luo-ne.ne 
+- name: filter_v1_luo-nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luonl/train.luo-nl.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luonl/train.luo-nl.nl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luonl/train.luo-nl.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luonl/train.luo-nl.nl 
+- name: filter_v1_luo-no
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luono/train.luo-no.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luono/train.luo-no.no -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luono/train.luo-no.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luono/train.luo-no.no 
+- name: filter_v1_luo-ny
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luony/train.luo-ny.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luony/train.luo-ny.ny -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luony/train.luo-ny.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luony/train.luo-ny.ny 
+- name: filter_v1_luo-om
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoom/train.luo-om.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoom/train.luo-om.om -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoom/train.luo-om.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoom/train.luo-om.om 
+- name: filter_v1_luo-pa
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luopa/train.luo-pa.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luopa/train.luo-pa.pa -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luopa/train.luo-pa.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luopa/train.luo-pa.pa 
+- name: filter_v1_luo-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luopl/train.luo-pl.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luopl/train.luo-pl.pl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luopl/train.luo-pl.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luopl/train.luo-pl.pl 
+- name: filter_v1_luo-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luopt/train.luo-pt.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luopt/train.luo-pt.pt -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luopt/train.luo-pt.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luopt/train.luo-pt.pt 
+- name: filter_v1_luo-ro
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoro/train.luo-ro.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoro/train.luo-ro.ro -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoro/train.luo-ro.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoro/train.luo-ro.ro 
+- name: filter_v1_luo-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoru/train.luo-ru.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoru/train.luo-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoru/train.luo-ru.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoru/train.luo-ru.ru 
+- name: filter_v1_luo-sk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luosk/train.luo-sk.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luosk/train.luo-sk.sk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosk/train.luo-sk.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosk/train.luo-sk.sk 
+- name: filter_v1_luo-sl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luosl/train.luo-sl.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luosl/train.luo-sl.sl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosl/train.luo-sl.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosl/train.luo-sl.sl 
+- name: filter_v1_luo-sn
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luosn/train.luo-sn.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luosn/train.luo-sn.sn -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosn/train.luo-sn.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosn/train.luo-sn.sn 
+- name: filter_v1_luo-sv
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luosv/train.luo-sv.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luosv/train.luo-sv.sv -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosv/train.luo-sv.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosv/train.luo-sv.sv 
+- name: filter_v1_luo-sw
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luosw/train.luo-sw.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luosw/train.luo-sw.sw -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosw/train.luo-sw.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luosw/train.luo-sw.sw 
+- name: filter_v1_luo-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luota/train.luo-ta.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luota/train.luo-ta.ta -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luota/train.luo-ta.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luota/train.luo-ta.ta 
+- name: filter_v1_luo-te
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luote/train.luo-te.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luote/train.luo-te.te -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luote/train.luo-te.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luote/train.luo-te.te 
+- name: filter_v1_luo-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luotg/train.luo-tg.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luotg/train.luo-tg.tg -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luotg/train.luo-tg.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luotg/train.luo-tg.tg 
+- name: filter_v1_luo-th
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoth/train.luo-th.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoth/train.luo-th.th -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoth/train.luo-th.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoth/train.luo-th.th 
+- name: filter_v1_luo-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luotl/train.luo-tl.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luotl/train.luo-tl.tl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luotl/train.luo-tl.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luotl/train.luo-tl.tl 
+- name: filter_v1_luo-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luotr/train.luo-tr.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luotr/train.luo-tr.tr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luotr/train.luo-tr.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luotr/train.luo-tr.tr 
+- name: filter_v1_luo-uk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luouk/train.luo-uk.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luouk/train.luo-uk.uk -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luouk/train.luo-uk.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luouk/train.luo-uk.uk 
+- name: filter_v1_luo-umb
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoumb/train.luo-umb.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoumb/train.luo-umb.umb -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoumb/train.luo-umb.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoumb/train.luo-umb.umb 
+- name: filter_v1_luo-ur
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luour/train.luo-ur.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luour/train.luo-ur.ur -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luour/train.luo-ur.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luour/train.luo-ur.ur 
+- name: filter_v1_luo-vi
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luovi/train.luo-vi.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luovi/train.luo-vi.vi -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luovi/train.luo-vi.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luovi/train.luo-vi.vi 
+- name: filter_v1_luo-xh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoxh/train.luo-xh.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoxh/train.luo-xh.xh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoxh/train.luo-xh.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoxh/train.luo-xh.xh 
+- name: filter_v1_luo-yo
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luoyo/train.luo-yo.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luoyo/train.luo-yo.yo -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoyo/train.luo-yo.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luoyo/train.luo-yo.yo 
+- name: filter_v1_luo-zu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/luozu/train.luo-zu.luo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/luozu/train.luo-zu.zu -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luozu/train.luo-zu.luo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/luozu/train.luo-zu.zu 
+- name: filter_v1_lv-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/lven/train.lv-en.lv -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/lven/train.lv-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lven/train.lv-en.lv -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/lven/train.lv-en.en 
+- name: filter_v1_mi-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mien/train.mi-en.mi -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mien/train.mi-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mien/train.mi-en.mi -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mien/train.mi-en.en 
+- name: filter_v1_mk-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mken/train.mk-en.mk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mken/train.mk-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mken/train.mk-en.mk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mken/train.mk-en.en 
+- name: filter_v1_mk-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mksr/train.mk-sr.mk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mksr/train.mk-sr.sr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mksr/train.mk-sr.mk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mksr/train.mk-sr.sr 
+- name: filter_v1_ml-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mlen/train.ml-en.ml -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mlen/train.ml-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mlen/train.ml-en.ml -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mlen/train.ml-en.en 
+- name: filter_v1_mn-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mnen/train.mn-en.mn -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mnen/train.mn-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mnen/train.mn-en.mn -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mnen/train.mn-en.en 
+- name: filter_v1_mn-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mnzh/train.mn-zh.mn -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mnzh/train.mn-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mnzh/train.mn-zh.mn -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mnzh/train.mn-zh.zh 
+- name: filter_v1_mr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mren/train.mr-en.mr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mren/train.mr-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mren/train.mr-en.mr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mren/train.mr-en.en 
+- name: filter_v1_ms-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/msen/train.ms-en.ms -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/msen/train.ms-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/msen/train.ms-en.ms -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/msen/train.ms-en.en 
+- name: filter_v1_ms-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/msta/train.ms-ta.ms -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/msta/train.ms-ta.ta -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/msta/train.ms-ta.ms -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/msta/train.ms-ta.ta 
+- name: filter_v1_ms-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mstl/train.ms-tl.ms -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mstl/train.ms-tl.tl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mstl/train.ms-tl.ms -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mstl/train.ms-tl.tl 
+- name: filter_v1_mt-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/mten/train.mt-en.mt -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/mten/train.mt-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mten/train.mt-en.mt -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/mten/train.mt-en.en 
+- name: filter_v1_my-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/myen/train.my-en.my -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/myen/train.my-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/myen/train.my-en.my -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/myen/train.my-en.en 
+- name: filter_v1_ne-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/neen/train.ne-en.ne -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/neen/train.ne-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/neen/train.ne-en.ne -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/neen/train.ne-en.en 
+- name: filter_v1_nl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/nlen/train.nl-en.nl -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/nlen/train.nl-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/nlen/train.nl-en.nl -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/nlen/train.nl-en.en 
+- name: filter_v1_nl-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/nloc/train.nl-oc.nl -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/nloc/train.nl-oc.oc -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/nloc/train.nl-oc.nl -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/nloc/train.nl-oc.oc 
+- name: filter_v1_no-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/noen/train.no-en.no -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/noen/train.no-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/noen/train.no-en.no -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/noen/train.no-en.en 
+- name: filter_v1_ns-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/nsen/train.ns-en.ns -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/nsen/train.ns-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/nsen/train.ns-en.ns -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/nsen/train.ns-en.en 
+- name: filter_v1_ny-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/nyen/train.ny-en.ny -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/nyen/train.ny-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/nyen/train.ny-en.ny -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/nyen/train.ny-en.en 
+- name: filter_v1_oc-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ocen/train.oc-en.oc -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ocen/train.oc-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ocen/train.oc-en.oc -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ocen/train.oc-en.en 
+- name: filter_v1_oc-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/oces/train.oc-es.oc -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/oces/train.oc-es.es -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/oces/train.oc-es.oc -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/oces/train.oc-es.es 
+- name: filter_v1_oc-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ocpl/train.oc-pl.oc -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ocpl/train.oc-pl.pl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ocpl/train.oc-pl.oc -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ocpl/train.oc-pl.pl 
+- name: filter_v1_oc-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ocru/train.oc-ru.oc -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ocru/train.oc-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ocru/train.oc-ru.oc -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ocru/train.oc-ru.ru 
+- name: filter_v1_oc-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/octr/train.oc-tr.oc -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/octr/train.oc-tr.tr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/octr/train.oc-tr.oc -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/octr/train.oc-tr.tr 
+- name: filter_v1_oc-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/oczh/train.oc-zh.oc -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/oczh/train.oc-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/oczh/train.oc-zh.oc -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/oczh/train.oc-zh.zh 
+- name: filter_v1_om-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/omen/train.om-en.om -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/omen/train.om-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/omen/train.om-en.om -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/omen/train.om-en.en 
+- name: filter_v1_or-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/oren/train.or-en.or -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/oren/train.or-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/oren/train.or-en.or -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/oren/train.or-en.en 
+- name: filter_v1_or-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/orru/train.or-ru.or -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/orru/train.or-ru.ru -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/orru/train.or-ru.or -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/orru/train.or-ru.ru 
+- name: filter_v1_pa-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/paen/train.pa-en.pa -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/paen/train.pa-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/paen/train.pa-en.pa -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/paen/train.pa-en.en 
+- name: filter_v1_pl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/plen/train.pl-en.pl -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/plen/train.pl-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/plen/train.pl-en.pl -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/plen/train.pl-en.en 
+- name: filter_v1_ps-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/psen/train.ps-en.ps -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/psen/train.ps-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/psen/train.ps-en.ps -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/psen/train.ps-en.en 
+- name: filter_v1_pt-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/pten/train.pt-en.pt -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/pten/train.pt-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/pten/train.pt-en.pt -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/pten/train.pt-en.en 
+- name: filter_v1_ro-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/roen/train.ro-en.ro -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/roen/train.ro-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/roen/train.ro-en.ro -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/roen/train.ro-en.en 
+- name: filter_v1_ru-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ruen/train.ru-en.ru -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ruen/train.ru-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ruen/train.ru-en.ru -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ruen/train.ru-en.en 
+- name: filter_v1_ru-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ruzh/train.ru-zh.ru -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ruzh/train.ru-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ruzh/train.ru-zh.ru -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ruzh/train.ru-zh.zh 
+- name: filter_v1_sd-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/sden/train.sd-en.sd -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/sden/train.sd-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sden/train.sd-en.sd -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sden/train.sd-en.en 
+- name: filter_v1_sk-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/sken/train.sk-en.sk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/sken/train.sk-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sken/train.sk-en.sk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sken/train.sk-en.en 
+- name: filter_v1_sl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/slen/train.sl-en.sl -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/slen/train.sl-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/slen/train.sl-en.sl -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/slen/train.sl-en.en 
+- name: filter_v1_sn-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/snen/train.sn-en.sn -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/snen/train.sn-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/snen/train.sn-en.sn -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/snen/train.sn-en.en 
+- name: filter_v1_so-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/soen/train.so-en.so -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/soen/train.so-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/soen/train.so-en.so -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/soen/train.so-en.en 
+- name: filter_v1_so-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/sotr/train.so-tr.so -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/sotr/train.so-tr.tr -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sotr/train.so-tr.so -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sotr/train.so-tr.tr 
+- name: filter_v1_sr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/sren/train.sr-en.sr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/sren/train.sr-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sren/train.sr-en.sr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sren/train.sr-en.en 
+- name: filter_v1_sv-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/sven/train.sv-en.sv -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/sven/train.sv-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sven/train.sv-en.sv -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/sven/train.sv-en.en 
+- name: filter_v1_sw-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/swen/train.sw-en.sw -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/swen/train.sw-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/swen/train.sw-en.sw -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/swen/train.sw-en.en 
+- name: filter_v1_ta-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/taen/train.ta-en.ta -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/taen/train.ta-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/taen/train.ta-en.ta -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/taen/train.ta-en.en 
+- name: filter_v1_ta-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/tatl/train.ta-tl.ta -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/tatl/train.ta-tl.tl -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tatl/train.ta-tl.ta -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tatl/train.ta-tl.tl 
+- name: filter_v1_te-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/teen/train.te-en.te -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/teen/train.te-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/teen/train.te-en.te -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/teen/train.te-en.en 
+- name: filter_v1_tg-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/tgen/train.tg-en.tg -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/tgen/train.tg-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tgen/train.tg-en.tg -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tgen/train.tg-en.en 
+- name: filter_v1_tg-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/tgzh/train.tg-zh.tg -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/tgzh/train.tg-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tgzh/train.tg-zh.tg -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tgzh/train.tg-zh.zh 
+- name: filter_v1_th-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/then/train.th-en.th -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/then/train.th-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/then/train.th-en.th -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/then/train.th-en.en 
+- name: filter_v1_th-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/thzh/train.th-zh.th -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/thzh/train.th-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/thzh/train.th-zh.th -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/thzh/train.th-zh.zh 
+- name: filter_v1_tl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/tlen/train.tl-en.tl -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/tlen/train.tl-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tlen/train.tl-en.tl -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tlen/train.tl-en.en 
+- name: filter_v1_tr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/tren/train.tr-en.tr -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/tren/train.tr-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tren/train.tr-en.tr -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/tren/train.tr-en.en 
+- name: filter_v1_uk-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/uken/train.uk-en.uk -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/uken/train.uk-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/uken/train.uk-en.uk -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/uken/train.uk-en.en 
+- name: filter_v1_umb-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/umben/train.umb-en.umb -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/umben/train.umb-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/umben/train.umb-en.umb -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/umben/train.umb-en.en 
+- name: filter_v1_ur-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/uren/train.ur-en.ur -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/uren/train.ur-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/uren/train.ur-en.ur -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/uren/train.ur-en.en 
+- name: filter_v1_uz-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/uzen/train.uz-en.uz -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/uzen/train.uz-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/uzen/train.uz-en.uz -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/uzen/train.uz-en.en 
+- name: filter_v1_vi-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/vien/train.vi-en.vi -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/vien/train.vi-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/vien/train.vi-en.vi -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/vien/train.vi-en.en 
+- name: filter_v1_vi-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/vizh/train.vi-zh.vi -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/vizh/train.vi-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/vizh/train.vi-zh.vi -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/vizh/train.vi-zh.zh 
+- name: filter_v1_wo-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/woen/train.wo-en.wo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/woen/train.wo-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/woen/train.wo-en.wo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/woen/train.wo-en.en 
+- name: filter_v1_xh-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/xhen/train.xh-en.xh -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/xhen/train.xh-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/xhen/train.xh-en.xh -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/xhen/train.xh-en.en 
+- name: filter_v1_yo-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/yoen/train.yo-en.yo -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/yoen/train.yo-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/yoen/train.yo-en.yo -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/yoen/train.yo-en.en 
+- name: filter_v1_zh-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/zhen/train.zh-en.zh -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/zhen/train.zh-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/zhen/train.zh-en.zh -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/zhen/train.zh-en.en 
+- name: filter_v1_zt-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/zten/train.zt-en.zt -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/zten/train.zt-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/zten/train.zt-en.zt -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/zten/train.zt-en.en 
+- name: filter_v1_zt-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/ztzh/train.zt-zh.zt -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/ztzh/train.zt-zh.zh -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ztzh/train.zt-zh.zt -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/ztzh/train.zt-zh.zh 
+- name: filter_v1_zu-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/large_track/Filter_v1/filter.py -src /mnt/input/SharedTask/thunder/large_track/data/spm/zuen/train.zu-en.zu -tgt /mnt/input/SharedTask/thunder/large_track/data/spm/zuen/train.zu-en.en -new-src /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/zuen/train.zu-en.zu -new-tgt /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/zuen/train.zu-en.en 
+
+

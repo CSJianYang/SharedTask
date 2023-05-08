@@ -1,0 +1,186 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  name: itpeastusv100cl
+  #name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+jobs: 
+- name: split_v1_en-et.en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-et.en -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-et.et
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-et.et -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-hr.en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-hr.en -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-hr.hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-hr.hr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-hu.en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-hu.en -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-hu.hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-hu.hu -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-mk.en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-mk.en -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-mk.mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-mk.mk -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-sr.en
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-sr.en -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_en-sr.sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.en-sr.sr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_et-hr.et
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.et-hr.et -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_et-hr.hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.et-hr.hr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_et-hu.et
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.et-hu.et -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_et-hu.hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.et-hu.hu -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_et-mk.et
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.et-mk.et -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_et-mk.mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.et-mk.mk -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_et-sr.et
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.et-sr.et -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_et-sr.sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.et-sr.sr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hr-hu.hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hr-hu.hr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hr-hu.hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hr-hu.hu -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hr-mk.hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hr-mk.hr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hr-mk.mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hr-mk.mk -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hr-sr.hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hr-sr.hr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hr-sr.sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hr-sr.sr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hu-mk.hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hu-mk.hu -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hu-mk.mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hu-mk.mk -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hu-sr.hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hu-sr.hu -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_hu-sr.sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.hu-sr.sr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_mk-sr.mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.mk-sr.mk -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+- name: split_v1_mk-sr.sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/SplitTrainingData.py -input /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/train.mk-sr.sr -output /mnt/input/SharedTask/thunder/small_task1/Filter_v1/split10/ -split-num 10
+

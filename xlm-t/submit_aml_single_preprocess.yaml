@@ -1,0 +1,155 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itpeastusv100cl
+  #name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+#- name: extract_bt.sh
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/BT/extract_bt.sh
+   
+#- name: split_monolingual
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/large_task/split_mono.sh monolingual
+
+
+#- name: spm_dev
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/spm.sh dev
+
+#- name: spm_devtest
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/spm.sh devtest
+
+#- name: spm_small-task1-train
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/spm.sh small-task1-train
+
+
+#- name: binary_small-task2
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/small_track2/binary.sh
+
+#- name: spm
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/spm.sh small-task1-test
+
+#- name: concat1
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/concat.sh small-task1-train
+
+#- name: concat2
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/concat.sh small-task2-train
+   
+#- name: binary_small_task1_valid
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/binary.sh small-task1-valid
+
+
+#- name: binary_small_task1_train
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/binary.sh small-task1-train
+   
+
+#- name: binary_small_task2_valid
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/binary.sh small-task2-valid
+
+#- name: binary_flores.sh
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/binary_flores.sh
+
+#- name: binary_small_task2_train
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/deltalm/binary.sh small-task2-train
+    
+#- name: binary_small_task2
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/binary.sh small-task2-train
+
+
+
+
+#- name: split
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/split.sh monolingual
+
+#- name: filter
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/filter.sh monolingual-remove-empty-lines
+
+#- name: translate
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - bash ./shells/preprocess/translate.sh monolingual
+
+#- name: langdetect
+#  sku: G0
+#  sku_count: 1
+#  command:
+#   - python ./scripts/SharedTask/langdetect.py --input /mnt/input/SharedTask/thunder/small_task1/download/small_task1_filt/
+

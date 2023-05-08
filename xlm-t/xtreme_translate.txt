@@ -1,0 +1,1440 @@
+- name: en.txt0000-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2ar 64
+- name: en.txt0000-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2bn 64
+- name: en.txt0000-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2de 64
+- name: en.txt0000-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2el 64
+- name: en.txt0000-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2es 64
+- name: en.txt0000-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2fi 64
+- name: en.txt0000-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2hi 64
+- name: en.txt0000-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2id 64
+- name: en.txt0000-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2ko 64
+- name: en.txt0000-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2ru 64
+- name: en.txt0000-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2sw 64
+- name: en.txt0000-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2te 64
+- name: en.txt0000-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2th 64
+- name: en.txt0000-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2tr 64
+- name: en.txt0000-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2vi 64
+- name: en.txt0000-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0000 en0000.2zh 64
+- name: en.txt0001-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2ar 64
+- name: en.txt0001-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2bn 64
+- name: en.txt0001-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2de 64
+- name: en.txt0001-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2el 64
+- name: en.txt0001-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2es 64
+- name: en.txt0001-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2fi 64
+- name: en.txt0001-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2hi 64
+- name: en.txt0001-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2id 64
+- name: en.txt0001-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2ko 64
+- name: en.txt0001-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2ru 64
+- name: en.txt0001-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2sw 64
+- name: en.txt0001-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2te 64
+- name: en.txt0001-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2th 64
+- name: en.txt0001-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2tr 64
+- name: en.txt0001-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2vi 64
+- name: en.txt0001-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0001 en0001.2zh 64
+- name: en.txt0002-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2ar 64
+- name: en.txt0002-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2bn 64
+- name: en.txt0002-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2de 64
+- name: en.txt0002-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2el 64
+- name: en.txt0002-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2es 64
+- name: en.txt0002-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2fi 64
+- name: en.txt0002-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2hi 64
+- name: en.txt0002-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2id 64
+- name: en.txt0002-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2ko 64
+- name: en.txt0002-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2ru 64
+- name: en.txt0002-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2sw 64
+- name: en.txt0002-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2te 64
+- name: en.txt0002-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2th 64
+- name: en.txt0002-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2tr 64
+- name: en.txt0002-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2vi 64
+- name: en.txt0002-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0002 en0002.2zh 64
+- name: en.txt0003-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2ar 64
+- name: en.txt0003-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2bn 64
+- name: en.txt0003-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2de 64
+- name: en.txt0003-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2el 64
+- name: en.txt0003-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2es 64
+- name: en.txt0003-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2fi 64
+- name: en.txt0003-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2hi 64
+- name: en.txt0003-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2id 64
+- name: en.txt0003-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2ko 64
+- name: en.txt0003-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2ru 64
+- name: en.txt0003-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2sw 64
+- name: en.txt0003-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2te 64
+- name: en.txt0003-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2th 64
+- name: en.txt0003-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2tr 64
+- name: en.txt0003-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2vi 64
+- name: en.txt0003-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0003 en0003.2zh 64
+- name: en.txt0004-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2ar 64
+- name: en.txt0004-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2bn 64
+- name: en.txt0004-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2de 64
+- name: en.txt0004-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2el 64
+- name: en.txt0004-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2es 64
+- name: en.txt0004-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2fi 64
+- name: en.txt0004-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2hi 64
+- name: en.txt0004-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2id 64
+- name: en.txt0004-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2ko 64
+- name: en.txt0004-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2ru 64
+- name: en.txt0004-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2sw 64
+- name: en.txt0004-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2te 64
+- name: en.txt0004-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2th 64
+- name: en.txt0004-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2tr 64
+- name: en.txt0004-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2vi 64
+- name: en.txt0004-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0004 en0004.2zh 64
+- name: en.txt0005-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2ar 64
+- name: en.txt0005-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2bn 64
+- name: en.txt0005-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2de 64
+- name: en.txt0005-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2el 64
+- name: en.txt0005-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2es 64
+- name: en.txt0005-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2fi 64
+- name: en.txt0005-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2hi 64
+- name: en.txt0005-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2id 64
+- name: en.txt0005-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2ko 64
+- name: en.txt0005-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2ru 64
+- name: en.txt0005-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2sw 64
+- name: en.txt0005-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2te 64
+- name: en.txt0005-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2th 64
+- name: en.txt0005-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2tr 64
+- name: en.txt0005-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2vi 64
+- name: en.txt0005-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0005 en0005.2zh 64
+- name: en.txt0006-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2ar 64
+- name: en.txt0006-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2bn 64
+- name: en.txt0006-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2de 64
+- name: en.txt0006-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2el 64
+- name: en.txt0006-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2es 64
+- name: en.txt0006-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2fi 64
+- name: en.txt0006-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2hi 64
+- name: en.txt0006-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2id 64
+- name: en.txt0006-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2ko 64
+- name: en.txt0006-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2ru 64
+- name: en.txt0006-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2sw 64
+- name: en.txt0006-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2te 64
+- name: en.txt0006-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2th 64
+- name: en.txt0006-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2tr 64
+- name: en.txt0006-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2vi 64
+- name: en.txt0006-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0006 en0006.2zh 64
+- name: en.txt0007-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2ar 64
+- name: en.txt0007-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2bn 64
+- name: en.txt0007-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2de 64
+- name: en.txt0007-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2el 64
+- name: en.txt0007-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2es 64
+- name: en.txt0007-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2fi 64
+- name: en.txt0007-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2hi 64
+- name: en.txt0007-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2id 64
+- name: en.txt0007-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2ko 64
+- name: en.txt0007-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2ru 64
+- name: en.txt0007-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2sw 64
+- name: en.txt0007-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2te 64
+- name: en.txt0007-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2th 64
+- name: en.txt0007-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2tr 64
+- name: en.txt0007-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2vi 64
+- name: en.txt0007-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0007 en0007.2zh 64
+- name: en.txt0008-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2ar 64
+- name: en.txt0008-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2bn 64
+- name: en.txt0008-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2de 64
+- name: en.txt0008-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2el 64
+- name: en.txt0008-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2es 64
+- name: en.txt0008-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2fi 64
+- name: en.txt0008-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2hi 64
+- name: en.txt0008-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2id 64
+- name: en.txt0008-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2ko 64
+- name: en.txt0008-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2ru 64
+- name: en.txt0008-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2sw 64
+- name: en.txt0008-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2te 64
+- name: en.txt0008-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2th 64
+- name: en.txt0008-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2tr 64
+- name: en.txt0008-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2vi 64
+- name: en.txt0008-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0008 en0008.2zh 64
+- name: en.txt0009-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2ar 64
+- name: en.txt0009-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2bn 64
+- name: en.txt0009-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2de 64
+- name: en.txt0009-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2el 64
+- name: en.txt0009-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2es 64
+- name: en.txt0009-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2fi 64
+- name: en.txt0009-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2hi 64
+- name: en.txt0009-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2id 64
+- name: en.txt0009-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2ko 64
+- name: en.txt0009-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2ru 64
+- name: en.txt0009-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2sw 64
+- name: en.txt0009-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2te 64
+- name: en.txt0009-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2th 64
+- name: en.txt0009-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2tr 64
+- name: en.txt0009-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2vi 64
+- name: en.txt0009-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0009 en0009.2zh 64
+- name: en.txt0010-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2ar 64
+- name: en.txt0010-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2bn 64
+- name: en.txt0010-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2de 64
+- name: en.txt0010-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2el 64
+- name: en.txt0010-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2es 64
+- name: en.txt0010-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2fi 64
+- name: en.txt0010-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2hi 64
+- name: en.txt0010-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2id 64
+- name: en.txt0010-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2ko 64
+- name: en.txt0010-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2ru 64
+- name: en.txt0010-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2sw 64
+- name: en.txt0010-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2te 64
+- name: en.txt0010-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2th 64
+- name: en.txt0010-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2tr 64
+- name: en.txt0010-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2vi 64
+- name: en.txt0010-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0010 en0010.2zh 64
+- name: en.txt0011-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2ar 64
+- name: en.txt0011-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2bn 64
+- name: en.txt0011-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2de 64
+- name: en.txt0011-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2el 64
+- name: en.txt0011-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2es 64
+- name: en.txt0011-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2fi 64
+- name: en.txt0011-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2hi 64
+- name: en.txt0011-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2id 64
+- name: en.txt0011-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2ko 64
+- name: en.txt0011-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2ru 64
+- name: en.txt0011-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2sw 64
+- name: en.txt0011-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2te 64
+- name: en.txt0011-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2th 64
+- name: en.txt0011-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2tr 64
+- name: en.txt0011-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2vi 64
+- name: en.txt0011-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0011 en0011.2zh 64
+- name: en.txt0012-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2ar 64
+- name: en.txt0012-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2bn 64
+- name: en.txt0012-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2de 64
+- name: en.txt0012-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2el 64
+- name: en.txt0012-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2es 64
+- name: en.txt0012-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2fi 64
+- name: en.txt0012-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2hi 64
+- name: en.txt0012-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2id 64
+- name: en.txt0012-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2ko 64
+- name: en.txt0012-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2ru 64
+- name: en.txt0012-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2sw 64
+- name: en.txt0012-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2te 64
+- name: en.txt0012-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2th 64
+- name: en.txt0012-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2tr 64
+- name: en.txt0012-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2vi 64
+- name: en.txt0012-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0012 en0012.2zh 64
+- name: en.txt0013-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2ar 64
+- name: en.txt0013-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2bn 64
+- name: en.txt0013-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2de 64
+- name: en.txt0013-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2el 64
+- name: en.txt0013-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2es 64
+- name: en.txt0013-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2fi 64
+- name: en.txt0013-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2hi 64
+- name: en.txt0013-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2id 64
+- name: en.txt0013-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2ko 64
+- name: en.txt0013-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2ru 64
+- name: en.txt0013-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2sw 64
+- name: en.txt0013-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2te 64
+- name: en.txt0013-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2th 64
+- name: en.txt0013-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2tr 64
+- name: en.txt0013-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2vi 64
+- name: en.txt0013-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0013 en0013.2zh 64
+- name: en.txt0014-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2ar 64
+- name: en.txt0014-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2bn 64
+- name: en.txt0014-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2de 64
+- name: en.txt0014-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2el 64
+- name: en.txt0014-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2es 64
+- name: en.txt0014-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2fi 64
+- name: en.txt0014-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2hi 64
+- name: en.txt0014-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2id 64
+- name: en.txt0014-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2ko 64
+- name: en.txt0014-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2ru 64
+- name: en.txt0014-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2sw 64
+- name: en.txt0014-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2te 64
+- name: en.txt0014-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2th 64
+- name: en.txt0014-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2tr 64
+- name: en.txt0014-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2vi 64
+- name: en.txt0014-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0014 en0014.2zh 64
+- name: en.txt0015-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2ar 64
+- name: en.txt0015-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2bn 64
+- name: en.txt0015-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2de 64
+- name: en.txt0015-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2el 64
+- name: en.txt0015-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2es 64
+- name: en.txt0015-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2fi 64
+- name: en.txt0015-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2hi 64
+- name: en.txt0015-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2id 64
+- name: en.txt0015-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2ko 64
+- name: en.txt0015-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2ru 64
+- name: en.txt0015-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2sw 64
+- name: en.txt0015-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2te 64
+- name: en.txt0015-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2th 64
+- name: en.txt0015-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2tr 64
+- name: en.txt0015-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2vi 64
+- name: en.txt0015-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0015 en0015.2zh 64
+- name: en.txt0016-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2ar 64
+- name: en.txt0016-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2bn 64
+- name: en.txt0016-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2de 64
+- name: en.txt0016-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2el 64
+- name: en.txt0016-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2es 64
+- name: en.txt0016-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2fi 64
+- name: en.txt0016-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2hi 64
+- name: en.txt0016-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2id 64
+- name: en.txt0016-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2ko 64
+- name: en.txt0016-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2ru 64
+- name: en.txt0016-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2sw 64
+- name: en.txt0016-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2te 64
+- name: en.txt0016-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2th 64
+- name: en.txt0016-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2tr 64
+- name: en.txt0016-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2vi 64
+- name: en.txt0016-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0016 en0016.2zh 64
+- name: en.txt0017-en2ar
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ar 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2ar 64
+- name: en.txt0017-en2bn
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en bn 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2bn 64
+- name: en.txt0017-en2de
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en de 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2de 64
+- name: en.txt0017-en2el
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en el 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2el 64
+- name: en.txt0017-en2es
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en es 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2es 64
+- name: en.txt0017-en2fi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en fi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2fi 64
+- name: en.txt0017-en2hi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en hi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2hi 64
+- name: en.txt0017-en2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en id 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2id 64
+- name: en.txt0017-en2ko
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ko 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2ko 64
+- name: en.txt0017-en2ru
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en ru 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2ru 64
+- name: en.txt0017-en2sw
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en sw 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2sw 64
+- name: en.txt0017-en2te
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en te 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2te 64
+- name: en.txt0017-en2th
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en th 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2th 64
+- name: en.txt0017-en2tr
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en tr 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2tr 64
+- name: en.txt0017-en2vi
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en vi 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2vi 64
+- name: en.txt0017-en2zh
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/pattern/translate/translate.sh en zh 4 /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_40.pt en.txt0017 en0017.2zh 64

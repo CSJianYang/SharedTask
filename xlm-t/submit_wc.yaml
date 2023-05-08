@@ -1,0 +1,145 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTaskStatistics
+
+target:
+  service: amlk8s
+  #name: itpeastusv100cl
+  #name: itplabrr1cl1 
+  #vc: resrchvc
+  #name: itpwus2cpucl1     
+  #vc: gcrcpu
+  name: itp-p40-wus2
+  vc: language-itp-mtres
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  #- python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:  
+#- name: wc1
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/wc.sh /mnt/input/SharedTask/thunder/share_task_final_data_v1/
+
+#- name: wc2
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/wc.sh /mnt/input/SharedTask/thunder/share_task_final_BT/
+    
+
+#- name: wc1
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/wc.sh /mnt/input/SharedTask/thunder/Bt_v1/
+
+#- name: wc2
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - bash ./shells/preprocess/large_task/wc.sh /mnt/input/SharedTask/thunder/large_track/data/bt_spm/
+
+#- name: wc1
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - wc -l /mnt/input/SharedTask/thunder/MonolingualData/all_spm_split_10W_bt/*
+
+- name: wc_small_track1_train
+  sku: G0
+  sku_count: 1
+  command: 
+    - wc -l /mnt/input/SharedTask/thunder/small_task1/Filter_v1/train/*
+
+- name: wc_small_track1_bt
+  sku: G0
+  sku_count: 1
+  command: 
+    - wc -l /mnt/input/SharedTask/thunder/small_task1/Filter_v1/bt_train/*
+
+- name: wc_small_track1_parallel_bt
+  sku: G0
+  sku_count: 1
+  command: 
+    - wc -l /mnt/input/SharedTask/thunder/small_task1/Filter_v1/parallel_bt-train2.0/*
+
+
+- name: wc_small_track2_train
+  sku: G0
+  sku_count: 1
+  command: 
+    - wc -l /mnt/input/SharedTask/thunder/small_task2/Filter_v1/train/*
+
+- name: wc_small_track2_bt
+  sku: G0
+  sku_count: 1
+  command: 
+    - wc -l /mnt/input/SharedTask/thunder/small_task2/Filter_v1/bt_train/*
+
+- name: wc_small_track2_parallel_bt
+  sku: G0
+  sku_count: 1
+  command: 
+    - wc -l /mnt/input/SharedTask/thunder/small_task2/Filter_v1/parallel_bt-train2.0/*
+    
+    
+
+
+- name: wc_large_track_train
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/wc.sh /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/spm/
+
+- name: wc_large_track_bt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/wc.sh /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/bt_spm/
+    
+- name: wc_large_track_parallel_bt
+  sku: G0
+  sku_count: 1
+  command: 
+    - wc -l /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/parallel_bt_spm/*
+
+#- name: wc_small_track2
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - python ./scripts/SharedTask/small_track2/verify_bt_lines_small_track2.py
+
+
+#- name: wc2
+#  sku: G0
+#  sku_count: 1
+#  command: 
+#    - wc -l /mnt/input/SharedTask/thunder/MonolingualData/cc100/all_spm_split_10W_bt/*

@@ -1,0 +1,42 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+# OnSdaQJfGJ9YJ7tvFKNg9KkiQqXv1RHcc81oT5rxXmNzxWKTVF9vOmpn7+iIh44HoYG+h1pJFHNpIyrmwp2J0w==
+description: A100LargeFT
+
+target:
+  service: amlk8s
+  name: a100-scus
+  vc: language-itp-mt
+  #vc: language-itp-mtprod
+  #name: itp-a100-wus3
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: DeltaLM
+  sku: G8
+  sku_count: 6
+  aml_mpirun:
+    communicator: OpenMpi
+  command:
+    - bash ./shells/aml/multi-node/small_task2/Filter_v1/48GPU/A100/FT_24L_12L.sh

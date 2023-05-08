@@ -1,0 +1,5638 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  #name: itplabrr1cl1
+  name: itpeastusv100cl
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+jobs:  
+- name: binary_parallel_bt_af_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 0 10
+- name: binary_parallel_bt_af_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 10 20
+- name: binary_parallel_bt_af_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 20 30
+- name: binary_parallel_bt_af_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 30 40
+- name: binary_parallel_bt_af_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 40 50
+- name: binary_parallel_bt_af_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 50 60
+- name: binary_parallel_bt_af_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 60 70
+- name: binary_parallel_bt_af_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 70 80
+- name: binary_parallel_bt_af_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 80 90
+- name: binary_parallel_bt_af_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 90 100
+- name: binary_parallel_bt_af_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 100 110
+- name: binary_parallel_bt_af_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 110 120
+- name: binary_parallel_bt_af_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 120 130
+- name: binary_parallel_bt_af_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 130 140
+- name: binary_parallel_bt_af_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 140 150
+- name: binary_parallel_bt_af_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh af 160 150 160
+- name: binary_parallel_bt_ar_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 0 10
+- name: binary_parallel_bt_ar_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 10 20
+- name: binary_parallel_bt_ar_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 20 30
+- name: binary_parallel_bt_ar_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 30 40
+- name: binary_parallel_bt_ar_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 40 50
+- name: binary_parallel_bt_ar_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 50 60
+- name: binary_parallel_bt_ar_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 60 70
+- name: binary_parallel_bt_ar_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 70 80
+- name: binary_parallel_bt_ar_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 80 90
+- name: binary_parallel_bt_ar_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 90 100
+- name: binary_parallel_bt_ar_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 100 110
+- name: binary_parallel_bt_ar_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 110 120
+- name: binary_parallel_bt_ar_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 120 130
+- name: binary_parallel_bt_ar_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 130 140
+- name: binary_parallel_bt_ar_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 140 150
+- name: binary_parallel_bt_ar_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ar 160 150 160
+- name: binary_parallel_bt_ast_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 0 10
+- name: binary_parallel_bt_ast_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 10 20
+- name: binary_parallel_bt_ast_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 20 30
+- name: binary_parallel_bt_ast_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 30 40
+- name: binary_parallel_bt_ast_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 40 50
+- name: binary_parallel_bt_ast_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 50 60
+- name: binary_parallel_bt_ast_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 60 70
+- name: binary_parallel_bt_ast_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 70 80
+- name: binary_parallel_bt_ast_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 80 90
+- name: binary_parallel_bt_ast_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 90 100
+- name: binary_parallel_bt_ast_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 100 110
+- name: binary_parallel_bt_ast_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 110 120
+- name: binary_parallel_bt_ast_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 120 130
+- name: binary_parallel_bt_ast_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 130 140
+- name: binary_parallel_bt_ast_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 140 150
+- name: binary_parallel_bt_ast_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ast 160 150 160
+- name: binary_parallel_bt_bn_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 0 10
+- name: binary_parallel_bt_bn_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 10 20
+- name: binary_parallel_bt_bn_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 20 30
+- name: binary_parallel_bt_bn_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 30 40
+- name: binary_parallel_bt_bn_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 40 50
+- name: binary_parallel_bt_bn_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 50 60
+- name: binary_parallel_bt_bn_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 60 70
+- name: binary_parallel_bt_bn_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 70 80
+- name: binary_parallel_bt_bn_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 80 90
+- name: binary_parallel_bt_bn_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 90 100
+- name: binary_parallel_bt_bn_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 100 110
+- name: binary_parallel_bt_bn_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 110 120
+- name: binary_parallel_bt_bn_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 120 130
+- name: binary_parallel_bt_bn_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 130 140
+- name: binary_parallel_bt_bn_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 140 150
+- name: binary_parallel_bt_bn_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bn 160 150 160
+- name: binary_parallel_bt_bs_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 0 10
+- name: binary_parallel_bt_bs_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 10 20
+- name: binary_parallel_bt_bs_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 20 30
+- name: binary_parallel_bt_bs_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 30 40
+- name: binary_parallel_bt_bs_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 40 50
+- name: binary_parallel_bt_bs_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 50 60
+- name: binary_parallel_bt_bs_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 60 70
+- name: binary_parallel_bt_bs_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 70 80
+- name: binary_parallel_bt_bs_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 80 90
+- name: binary_parallel_bt_bs_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 90 100
+- name: binary_parallel_bt_bs_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 100 110
+- name: binary_parallel_bt_bs_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 110 120
+- name: binary_parallel_bt_bs_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 120 130
+- name: binary_parallel_bt_bs_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 130 140
+- name: binary_parallel_bt_bs_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 140 150
+- name: binary_parallel_bt_bs_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bs 160 150 160
+- name: binary_parallel_bt_bg_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 0 10
+- name: binary_parallel_bt_bg_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 10 20
+- name: binary_parallel_bt_bg_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 20 30
+- name: binary_parallel_bt_bg_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 30 40
+- name: binary_parallel_bt_bg_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 40 50
+- name: binary_parallel_bt_bg_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 50 60
+- name: binary_parallel_bt_bg_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 60 70
+- name: binary_parallel_bt_bg_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 70 80
+- name: binary_parallel_bt_bg_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 80 90
+- name: binary_parallel_bt_bg_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 90 100
+- name: binary_parallel_bt_bg_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 100 110
+- name: binary_parallel_bt_bg_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 110 120
+- name: binary_parallel_bt_bg_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 120 130
+- name: binary_parallel_bt_bg_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 130 140
+- name: binary_parallel_bt_bg_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 140 150
+- name: binary_parallel_bt_bg_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh bg 160 150 160
+- name: binary_parallel_bt_ca_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 0 10
+- name: binary_parallel_bt_ca_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 10 20
+- name: binary_parallel_bt_ca_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 20 30
+- name: binary_parallel_bt_ca_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 30 40
+- name: binary_parallel_bt_ca_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 40 50
+- name: binary_parallel_bt_ca_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 50 60
+- name: binary_parallel_bt_ca_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 60 70
+- name: binary_parallel_bt_ca_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 70 80
+- name: binary_parallel_bt_ca_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 80 90
+- name: binary_parallel_bt_ca_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 90 100
+- name: binary_parallel_bt_ca_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 100 110
+- name: binary_parallel_bt_ca_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 110 120
+- name: binary_parallel_bt_ca_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 120 130
+- name: binary_parallel_bt_ca_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 130 140
+- name: binary_parallel_bt_ca_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 140 150
+- name: binary_parallel_bt_ca_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ca 160 150 160
+- name: binary_parallel_bt_cs_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 0 10
+- name: binary_parallel_bt_cs_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 10 20
+- name: binary_parallel_bt_cs_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 20 30
+- name: binary_parallel_bt_cs_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 30 40
+- name: binary_parallel_bt_cs_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 40 50
+- name: binary_parallel_bt_cs_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 50 60
+- name: binary_parallel_bt_cs_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 60 70
+- name: binary_parallel_bt_cs_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 70 80
+- name: binary_parallel_bt_cs_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 80 90
+- name: binary_parallel_bt_cs_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 90 100
+- name: binary_parallel_bt_cs_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 100 110
+- name: binary_parallel_bt_cs_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 110 120
+- name: binary_parallel_bt_cs_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 120 130
+- name: binary_parallel_bt_cs_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 130 140
+- name: binary_parallel_bt_cs_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 140 150
+- name: binary_parallel_bt_cs_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cs 160 150 160
+- name: binary_parallel_bt_ku_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 0 10
+- name: binary_parallel_bt_ku_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 10 20
+- name: binary_parallel_bt_ku_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 20 30
+- name: binary_parallel_bt_ku_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 30 40
+- name: binary_parallel_bt_ku_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 40 50
+- name: binary_parallel_bt_ku_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 50 60
+- name: binary_parallel_bt_ku_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 60 70
+- name: binary_parallel_bt_ku_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 70 80
+- name: binary_parallel_bt_ku_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 80 90
+- name: binary_parallel_bt_ku_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 90 100
+- name: binary_parallel_bt_ku_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 100 110
+- name: binary_parallel_bt_ku_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 110 120
+- name: binary_parallel_bt_ku_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 120 130
+- name: binary_parallel_bt_ku_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 130 140
+- name: binary_parallel_bt_ku_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 140 150
+- name: binary_parallel_bt_ku_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ku 160 150 160
+- name: binary_parallel_bt_cy_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 0 10
+- name: binary_parallel_bt_cy_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 10 20
+- name: binary_parallel_bt_cy_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 20 30
+- name: binary_parallel_bt_cy_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 30 40
+- name: binary_parallel_bt_cy_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 40 50
+- name: binary_parallel_bt_cy_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 50 60
+- name: binary_parallel_bt_cy_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 60 70
+- name: binary_parallel_bt_cy_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 70 80
+- name: binary_parallel_bt_cy_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 80 90
+- name: binary_parallel_bt_cy_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 90 100
+- name: binary_parallel_bt_cy_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 100 110
+- name: binary_parallel_bt_cy_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 110 120
+- name: binary_parallel_bt_cy_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 120 130
+- name: binary_parallel_bt_cy_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 130 140
+- name: binary_parallel_bt_cy_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 140 150
+- name: binary_parallel_bt_cy_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh cy 160 150 160
+- name: binary_parallel_bt_da_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 0 10
+- name: binary_parallel_bt_da_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 10 20
+- name: binary_parallel_bt_da_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 20 30
+- name: binary_parallel_bt_da_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 30 40
+- name: binary_parallel_bt_da_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 40 50
+- name: binary_parallel_bt_da_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 50 60
+- name: binary_parallel_bt_da_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 60 70
+- name: binary_parallel_bt_da_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 70 80
+- name: binary_parallel_bt_da_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 80 90
+- name: binary_parallel_bt_da_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 90 100
+- name: binary_parallel_bt_da_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 100 110
+- name: binary_parallel_bt_da_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 110 120
+- name: binary_parallel_bt_da_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 120 130
+- name: binary_parallel_bt_da_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 130 140
+- name: binary_parallel_bt_da_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 140 150
+- name: binary_parallel_bt_da_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh da 160 150 160
+- name: binary_parallel_bt_de_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 0 10
+- name: binary_parallel_bt_de_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 10 20
+- name: binary_parallel_bt_de_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 20 30
+- name: binary_parallel_bt_de_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 30 40
+- name: binary_parallel_bt_de_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 40 50
+- name: binary_parallel_bt_de_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 50 60
+- name: binary_parallel_bt_de_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 60 70
+- name: binary_parallel_bt_de_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 70 80
+- name: binary_parallel_bt_de_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 80 90
+- name: binary_parallel_bt_de_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 90 100
+- name: binary_parallel_bt_de_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 100 110
+- name: binary_parallel_bt_de_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 110 120
+- name: binary_parallel_bt_de_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 120 130
+- name: binary_parallel_bt_de_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 130 140
+- name: binary_parallel_bt_de_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 140 150
+- name: binary_parallel_bt_de_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh de 160 150 160
+- name: binary_parallel_bt_el_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 0 10
+- name: binary_parallel_bt_el_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 10 20
+- name: binary_parallel_bt_el_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 20 30
+- name: binary_parallel_bt_el_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 30 40
+- name: binary_parallel_bt_el_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 40 50
+- name: binary_parallel_bt_el_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 50 60
+- name: binary_parallel_bt_el_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 60 70
+- name: binary_parallel_bt_el_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 70 80
+- name: binary_parallel_bt_el_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 80 90
+- name: binary_parallel_bt_el_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 90 100
+- name: binary_parallel_bt_el_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 100 110
+- name: binary_parallel_bt_el_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 110 120
+- name: binary_parallel_bt_el_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 120 130
+- name: binary_parallel_bt_el_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 130 140
+- name: binary_parallel_bt_el_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 140 150
+- name: binary_parallel_bt_el_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh el 160 150 160
+- name: binary_parallel_bt_et_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 0 10
+- name: binary_parallel_bt_et_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 10 20
+- name: binary_parallel_bt_et_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 20 30
+- name: binary_parallel_bt_et_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 30 40
+- name: binary_parallel_bt_et_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 40 50
+- name: binary_parallel_bt_et_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 50 60
+- name: binary_parallel_bt_et_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 60 70
+- name: binary_parallel_bt_et_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 70 80
+- name: binary_parallel_bt_et_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 80 90
+- name: binary_parallel_bt_et_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 90 100
+- name: binary_parallel_bt_et_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 100 110
+- name: binary_parallel_bt_et_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 110 120
+- name: binary_parallel_bt_et_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 120 130
+- name: binary_parallel_bt_et_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 130 140
+- name: binary_parallel_bt_et_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 140 150
+- name: binary_parallel_bt_et_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh et 160 150 160
+- name: binary_parallel_bt_en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 0 10
+- name: binary_parallel_bt_en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 10 20
+- name: binary_parallel_bt_en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 20 30
+- name: binary_parallel_bt_en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 30 40
+- name: binary_parallel_bt_en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 40 50
+- name: binary_parallel_bt_en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 50 60
+- name: binary_parallel_bt_en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 60 70
+- name: binary_parallel_bt_en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 70 80
+- name: binary_parallel_bt_en_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 80 90
+- name: binary_parallel_bt_en_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 90 100
+- name: binary_parallel_bt_en_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 100 110
+- name: binary_parallel_bt_en_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 110 120
+- name: binary_parallel_bt_en_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 120 130
+- name: binary_parallel_bt_en_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 130 140
+- name: binary_parallel_bt_en_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 140 150
+- name: binary_parallel_bt_en_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh en 160 150 160
+- name: binary_parallel_bt_fa_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 0 10
+- name: binary_parallel_bt_fa_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 10 20
+- name: binary_parallel_bt_fa_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 20 30
+- name: binary_parallel_bt_fa_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 30 40
+- name: binary_parallel_bt_fa_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 40 50
+- name: binary_parallel_bt_fa_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 50 60
+- name: binary_parallel_bt_fa_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 60 70
+- name: binary_parallel_bt_fa_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 70 80
+- name: binary_parallel_bt_fa_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 80 90
+- name: binary_parallel_bt_fa_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 90 100
+- name: binary_parallel_bt_fa_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 100 110
+- name: binary_parallel_bt_fa_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 110 120
+- name: binary_parallel_bt_fa_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 120 130
+- name: binary_parallel_bt_fa_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 130 140
+- name: binary_parallel_bt_fa_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 140 150
+- name: binary_parallel_bt_fa_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fa 160 150 160
+- name: binary_parallel_bt_fi_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 0 10
+- name: binary_parallel_bt_fi_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 10 20
+- name: binary_parallel_bt_fi_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 20 30
+- name: binary_parallel_bt_fi_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 30 40
+- name: binary_parallel_bt_fi_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 40 50
+- name: binary_parallel_bt_fi_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 50 60
+- name: binary_parallel_bt_fi_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 60 70
+- name: binary_parallel_bt_fi_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 70 80
+- name: binary_parallel_bt_fi_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 80 90
+- name: binary_parallel_bt_fi_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 90 100
+- name: binary_parallel_bt_fi_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 100 110
+- name: binary_parallel_bt_fi_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 110 120
+- name: binary_parallel_bt_fi_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 120 130
+- name: binary_parallel_bt_fi_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 130 140
+- name: binary_parallel_bt_fi_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 140 150
+- name: binary_parallel_bt_fi_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fi 160 150 160
+- name: binary_parallel_bt_fr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 0 10
+- name: binary_parallel_bt_fr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 10 20
+- name: binary_parallel_bt_fr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 20 30
+- name: binary_parallel_bt_fr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 30 40
+- name: binary_parallel_bt_fr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 40 50
+- name: binary_parallel_bt_fr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 50 60
+- name: binary_parallel_bt_fr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 60 70
+- name: binary_parallel_bt_fr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 70 80
+- name: binary_parallel_bt_fr_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 80 90
+- name: binary_parallel_bt_fr_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 90 100
+- name: binary_parallel_bt_fr_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 100 110
+- name: binary_parallel_bt_fr_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 110 120
+- name: binary_parallel_bt_fr_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 120 130
+- name: binary_parallel_bt_fr_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 130 140
+- name: binary_parallel_bt_fr_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 140 150
+- name: binary_parallel_bt_fr_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh fr 160 150 160
+- name: binary_parallel_bt_ga_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 0 10
+- name: binary_parallel_bt_ga_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 10 20
+- name: binary_parallel_bt_ga_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 20 30
+- name: binary_parallel_bt_ga_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 30 40
+- name: binary_parallel_bt_ga_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 40 50
+- name: binary_parallel_bt_ga_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 50 60
+- name: binary_parallel_bt_ga_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 60 70
+- name: binary_parallel_bt_ga_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 70 80
+- name: binary_parallel_bt_ga_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 80 90
+- name: binary_parallel_bt_ga_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 90 100
+- name: binary_parallel_bt_ga_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 100 110
+- name: binary_parallel_bt_ga_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 110 120
+- name: binary_parallel_bt_ga_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 120 130
+- name: binary_parallel_bt_ga_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 130 140
+- name: binary_parallel_bt_ga_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 140 150
+- name: binary_parallel_bt_ga_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ga 160 150 160
+- name: binary_parallel_bt_gl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 0 10
+- name: binary_parallel_bt_gl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 10 20
+- name: binary_parallel_bt_gl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 20 30
+- name: binary_parallel_bt_gl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 30 40
+- name: binary_parallel_bt_gl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 40 50
+- name: binary_parallel_bt_gl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 50 60
+- name: binary_parallel_bt_gl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 60 70
+- name: binary_parallel_bt_gl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 70 80
+- name: binary_parallel_bt_gl_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 80 90
+- name: binary_parallel_bt_gl_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 90 100
+- name: binary_parallel_bt_gl_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 100 110
+- name: binary_parallel_bt_gl_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 110 120
+- name: binary_parallel_bt_gl_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 120 130
+- name: binary_parallel_bt_gl_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 130 140
+- name: binary_parallel_bt_gl_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 140 150
+- name: binary_parallel_bt_gl_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh gl 160 150 160
+- name: binary_parallel_bt_he_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 0 10
+- name: binary_parallel_bt_he_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 10 20
+- name: binary_parallel_bt_he_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 20 30
+- name: binary_parallel_bt_he_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 30 40
+- name: binary_parallel_bt_he_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 40 50
+- name: binary_parallel_bt_he_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 50 60
+- name: binary_parallel_bt_he_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 60 70
+- name: binary_parallel_bt_he_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 70 80
+- name: binary_parallel_bt_he_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 80 90
+- name: binary_parallel_bt_he_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 90 100
+- name: binary_parallel_bt_he_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 100 110
+- name: binary_parallel_bt_he_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 110 120
+- name: binary_parallel_bt_he_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 120 130
+- name: binary_parallel_bt_he_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 130 140
+- name: binary_parallel_bt_he_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 140 150
+- name: binary_parallel_bt_he_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh he 160 150 160
+- name: binary_parallel_bt_hi_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 0 10
+- name: binary_parallel_bt_hi_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 10 20
+- name: binary_parallel_bt_hi_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 20 30
+- name: binary_parallel_bt_hi_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 30 40
+- name: binary_parallel_bt_hi_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 40 50
+- name: binary_parallel_bt_hi_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 50 60
+- name: binary_parallel_bt_hi_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 60 70
+- name: binary_parallel_bt_hi_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 70 80
+- name: binary_parallel_bt_hi_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 80 90
+- name: binary_parallel_bt_hi_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 90 100
+- name: binary_parallel_bt_hi_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 100 110
+- name: binary_parallel_bt_hi_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 110 120
+- name: binary_parallel_bt_hi_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 120 130
+- name: binary_parallel_bt_hi_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 130 140
+- name: binary_parallel_bt_hi_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 140 150
+- name: binary_parallel_bt_hi_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hi 160 150 160
+- name: binary_parallel_bt_hr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 0 10
+- name: binary_parallel_bt_hr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 10 20
+- name: binary_parallel_bt_hr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 20 30
+- name: binary_parallel_bt_hr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 30 40
+- name: binary_parallel_bt_hr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 40 50
+- name: binary_parallel_bt_hr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 50 60
+- name: binary_parallel_bt_hr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 60 70
+- name: binary_parallel_bt_hr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 70 80
+- name: binary_parallel_bt_hr_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 80 90
+- name: binary_parallel_bt_hr_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 90 100
+- name: binary_parallel_bt_hr_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 100 110
+- name: binary_parallel_bt_hr_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 110 120
+- name: binary_parallel_bt_hr_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 120 130
+- name: binary_parallel_bt_hr_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 130 140
+- name: binary_parallel_bt_hr_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 140 150
+- name: binary_parallel_bt_hr_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hr 160 150 160
+- name: binary_parallel_bt_hu_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 0 10
+- name: binary_parallel_bt_hu_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 10 20
+- name: binary_parallel_bt_hu_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 20 30
+- name: binary_parallel_bt_hu_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 30 40
+- name: binary_parallel_bt_hu_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 40 50
+- name: binary_parallel_bt_hu_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 50 60
+- name: binary_parallel_bt_hu_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 60 70
+- name: binary_parallel_bt_hu_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 70 80
+- name: binary_parallel_bt_hu_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 80 90
+- name: binary_parallel_bt_hu_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 90 100
+- name: binary_parallel_bt_hu_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 100 110
+- name: binary_parallel_bt_hu_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 110 120
+- name: binary_parallel_bt_hu_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 120 130
+- name: binary_parallel_bt_hu_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 130 140
+- name: binary_parallel_bt_hu_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 140 150
+- name: binary_parallel_bt_hu_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hu 160 150 160
+- name: binary_parallel_bt_hy_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 0 10
+- name: binary_parallel_bt_hy_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 10 20
+- name: binary_parallel_bt_hy_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 20 30
+- name: binary_parallel_bt_hy_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 30 40
+- name: binary_parallel_bt_hy_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 40 50
+- name: binary_parallel_bt_hy_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 50 60
+- name: binary_parallel_bt_hy_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 60 70
+- name: binary_parallel_bt_hy_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 70 80
+- name: binary_parallel_bt_hy_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 80 90
+- name: binary_parallel_bt_hy_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 90 100
+- name: binary_parallel_bt_hy_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 100 110
+- name: binary_parallel_bt_hy_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 110 120
+- name: binary_parallel_bt_hy_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 120 130
+- name: binary_parallel_bt_hy_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 130 140
+- name: binary_parallel_bt_hy_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 140 150
+- name: binary_parallel_bt_hy_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh hy 160 150 160
+- name: binary_parallel_bt_id_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 0 10
+- name: binary_parallel_bt_id_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 10 20
+- name: binary_parallel_bt_id_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 20 30
+- name: binary_parallel_bt_id_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 30 40
+- name: binary_parallel_bt_id_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 40 50
+- name: binary_parallel_bt_id_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 50 60
+- name: binary_parallel_bt_id_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 60 70
+- name: binary_parallel_bt_id_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 70 80
+- name: binary_parallel_bt_id_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 80 90
+- name: binary_parallel_bt_id_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 90 100
+- name: binary_parallel_bt_id_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 100 110
+- name: binary_parallel_bt_id_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 110 120
+- name: binary_parallel_bt_id_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 120 130
+- name: binary_parallel_bt_id_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 130 140
+- name: binary_parallel_bt_id_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 140 150
+- name: binary_parallel_bt_id_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh id 160 150 160
+- name: binary_parallel_bt_is_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 0 10
+- name: binary_parallel_bt_is_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 10 20
+- name: binary_parallel_bt_is_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 20 30
+- name: binary_parallel_bt_is_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 30 40
+- name: binary_parallel_bt_is_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 40 50
+- name: binary_parallel_bt_is_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 50 60
+- name: binary_parallel_bt_is_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 60 70
+- name: binary_parallel_bt_is_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 70 80
+- name: binary_parallel_bt_is_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 80 90
+- name: binary_parallel_bt_is_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 90 100
+- name: binary_parallel_bt_is_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 100 110
+- name: binary_parallel_bt_is_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 110 120
+- name: binary_parallel_bt_is_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 120 130
+- name: binary_parallel_bt_is_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 130 140
+- name: binary_parallel_bt_is_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 140 150
+- name: binary_parallel_bt_is_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh is 160 150 160
+- name: binary_parallel_bt_it_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 0 10
+- name: binary_parallel_bt_it_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 10 20
+- name: binary_parallel_bt_it_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 20 30
+- name: binary_parallel_bt_it_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 30 40
+- name: binary_parallel_bt_it_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 40 50
+- name: binary_parallel_bt_it_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 50 60
+- name: binary_parallel_bt_it_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 60 70
+- name: binary_parallel_bt_it_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 70 80
+- name: binary_parallel_bt_it_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 80 90
+- name: binary_parallel_bt_it_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 90 100
+- name: binary_parallel_bt_it_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 100 110
+- name: binary_parallel_bt_it_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 110 120
+- name: binary_parallel_bt_it_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 120 130
+- name: binary_parallel_bt_it_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 130 140
+- name: binary_parallel_bt_it_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 140 150
+- name: binary_parallel_bt_it_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh it 160 150 160
+- name: binary_parallel_bt_jv_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 0 10
+- name: binary_parallel_bt_jv_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 10 20
+- name: binary_parallel_bt_jv_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 20 30
+- name: binary_parallel_bt_jv_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 30 40
+- name: binary_parallel_bt_jv_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 40 50
+- name: binary_parallel_bt_jv_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 50 60
+- name: binary_parallel_bt_jv_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 60 70
+- name: binary_parallel_bt_jv_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 70 80
+- name: binary_parallel_bt_jv_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 80 90
+- name: binary_parallel_bt_jv_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 90 100
+- name: binary_parallel_bt_jv_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 100 110
+- name: binary_parallel_bt_jv_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 110 120
+- name: binary_parallel_bt_jv_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 120 130
+- name: binary_parallel_bt_jv_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 130 140
+- name: binary_parallel_bt_jv_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 140 150
+- name: binary_parallel_bt_jv_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh jv 160 150 160
+- name: binary_parallel_bt_ja_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 0 10
+- name: binary_parallel_bt_ja_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 10 20
+- name: binary_parallel_bt_ja_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 20 30
+- name: binary_parallel_bt_ja_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 30 40
+- name: binary_parallel_bt_ja_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 40 50
+- name: binary_parallel_bt_ja_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 50 60
+- name: binary_parallel_bt_ja_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 60 70
+- name: binary_parallel_bt_ja_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 70 80
+- name: binary_parallel_bt_ja_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 80 90
+- name: binary_parallel_bt_ja_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 90 100
+- name: binary_parallel_bt_ja_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 100 110
+- name: binary_parallel_bt_ja_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 110 120
+- name: binary_parallel_bt_ja_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 120 130
+- name: binary_parallel_bt_ja_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 130 140
+- name: binary_parallel_bt_ja_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 140 150
+- name: binary_parallel_bt_ja_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ja 160 150 160
+- name: binary_parallel_bt_ka_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 0 10
+- name: binary_parallel_bt_ka_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 10 20
+- name: binary_parallel_bt_ka_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 20 30
+- name: binary_parallel_bt_ka_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 30 40
+- name: binary_parallel_bt_ka_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 40 50
+- name: binary_parallel_bt_ka_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 50 60
+- name: binary_parallel_bt_ka_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 60 70
+- name: binary_parallel_bt_ka_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 70 80
+- name: binary_parallel_bt_ka_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 80 90
+- name: binary_parallel_bt_ka_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 90 100
+- name: binary_parallel_bt_ka_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 100 110
+- name: binary_parallel_bt_ka_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 110 120
+- name: binary_parallel_bt_ka_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 120 130
+- name: binary_parallel_bt_ka_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 130 140
+- name: binary_parallel_bt_ka_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 140 150
+- name: binary_parallel_bt_ka_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ka 160 150 160
+- name: binary_parallel_bt_km_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 0 10
+- name: binary_parallel_bt_km_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 10 20
+- name: binary_parallel_bt_km_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 20 30
+- name: binary_parallel_bt_km_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 30 40
+- name: binary_parallel_bt_km_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 40 50
+- name: binary_parallel_bt_km_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 50 60
+- name: binary_parallel_bt_km_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 60 70
+- name: binary_parallel_bt_km_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 70 80
+- name: binary_parallel_bt_km_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 80 90
+- name: binary_parallel_bt_km_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 90 100
+- name: binary_parallel_bt_km_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 100 110
+- name: binary_parallel_bt_km_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 110 120
+- name: binary_parallel_bt_km_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 120 130
+- name: binary_parallel_bt_km_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 130 140
+- name: binary_parallel_bt_km_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 140 150
+- name: binary_parallel_bt_km_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh km 160 150 160
+- name: binary_parallel_bt_ky_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 0 10
+- name: binary_parallel_bt_ky_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 10 20
+- name: binary_parallel_bt_ky_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 20 30
+- name: binary_parallel_bt_ky_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 30 40
+- name: binary_parallel_bt_ky_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 40 50
+- name: binary_parallel_bt_ky_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 50 60
+- name: binary_parallel_bt_ky_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 60 70
+- name: binary_parallel_bt_ky_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 70 80
+- name: binary_parallel_bt_ky_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 80 90
+- name: binary_parallel_bt_ky_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 90 100
+- name: binary_parallel_bt_ky_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 100 110
+- name: binary_parallel_bt_ky_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 110 120
+- name: binary_parallel_bt_ky_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 120 130
+- name: binary_parallel_bt_ky_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 130 140
+- name: binary_parallel_bt_ky_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 140 150
+- name: binary_parallel_bt_ky_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ky 160 150 160
+- name: binary_parallel_bt_ko_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 0 10
+- name: binary_parallel_bt_ko_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 10 20
+- name: binary_parallel_bt_ko_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 20 30
+- name: binary_parallel_bt_ko_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 30 40
+- name: binary_parallel_bt_ko_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 40 50
+- name: binary_parallel_bt_ko_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 50 60
+- name: binary_parallel_bt_ko_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 60 70
+- name: binary_parallel_bt_ko_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 70 80
+- name: binary_parallel_bt_ko_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 80 90
+- name: binary_parallel_bt_ko_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 90 100
+- name: binary_parallel_bt_ko_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 100 110
+- name: binary_parallel_bt_ko_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 110 120
+- name: binary_parallel_bt_ko_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 120 130
+- name: binary_parallel_bt_ko_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 130 140
+- name: binary_parallel_bt_ko_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 140 150
+- name: binary_parallel_bt_ko_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ko 160 150 160
+- name: binary_parallel_bt_lv_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 0 10
+- name: binary_parallel_bt_lv_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 10 20
+- name: binary_parallel_bt_lv_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 20 30
+- name: binary_parallel_bt_lv_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 30 40
+- name: binary_parallel_bt_lv_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 40 50
+- name: binary_parallel_bt_lv_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 50 60
+- name: binary_parallel_bt_lv_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 60 70
+- name: binary_parallel_bt_lv_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 70 80
+- name: binary_parallel_bt_lv_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 80 90
+- name: binary_parallel_bt_lv_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 90 100
+- name: binary_parallel_bt_lv_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 100 110
+- name: binary_parallel_bt_lv_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 110 120
+- name: binary_parallel_bt_lv_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 120 130
+- name: binary_parallel_bt_lv_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 130 140
+- name: binary_parallel_bt_lv_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 140 150
+- name: binary_parallel_bt_lv_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lv 160 150 160
+- name: binary_parallel_bt_lt_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 0 10
+- name: binary_parallel_bt_lt_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 10 20
+- name: binary_parallel_bt_lt_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 20 30
+- name: binary_parallel_bt_lt_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 30 40
+- name: binary_parallel_bt_lt_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 40 50
+- name: binary_parallel_bt_lt_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 50 60
+- name: binary_parallel_bt_lt_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 60 70
+- name: binary_parallel_bt_lt_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 70 80
+- name: binary_parallel_bt_lt_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 80 90
+- name: binary_parallel_bt_lt_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 90 100
+- name: binary_parallel_bt_lt_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 100 110
+- name: binary_parallel_bt_lt_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 110 120
+- name: binary_parallel_bt_lt_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 120 130
+- name: binary_parallel_bt_lt_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 130 140
+- name: binary_parallel_bt_lt_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 140 150
+- name: binary_parallel_bt_lt_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lt 160 150 160
+- name: binary_parallel_bt_lb_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 0 10
+- name: binary_parallel_bt_lb_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 10 20
+- name: binary_parallel_bt_lb_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 20 30
+- name: binary_parallel_bt_lb_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 30 40
+- name: binary_parallel_bt_lb_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 40 50
+- name: binary_parallel_bt_lb_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 50 60
+- name: binary_parallel_bt_lb_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 60 70
+- name: binary_parallel_bt_lb_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 70 80
+- name: binary_parallel_bt_lb_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 80 90
+- name: binary_parallel_bt_lb_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 90 100
+- name: binary_parallel_bt_lb_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 100 110
+- name: binary_parallel_bt_lb_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 110 120
+- name: binary_parallel_bt_lb_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 120 130
+- name: binary_parallel_bt_lb_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 130 140
+- name: binary_parallel_bt_lb_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 140 150
+- name: binary_parallel_bt_lb_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh lb 160 150 160
+- name: binary_parallel_bt_ml_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 0 10
+- name: binary_parallel_bt_ml_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 10 20
+- name: binary_parallel_bt_ml_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 20 30
+- name: binary_parallel_bt_ml_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 30 40
+- name: binary_parallel_bt_ml_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 40 50
+- name: binary_parallel_bt_ml_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 50 60
+- name: binary_parallel_bt_ml_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 60 70
+- name: binary_parallel_bt_ml_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 70 80
+- name: binary_parallel_bt_ml_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 80 90
+- name: binary_parallel_bt_ml_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 90 100
+- name: binary_parallel_bt_ml_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 100 110
+- name: binary_parallel_bt_ml_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 110 120
+- name: binary_parallel_bt_ml_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 120 130
+- name: binary_parallel_bt_ml_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 130 140
+- name: binary_parallel_bt_ml_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 140 150
+- name: binary_parallel_bt_ml_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ml 160 150 160
+- name: binary_parallel_bt_mr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 0 10
+- name: binary_parallel_bt_mr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 10 20
+- name: binary_parallel_bt_mr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 20 30
+- name: binary_parallel_bt_mr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 30 40
+- name: binary_parallel_bt_mr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 40 50
+- name: binary_parallel_bt_mr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 50 60
+- name: binary_parallel_bt_mr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 60 70
+- name: binary_parallel_bt_mr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 70 80
+- name: binary_parallel_bt_mr_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 80 90
+- name: binary_parallel_bt_mr_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 90 100
+- name: binary_parallel_bt_mr_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 100 110
+- name: binary_parallel_bt_mr_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 110 120
+- name: binary_parallel_bt_mr_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 120 130
+- name: binary_parallel_bt_mr_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 130 140
+- name: binary_parallel_bt_mr_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 140 150
+- name: binary_parallel_bt_mr_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mr 160 150 160
+- name: binary_parallel_bt_mk_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 0 10
+- name: binary_parallel_bt_mk_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 10 20
+- name: binary_parallel_bt_mk_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 20 30
+- name: binary_parallel_bt_mk_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 30 40
+- name: binary_parallel_bt_mk_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 40 50
+- name: binary_parallel_bt_mk_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 50 60
+- name: binary_parallel_bt_mk_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 60 70
+- name: binary_parallel_bt_mk_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 70 80
+- name: binary_parallel_bt_mk_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 80 90
+- name: binary_parallel_bt_mk_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 90 100
+- name: binary_parallel_bt_mk_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 100 110
+- name: binary_parallel_bt_mk_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 110 120
+- name: binary_parallel_bt_mk_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 120 130
+- name: binary_parallel_bt_mk_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 130 140
+- name: binary_parallel_bt_mk_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 140 150
+- name: binary_parallel_bt_mk_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mk 160 150 160
+- name: binary_parallel_bt_mt_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 0 10
+- name: binary_parallel_bt_mt_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 10 20
+- name: binary_parallel_bt_mt_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 20 30
+- name: binary_parallel_bt_mt_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 30 40
+- name: binary_parallel_bt_mt_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 40 50
+- name: binary_parallel_bt_mt_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 50 60
+- name: binary_parallel_bt_mt_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 60 70
+- name: binary_parallel_bt_mt_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 70 80
+- name: binary_parallel_bt_mt_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 80 90
+- name: binary_parallel_bt_mt_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 90 100
+- name: binary_parallel_bt_mt_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 100 110
+- name: binary_parallel_bt_mt_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 110 120
+- name: binary_parallel_bt_mt_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 120 130
+- name: binary_parallel_bt_mt_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 130 140
+- name: binary_parallel_bt_mt_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 140 150
+- name: binary_parallel_bt_mt_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mt 160 150 160
+- name: binary_parallel_bt_mn_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 0 10
+- name: binary_parallel_bt_mn_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 10 20
+- name: binary_parallel_bt_mn_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 20 30
+- name: binary_parallel_bt_mn_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 30 40
+- name: binary_parallel_bt_mn_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 40 50
+- name: binary_parallel_bt_mn_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 50 60
+- name: binary_parallel_bt_mn_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 60 70
+- name: binary_parallel_bt_mn_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 70 80
+- name: binary_parallel_bt_mn_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 80 90
+- name: binary_parallel_bt_mn_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 90 100
+- name: binary_parallel_bt_mn_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 100 110
+- name: binary_parallel_bt_mn_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 110 120
+- name: binary_parallel_bt_mn_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 120 130
+- name: binary_parallel_bt_mn_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 130 140
+- name: binary_parallel_bt_mn_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 140 150
+- name: binary_parallel_bt_mn_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mn 160 150 160
+- name: binary_parallel_bt_mi_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 0 10
+- name: binary_parallel_bt_mi_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 10 20
+- name: binary_parallel_bt_mi_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 20 30
+- name: binary_parallel_bt_mi_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 30 40
+- name: binary_parallel_bt_mi_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 40 50
+- name: binary_parallel_bt_mi_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 50 60
+- name: binary_parallel_bt_mi_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 60 70
+- name: binary_parallel_bt_mi_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 70 80
+- name: binary_parallel_bt_mi_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 80 90
+- name: binary_parallel_bt_mi_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 90 100
+- name: binary_parallel_bt_mi_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 100 110
+- name: binary_parallel_bt_mi_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 110 120
+- name: binary_parallel_bt_mi_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 120 130
+- name: binary_parallel_bt_mi_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 130 140
+- name: binary_parallel_bt_mi_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 140 150
+- name: binary_parallel_bt_mi_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh mi 160 150 160
+- name: binary_parallel_bt_ms_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 0 10
+- name: binary_parallel_bt_ms_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 10 20
+- name: binary_parallel_bt_ms_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 20 30
+- name: binary_parallel_bt_ms_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 30 40
+- name: binary_parallel_bt_ms_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 40 50
+- name: binary_parallel_bt_ms_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 50 60
+- name: binary_parallel_bt_ms_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 60 70
+- name: binary_parallel_bt_ms_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 70 80
+- name: binary_parallel_bt_ms_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 80 90
+- name: binary_parallel_bt_ms_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 90 100
+- name: binary_parallel_bt_ms_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 100 110
+- name: binary_parallel_bt_ms_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 110 120
+- name: binary_parallel_bt_ms_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 120 130
+- name: binary_parallel_bt_ms_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 130 140
+- name: binary_parallel_bt_ms_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 140 150
+- name: binary_parallel_bt_ms_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ms 160 150 160
+- name: binary_parallel_bt_nl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 0 10
+- name: binary_parallel_bt_nl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 10 20
+- name: binary_parallel_bt_nl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 20 30
+- name: binary_parallel_bt_nl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 30 40
+- name: binary_parallel_bt_nl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 40 50
+- name: binary_parallel_bt_nl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 50 60
+- name: binary_parallel_bt_nl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 60 70
+- name: binary_parallel_bt_nl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 70 80
+- name: binary_parallel_bt_nl_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 80 90
+- name: binary_parallel_bt_nl_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 90 100
+- name: binary_parallel_bt_nl_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 100 110
+- name: binary_parallel_bt_nl_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 110 120
+- name: binary_parallel_bt_nl_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 120 130
+- name: binary_parallel_bt_nl_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 130 140
+- name: binary_parallel_bt_nl_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 140 150
+- name: binary_parallel_bt_nl_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh nl 160 150 160
+- name: binary_parallel_bt_no_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 0 10
+- name: binary_parallel_bt_no_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 10 20
+- name: binary_parallel_bt_no_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 20 30
+- name: binary_parallel_bt_no_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 30 40
+- name: binary_parallel_bt_no_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 40 50
+- name: binary_parallel_bt_no_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 50 60
+- name: binary_parallel_bt_no_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 60 70
+- name: binary_parallel_bt_no_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 70 80
+- name: binary_parallel_bt_no_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 80 90
+- name: binary_parallel_bt_no_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 90 100
+- name: binary_parallel_bt_no_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 100 110
+- name: binary_parallel_bt_no_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 110 120
+- name: binary_parallel_bt_no_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 120 130
+- name: binary_parallel_bt_no_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 130 140
+- name: binary_parallel_bt_no_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 140 150
+- name: binary_parallel_bt_no_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh no 160 150 160
+- name: binary_parallel_bt_ny_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 0 10
+- name: binary_parallel_bt_ny_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 10 20
+- name: binary_parallel_bt_ny_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 20 30
+- name: binary_parallel_bt_ny_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 30 40
+- name: binary_parallel_bt_ny_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 40 50
+- name: binary_parallel_bt_ny_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 50 60
+- name: binary_parallel_bt_ny_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 60 70
+- name: binary_parallel_bt_ny_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 70 80
+- name: binary_parallel_bt_ny_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 80 90
+- name: binary_parallel_bt_ny_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 90 100
+- name: binary_parallel_bt_ny_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 100 110
+- name: binary_parallel_bt_ny_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 110 120
+- name: binary_parallel_bt_ny_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 120 130
+- name: binary_parallel_bt_ny_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 130 140
+- name: binary_parallel_bt_ny_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 140 150
+- name: binary_parallel_bt_ny_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ny 160 150 160
+- name: binary_parallel_bt_oc_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 0 10
+- name: binary_parallel_bt_oc_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 10 20
+- name: binary_parallel_bt_oc_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 20 30
+- name: binary_parallel_bt_oc_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 30 40
+- name: binary_parallel_bt_oc_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 40 50
+- name: binary_parallel_bt_oc_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 50 60
+- name: binary_parallel_bt_oc_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 60 70
+- name: binary_parallel_bt_oc_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 70 80
+- name: binary_parallel_bt_oc_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 80 90
+- name: binary_parallel_bt_oc_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 90 100
+- name: binary_parallel_bt_oc_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 100 110
+- name: binary_parallel_bt_oc_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 110 120
+- name: binary_parallel_bt_oc_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 120 130
+- name: binary_parallel_bt_oc_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 130 140
+- name: binary_parallel_bt_oc_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 140 150
+- name: binary_parallel_bt_oc_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh oc 160 150 160
+- name: binary_parallel_bt_pl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 0 10
+- name: binary_parallel_bt_pl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 10 20
+- name: binary_parallel_bt_pl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 20 30
+- name: binary_parallel_bt_pl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 30 40
+- name: binary_parallel_bt_pl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 40 50
+- name: binary_parallel_bt_pl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 50 60
+- name: binary_parallel_bt_pl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 60 70
+- name: binary_parallel_bt_pl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 70 80
+- name: binary_parallel_bt_pl_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 80 90
+- name: binary_parallel_bt_pl_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 90 100
+- name: binary_parallel_bt_pl_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 100 110
+- name: binary_parallel_bt_pl_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 110 120
+- name: binary_parallel_bt_pl_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 120 130
+- name: binary_parallel_bt_pl_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 130 140
+- name: binary_parallel_bt_pl_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 140 150
+- name: binary_parallel_bt_pl_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pl 160 150 160
+- name: binary_parallel_bt_pt_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 0 10
+- name: binary_parallel_bt_pt_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 10 20
+- name: binary_parallel_bt_pt_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 20 30
+- name: binary_parallel_bt_pt_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 30 40
+- name: binary_parallel_bt_pt_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 40 50
+- name: binary_parallel_bt_pt_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 50 60
+- name: binary_parallel_bt_pt_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 60 70
+- name: binary_parallel_bt_pt_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 70 80
+- name: binary_parallel_bt_pt_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 80 90
+- name: binary_parallel_bt_pt_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 90 100
+- name: binary_parallel_bt_pt_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 100 110
+- name: binary_parallel_bt_pt_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 110 120
+- name: binary_parallel_bt_pt_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 120 130
+- name: binary_parallel_bt_pt_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 130 140
+- name: binary_parallel_bt_pt_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 140 150
+- name: binary_parallel_bt_pt_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh pt 160 150 160
+- name: binary_parallel_bt_ps_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 0 10
+- name: binary_parallel_bt_ps_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 10 20
+- name: binary_parallel_bt_ps_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 20 30
+- name: binary_parallel_bt_ps_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 30 40
+- name: binary_parallel_bt_ps_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 40 50
+- name: binary_parallel_bt_ps_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 50 60
+- name: binary_parallel_bt_ps_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 60 70
+- name: binary_parallel_bt_ps_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 70 80
+- name: binary_parallel_bt_ps_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 80 90
+- name: binary_parallel_bt_ps_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 90 100
+- name: binary_parallel_bt_ps_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 100 110
+- name: binary_parallel_bt_ps_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 110 120
+- name: binary_parallel_bt_ps_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 120 130
+- name: binary_parallel_bt_ps_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 130 140
+- name: binary_parallel_bt_ps_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 140 150
+- name: binary_parallel_bt_ps_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ps 160 150 160
+- name: binary_parallel_bt_ro_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 0 10
+- name: binary_parallel_bt_ro_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 10 20
+- name: binary_parallel_bt_ro_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 20 30
+- name: binary_parallel_bt_ro_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 30 40
+- name: binary_parallel_bt_ro_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 40 50
+- name: binary_parallel_bt_ro_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 50 60
+- name: binary_parallel_bt_ro_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 60 70
+- name: binary_parallel_bt_ro_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 70 80
+- name: binary_parallel_bt_ro_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 80 90
+- name: binary_parallel_bt_ro_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 90 100
+- name: binary_parallel_bt_ro_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 100 110
+- name: binary_parallel_bt_ro_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 110 120
+- name: binary_parallel_bt_ro_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 120 130
+- name: binary_parallel_bt_ro_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 130 140
+- name: binary_parallel_bt_ro_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 140 150
+- name: binary_parallel_bt_ro_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ro 160 150 160
+- name: binary_parallel_bt_ru_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 0 10
+- name: binary_parallel_bt_ru_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 10 20
+- name: binary_parallel_bt_ru_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 20 30
+- name: binary_parallel_bt_ru_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 30 40
+- name: binary_parallel_bt_ru_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 40 50
+- name: binary_parallel_bt_ru_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 50 60
+- name: binary_parallel_bt_ru_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 60 70
+- name: binary_parallel_bt_ru_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 70 80
+- name: binary_parallel_bt_ru_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 80 90
+- name: binary_parallel_bt_ru_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 90 100
+- name: binary_parallel_bt_ru_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 100 110
+- name: binary_parallel_bt_ru_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 110 120
+- name: binary_parallel_bt_ru_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 120 130
+- name: binary_parallel_bt_ru_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 130 140
+- name: binary_parallel_bt_ru_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 140 150
+- name: binary_parallel_bt_ru_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ru 160 150 160
+- name: binary_parallel_bt_sk_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 0 10
+- name: binary_parallel_bt_sk_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 10 20
+- name: binary_parallel_bt_sk_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 20 30
+- name: binary_parallel_bt_sk_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 30 40
+- name: binary_parallel_bt_sk_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 40 50
+- name: binary_parallel_bt_sk_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 50 60
+- name: binary_parallel_bt_sk_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 60 70
+- name: binary_parallel_bt_sk_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 70 80
+- name: binary_parallel_bt_sk_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 80 90
+- name: binary_parallel_bt_sk_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 90 100
+- name: binary_parallel_bt_sk_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 100 110
+- name: binary_parallel_bt_sk_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 110 120
+- name: binary_parallel_bt_sk_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 120 130
+- name: binary_parallel_bt_sk_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 130 140
+- name: binary_parallel_bt_sk_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 140 150
+- name: binary_parallel_bt_sk_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sk 160 150 160
+- name: binary_parallel_bt_sl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 0 10
+- name: binary_parallel_bt_sl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 10 20
+- name: binary_parallel_bt_sl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 20 30
+- name: binary_parallel_bt_sl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 30 40
+- name: binary_parallel_bt_sl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 40 50
+- name: binary_parallel_bt_sl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 50 60
+- name: binary_parallel_bt_sl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 60 70
+- name: binary_parallel_bt_sl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 70 80
+- name: binary_parallel_bt_sl_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 80 90
+- name: binary_parallel_bt_sl_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 90 100
+- name: binary_parallel_bt_sl_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 100 110
+- name: binary_parallel_bt_sl_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 110 120
+- name: binary_parallel_bt_sl_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 120 130
+- name: binary_parallel_bt_sl_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 130 140
+- name: binary_parallel_bt_sl_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 140 150
+- name: binary_parallel_bt_sl_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sl 160 150 160
+- name: binary_parallel_bt_sn_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 0 10
+- name: binary_parallel_bt_sn_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 10 20
+- name: binary_parallel_bt_sn_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 20 30
+- name: binary_parallel_bt_sn_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 30 40
+- name: binary_parallel_bt_sn_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 40 50
+- name: binary_parallel_bt_sn_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 50 60
+- name: binary_parallel_bt_sn_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 60 70
+- name: binary_parallel_bt_sn_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 70 80
+- name: binary_parallel_bt_sn_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 80 90
+- name: binary_parallel_bt_sn_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 90 100
+- name: binary_parallel_bt_sn_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 100 110
+- name: binary_parallel_bt_sn_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 110 120
+- name: binary_parallel_bt_sn_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 120 130
+- name: binary_parallel_bt_sn_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 130 140
+- name: binary_parallel_bt_sn_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 140 150
+- name: binary_parallel_bt_sn_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sn 160 150 160
+- name: binary_parallel_bt_so_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 0 10
+- name: binary_parallel_bt_so_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 10 20
+- name: binary_parallel_bt_so_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 20 30
+- name: binary_parallel_bt_so_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 30 40
+- name: binary_parallel_bt_so_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 40 50
+- name: binary_parallel_bt_so_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 50 60
+- name: binary_parallel_bt_so_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 60 70
+- name: binary_parallel_bt_so_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 70 80
+- name: binary_parallel_bt_so_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 80 90
+- name: binary_parallel_bt_so_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 90 100
+- name: binary_parallel_bt_so_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 100 110
+- name: binary_parallel_bt_so_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 110 120
+- name: binary_parallel_bt_so_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 120 130
+- name: binary_parallel_bt_so_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 130 140
+- name: binary_parallel_bt_so_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 140 150
+- name: binary_parallel_bt_so_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh so 160 150 160
+- name: binary_parallel_bt_es_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 0 10
+- name: binary_parallel_bt_es_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 10 20
+- name: binary_parallel_bt_es_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 20 30
+- name: binary_parallel_bt_es_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 30 40
+- name: binary_parallel_bt_es_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 40 50
+- name: binary_parallel_bt_es_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 50 60
+- name: binary_parallel_bt_es_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 60 70
+- name: binary_parallel_bt_es_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 70 80
+- name: binary_parallel_bt_es_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 80 90
+- name: binary_parallel_bt_es_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 90 100
+- name: binary_parallel_bt_es_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 100 110
+- name: binary_parallel_bt_es_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 110 120
+- name: binary_parallel_bt_es_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 120 130
+- name: binary_parallel_bt_es_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 130 140
+- name: binary_parallel_bt_es_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 140 150
+- name: binary_parallel_bt_es_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh es 160 150 160
+- name: binary_parallel_bt_sr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 0 10
+- name: binary_parallel_bt_sr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 10 20
+- name: binary_parallel_bt_sr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 20 30
+- name: binary_parallel_bt_sr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 30 40
+- name: binary_parallel_bt_sr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 40 50
+- name: binary_parallel_bt_sr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 50 60
+- name: binary_parallel_bt_sr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 60 70
+- name: binary_parallel_bt_sr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 70 80
+- name: binary_parallel_bt_sr_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 80 90
+- name: binary_parallel_bt_sr_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 90 100
+- name: binary_parallel_bt_sr_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 100 110
+- name: binary_parallel_bt_sr_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 110 120
+- name: binary_parallel_bt_sr_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 120 130
+- name: binary_parallel_bt_sr_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 130 140
+- name: binary_parallel_bt_sr_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 140 150
+- name: binary_parallel_bt_sr_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sr 160 150 160
+- name: binary_parallel_bt_sv_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 0 10
+- name: binary_parallel_bt_sv_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 10 20
+- name: binary_parallel_bt_sv_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 20 30
+- name: binary_parallel_bt_sv_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 30 40
+- name: binary_parallel_bt_sv_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 40 50
+- name: binary_parallel_bt_sv_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 50 60
+- name: binary_parallel_bt_sv_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 60 70
+- name: binary_parallel_bt_sv_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 70 80
+- name: binary_parallel_bt_sv_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 80 90
+- name: binary_parallel_bt_sv_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 90 100
+- name: binary_parallel_bt_sv_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 100 110
+- name: binary_parallel_bt_sv_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 110 120
+- name: binary_parallel_bt_sv_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 120 130
+- name: binary_parallel_bt_sv_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 130 140
+- name: binary_parallel_bt_sv_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 140 150
+- name: binary_parallel_bt_sv_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sv 160 150 160
+- name: binary_parallel_bt_sw_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 0 10
+- name: binary_parallel_bt_sw_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 10 20
+- name: binary_parallel_bt_sw_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 20 30
+- name: binary_parallel_bt_sw_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 30 40
+- name: binary_parallel_bt_sw_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 40 50
+- name: binary_parallel_bt_sw_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 50 60
+- name: binary_parallel_bt_sw_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 60 70
+- name: binary_parallel_bt_sw_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 70 80
+- name: binary_parallel_bt_sw_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 80 90
+- name: binary_parallel_bt_sw_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 90 100
+- name: binary_parallel_bt_sw_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 100 110
+- name: binary_parallel_bt_sw_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 110 120
+- name: binary_parallel_bt_sw_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 120 130
+- name: binary_parallel_bt_sw_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 130 140
+- name: binary_parallel_bt_sw_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 140 150
+- name: binary_parallel_bt_sw_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh sw 160 150 160
+- name: binary_parallel_bt_ta_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 0 10
+- name: binary_parallel_bt_ta_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 10 20
+- name: binary_parallel_bt_ta_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 20 30
+- name: binary_parallel_bt_ta_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 30 40
+- name: binary_parallel_bt_ta_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 40 50
+- name: binary_parallel_bt_ta_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 50 60
+- name: binary_parallel_bt_ta_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 60 70
+- name: binary_parallel_bt_ta_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 70 80
+- name: binary_parallel_bt_ta_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 80 90
+- name: binary_parallel_bt_ta_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 90 100
+- name: binary_parallel_bt_ta_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 100 110
+- name: binary_parallel_bt_ta_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 110 120
+- name: binary_parallel_bt_ta_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 120 130
+- name: binary_parallel_bt_ta_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 130 140
+- name: binary_parallel_bt_ta_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 140 150
+- name: binary_parallel_bt_ta_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ta 160 150 160
+- name: binary_parallel_bt_tl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 0 10
+- name: binary_parallel_bt_tl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 10 20
+- name: binary_parallel_bt_tl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 20 30
+- name: binary_parallel_bt_tl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 30 40
+- name: binary_parallel_bt_tl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 40 50
+- name: binary_parallel_bt_tl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 50 60
+- name: binary_parallel_bt_tl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 60 70
+- name: binary_parallel_bt_tl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 70 80
+- name: binary_parallel_bt_tl_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 80 90
+- name: binary_parallel_bt_tl_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 90 100
+- name: binary_parallel_bt_tl_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 100 110
+- name: binary_parallel_bt_tl_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 110 120
+- name: binary_parallel_bt_tl_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 120 130
+- name: binary_parallel_bt_tl_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 130 140
+- name: binary_parallel_bt_tl_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 140 150
+- name: binary_parallel_bt_tl_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tl 160 150 160
+- name: binary_parallel_bt_th_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 0 10
+- name: binary_parallel_bt_th_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 10 20
+- name: binary_parallel_bt_th_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 20 30
+- name: binary_parallel_bt_th_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 30 40
+- name: binary_parallel_bt_th_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 40 50
+- name: binary_parallel_bt_th_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 50 60
+- name: binary_parallel_bt_th_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 60 70
+- name: binary_parallel_bt_th_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 70 80
+- name: binary_parallel_bt_th_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 80 90
+- name: binary_parallel_bt_th_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 90 100
+- name: binary_parallel_bt_th_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 100 110
+- name: binary_parallel_bt_th_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 110 120
+- name: binary_parallel_bt_th_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 120 130
+- name: binary_parallel_bt_th_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 130 140
+- name: binary_parallel_bt_th_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 140 150
+- name: binary_parallel_bt_th_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh th 160 150 160
+- name: binary_parallel_bt_tr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 0 10
+- name: binary_parallel_bt_tr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 10 20
+- name: binary_parallel_bt_tr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 20 30
+- name: binary_parallel_bt_tr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 30 40
+- name: binary_parallel_bt_tr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 40 50
+- name: binary_parallel_bt_tr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 50 60
+- name: binary_parallel_bt_tr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 60 70
+- name: binary_parallel_bt_tr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 70 80
+- name: binary_parallel_bt_tr_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 80 90
+- name: binary_parallel_bt_tr_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 90 100
+- name: binary_parallel_bt_tr_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 100 110
+- name: binary_parallel_bt_tr_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 110 120
+- name: binary_parallel_bt_tr_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 120 130
+- name: binary_parallel_bt_tr_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 130 140
+- name: binary_parallel_bt_tr_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 140 150
+- name: binary_parallel_bt_tr_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh tr 160 150 160
+- name: binary_parallel_bt_uk_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 0 10
+- name: binary_parallel_bt_uk_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 10 20
+- name: binary_parallel_bt_uk_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 20 30
+- name: binary_parallel_bt_uk_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 30 40
+- name: binary_parallel_bt_uk_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 40 50
+- name: binary_parallel_bt_uk_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 50 60
+- name: binary_parallel_bt_uk_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 60 70
+- name: binary_parallel_bt_uk_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 70 80
+- name: binary_parallel_bt_uk_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 80 90
+- name: binary_parallel_bt_uk_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 90 100
+- name: binary_parallel_bt_uk_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 100 110
+- name: binary_parallel_bt_uk_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 110 120
+- name: binary_parallel_bt_uk_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 120 130
+- name: binary_parallel_bt_uk_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 130 140
+- name: binary_parallel_bt_uk_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 140 150
+- name: binary_parallel_bt_uk_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh uk 160 150 160
+- name: binary_parallel_bt_umb_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 0 10
+- name: binary_parallel_bt_umb_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 10 20
+- name: binary_parallel_bt_umb_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 20 30
+- name: binary_parallel_bt_umb_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 30 40
+- name: binary_parallel_bt_umb_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 40 50
+- name: binary_parallel_bt_umb_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 50 60
+- name: binary_parallel_bt_umb_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 60 70
+- name: binary_parallel_bt_umb_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 70 80
+- name: binary_parallel_bt_umb_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 80 90
+- name: binary_parallel_bt_umb_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 90 100
+- name: binary_parallel_bt_umb_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 100 110
+- name: binary_parallel_bt_umb_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 110 120
+- name: binary_parallel_bt_umb_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 120 130
+- name: binary_parallel_bt_umb_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 130 140
+- name: binary_parallel_bt_umb_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 140 150
+- name: binary_parallel_bt_umb_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh umb 160 150 160
+- name: binary_parallel_bt_ur_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 0 10
+- name: binary_parallel_bt_ur_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 10 20
+- name: binary_parallel_bt_ur_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 20 30
+- name: binary_parallel_bt_ur_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 30 40
+- name: binary_parallel_bt_ur_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 40 50
+- name: binary_parallel_bt_ur_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 50 60
+- name: binary_parallel_bt_ur_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 60 70
+- name: binary_parallel_bt_ur_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 70 80
+- name: binary_parallel_bt_ur_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 80 90
+- name: binary_parallel_bt_ur_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 90 100
+- name: binary_parallel_bt_ur_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 100 110
+- name: binary_parallel_bt_ur_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 110 120
+- name: binary_parallel_bt_ur_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 120 130
+- name: binary_parallel_bt_ur_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 130 140
+- name: binary_parallel_bt_ur_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 140 150
+- name: binary_parallel_bt_ur_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh ur 160 150 160
+- name: binary_parallel_bt_vi_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 0 10
+- name: binary_parallel_bt_vi_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 10 20
+- name: binary_parallel_bt_vi_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 20 30
+- name: binary_parallel_bt_vi_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 30 40
+- name: binary_parallel_bt_vi_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 40 50
+- name: binary_parallel_bt_vi_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 50 60
+- name: binary_parallel_bt_vi_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 60 70
+- name: binary_parallel_bt_vi_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 70 80
+- name: binary_parallel_bt_vi_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 80 90
+- name: binary_parallel_bt_vi_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 90 100
+- name: binary_parallel_bt_vi_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 100 110
+- name: binary_parallel_bt_vi_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 110 120
+- name: binary_parallel_bt_vi_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 120 130
+- name: binary_parallel_bt_vi_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 130 140
+- name: binary_parallel_bt_vi_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 140 150
+- name: binary_parallel_bt_vi_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh vi 160 150 160
+- name: binary_parallel_bt_zh_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 0 10
+- name: binary_parallel_bt_zh_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 10 20
+- name: binary_parallel_bt_zh_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 20 30
+- name: binary_parallel_bt_zh_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 30 40
+- name: binary_parallel_bt_zh_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 40 50
+- name: binary_parallel_bt_zh_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 50 60
+- name: binary_parallel_bt_zh_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 60 70
+- name: binary_parallel_bt_zh_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 70 80
+- name: binary_parallel_bt_zh_80-90
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 80 90
+- name: binary_parallel_bt_zh_90-100
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 90 100
+- name: binary_parallel_bt_zh_100-110
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 100 110
+- name: binary_parallel_bt_zh_110-120
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 110 120
+- name: binary_parallel_bt_zh_120-130
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 120 130
+- name: binary_parallel_bt_zh_130-140
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 130 140
+- name: binary_parallel_bt_zh_140-150
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 140 150
+- name: binary_parallel_bt_zh_150-160
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/parallel_bt/parallel_bt_binary_lang.sh zh 160 150 160
+
+
+
+
+

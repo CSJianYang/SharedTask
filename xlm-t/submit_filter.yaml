@@ -1,0 +1,44 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+jobs:   
+- name: filter_sren
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/multiprocessor_filter.py -src /mnt/input/SharedTask/thunder/small_task1/download/train/train.en-sr.en -tgt /mnt/input/SharedTask/thunder/small_task1/download/train/train.en-sr.sr -new-src /mnt/input/SharedTask/thunder/small_task1/download/train-filter/train.en-sr.en -new-tgt /mnt/input/SharedTask/thunder/small_task1/download/train-filter/train.en-sr.sr
+
+- name: filter_sret
+  sku: G0
+  sku_count: 1
+  command: 
+    - python ./scripts/SharedTask/multiprocessor_filter.py -src /mnt/input/SharedTask/thunder/small_task1/download/train/train.et-sr.et -tgt /mnt/input/SharedTask/thunder/small_task1/download/train/train.et-sr.sr -new-src /mnt/input/SharedTask/thunder/small_task1/download/train-filter/train.et-sr.et -new-tgt /mnt/input/SharedTask/thunder/small_task1/download/train-filter/train.et-sr.sr

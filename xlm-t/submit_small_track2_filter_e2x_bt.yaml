@@ -1,0 +1,147 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  service: amlk8s
+  #name: itplabrr1cl1
+  #name: itpeastusv100cl
+  #name: itplabrl1cl1
+  #vc: resrchvc
+  #name: a100-scus
+  #service: amlk8s
+  #vc: language-itp-mt
+  name: itpwus2cpucl1
+  vc: gcrcpu
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: filter_id-jv
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh id jv 
+- name: filter_id-ms
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh id ms 
+- name: filter_id-ta
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh id ta 
+- name: filter_id-tl
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh id tl 
+- name: filter_jv-ms
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh jv ms 
+- name: filter_jv-ta
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh jv ta 
+- name: filter_jv-tl
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh jv tl 
+- name: filter_ms-ta
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh ms ta 
+- name: filter_ms-tl
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh ms tl 
+- name: filter_ta-tl
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh ta tl 
+- name: filter_jv-id
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh jv id 
+- name: filter_ms-id
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh ms id 
+- name: filter_ta-id
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh ta id 
+- name: filter_tl-id
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh tl id 
+- name: filter_ms-jv
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh ms jv 
+- name: filter_ta-jv
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh ta jv 
+- name: filter_tl-jv
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh tl jv 
+- name: filter_ta-ms
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh ta ms 
+- name: filter_tl-ms
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh tl ms 
+- name: filter_tl-ta
+  sku: G0
+  sku_count: 1
+  command:
+    - bash ./shells/preprocess/BT/small_track2/filter_x2y_bt.sh tl ta 
+
+
+
+
+
+
+

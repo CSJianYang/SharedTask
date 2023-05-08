@@ -1,0 +1,163 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  service: amlk8s
+  #service: amlk8s
+  #vc: quantus
+  #name: itpeastusv100cl
+  #name: v100-8x-eus-1
+  name: v100-8x-scus
+  vc: quantus
+  #name: itp-p40-wus2
+  #vc: language-itp-mtres
+  #service: amlk8s
+  #name: v100-32gb-eus-2
+  #vc: language-itp-mtres
+  
+  #name: itplabrr1cl1
+  #service: amlk8s
+  #vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4896
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:
+- name: id.tsv0024-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0024 id0024.2ms 48
+- name: id.tsv0025-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0025 id0025.2ta 48
+- name: id.tsv0026-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0026 id0026.2ta 48
+- name: id.tsv0026-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0026 id0026.2tl 48
+- name: id.tsv0027-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0027 id0027.2jv 48
+- name: id.tsv0027-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0027 id0027.2ms 48
+- name: id.tsv0027-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0027 id0027.2ta 48
+- name: id.tsv0027-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0027 id0027.2tl 48
+- name: id.tsv0028-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0028 id0028.2jv 48
+- name: id.tsv0028-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0028 id0028.2ms 48
+- name: id.tsv0028-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0028 id0028.2ta 48
+- name: id.tsv0028-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0028 id0028.2tl 48
+- name: id.tsv0029-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0029 id0029.2jv 48
+- name: id.tsv0029-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0029 id0029.2ms 48
+- name: id.tsv0029-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0029 id0029.2ta 48
+- name: id.tsv0029-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0029 id0029.2tl 48
+- name: ms.tsv0004-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0004 ms0004.2ta 48
+- name: ms.tsv0004-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0004 ms0004.2tl 48
+- name: ms.tsv0005-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0005 ms0005.2id 48
+- name: ms.tsv0005-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0005 ms0005.2jv 48
+- name: ms.tsv0005-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0005 ms0005.2ta 48
+- name: ms.tsv0005-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0005 ms0005.2tl 48
+
+
+

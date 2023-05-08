@@ -1,0 +1,2842 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  #name: itpeastusv100cl
+  name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: parallel_bt_binary_parallel_bt_af_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh af 80 0 10
+- name: parallel_bt_binary_parallel_bt_af_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh af 80 10 20
+- name: parallel_bt_binary_parallel_bt_af_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh af 80 20 30
+- name: parallel_bt_binary_parallel_bt_af_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh af 80 30 40
+- name: parallel_bt_binary_parallel_bt_af_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh af 80 40 50
+- name: parallel_bt_binary_parallel_bt_af_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh af 80 50 60
+- name: parallel_bt_binary_parallel_bt_af_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh af 80 60 70
+- name: parallel_bt_binary_parallel_bt_af_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh af 80 70 80
+- name: parallel_bt_binary_parallel_bt_ar_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ar 80 0 10
+- name: parallel_bt_binary_parallel_bt_ar_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ar 80 10 20
+- name: parallel_bt_binary_parallel_bt_ar_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ar 80 20 30
+- name: parallel_bt_binary_parallel_bt_ar_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ar 80 30 40
+- name: parallel_bt_binary_parallel_bt_ar_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ar 80 40 50
+- name: parallel_bt_binary_parallel_bt_ar_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ar 80 50 60
+- name: parallel_bt_binary_parallel_bt_ar_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ar 80 60 70
+- name: parallel_bt_binary_parallel_bt_ar_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ar 80 70 80
+- name: parallel_bt_binary_parallel_bt_ast_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ast 80 0 10
+- name: parallel_bt_binary_parallel_bt_ast_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ast 80 10 20
+- name: parallel_bt_binary_parallel_bt_ast_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ast 80 20 30
+- name: parallel_bt_binary_parallel_bt_ast_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ast 80 30 40
+- name: parallel_bt_binary_parallel_bt_ast_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ast 80 40 50
+- name: parallel_bt_binary_parallel_bt_ast_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ast 80 50 60
+- name: parallel_bt_binary_parallel_bt_ast_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ast 80 60 70
+- name: parallel_bt_binary_parallel_bt_ast_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ast 80 70 80
+- name: parallel_bt_binary_parallel_bt_bn_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bn 80 0 10
+- name: parallel_bt_binary_parallel_bt_bn_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bn 80 10 20
+- name: parallel_bt_binary_parallel_bt_bn_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bn 80 20 30
+- name: parallel_bt_binary_parallel_bt_bn_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bn 80 30 40
+- name: parallel_bt_binary_parallel_bt_bn_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bn 80 40 50
+- name: parallel_bt_binary_parallel_bt_bn_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bn 80 50 60
+- name: parallel_bt_binary_parallel_bt_bn_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bn 80 60 70
+- name: parallel_bt_binary_parallel_bt_bn_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bn 80 70 80
+- name: parallel_bt_binary_parallel_bt_bs_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bs 80 0 10
+- name: parallel_bt_binary_parallel_bt_bs_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bs 80 10 20
+- name: parallel_bt_binary_parallel_bt_bs_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bs 80 20 30
+- name: parallel_bt_binary_parallel_bt_bs_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bs 80 30 40
+- name: parallel_bt_binary_parallel_bt_bs_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bs 80 40 50
+- name: parallel_bt_binary_parallel_bt_bs_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bs 80 50 60
+- name: parallel_bt_binary_parallel_bt_bs_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bs 80 60 70
+- name: parallel_bt_binary_parallel_bt_bs_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bs 80 70 80
+- name: parallel_bt_binary_parallel_bt_bg_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bg 80 0 10
+- name: parallel_bt_binary_parallel_bt_bg_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bg 80 10 20
+- name: parallel_bt_binary_parallel_bt_bg_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bg 80 20 30
+- name: parallel_bt_binary_parallel_bt_bg_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bg 80 30 40
+- name: parallel_bt_binary_parallel_bt_bg_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bg 80 40 50
+- name: parallel_bt_binary_parallel_bt_bg_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bg 80 50 60
+- name: parallel_bt_binary_parallel_bt_bg_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bg 80 60 70
+- name: parallel_bt_binary_parallel_bt_bg_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh bg 80 70 80
+- name: parallel_bt_binary_parallel_bt_ca_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ca 80 0 10
+- name: parallel_bt_binary_parallel_bt_ca_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ca 80 10 20
+- name: parallel_bt_binary_parallel_bt_ca_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ca 80 20 30
+- name: parallel_bt_binary_parallel_bt_ca_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ca 80 30 40
+- name: parallel_bt_binary_parallel_bt_ca_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ca 80 40 50
+- name: parallel_bt_binary_parallel_bt_ca_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ca 80 50 60
+- name: parallel_bt_binary_parallel_bt_ca_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ca 80 60 70
+- name: parallel_bt_binary_parallel_bt_ca_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ca 80 70 80
+- name: parallel_bt_binary_parallel_bt_cs_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cs 80 0 10
+- name: parallel_bt_binary_parallel_bt_cs_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cs 80 10 20
+- name: parallel_bt_binary_parallel_bt_cs_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cs 80 20 30
+- name: parallel_bt_binary_parallel_bt_cs_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cs 80 30 40
+- name: parallel_bt_binary_parallel_bt_cs_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cs 80 40 50
+- name: parallel_bt_binary_parallel_bt_cs_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cs 80 50 60
+- name: parallel_bt_binary_parallel_bt_cs_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cs 80 60 70
+- name: parallel_bt_binary_parallel_bt_cs_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cs 80 70 80
+- name: parallel_bt_binary_parallel_bt_ku_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ku 80 0 10
+- name: parallel_bt_binary_parallel_bt_ku_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ku 80 10 20
+- name: parallel_bt_binary_parallel_bt_ku_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ku 80 20 30
+- name: parallel_bt_binary_parallel_bt_ku_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ku 80 30 40
+- name: parallel_bt_binary_parallel_bt_ku_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ku 80 40 50
+- name: parallel_bt_binary_parallel_bt_ku_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ku 80 50 60
+- name: parallel_bt_binary_parallel_bt_ku_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ku 80 60 70
+- name: parallel_bt_binary_parallel_bt_ku_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ku 80 70 80
+- name: parallel_bt_binary_parallel_bt_cy_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cy 80 0 10
+- name: parallel_bt_binary_parallel_bt_cy_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cy 80 10 20
+- name: parallel_bt_binary_parallel_bt_cy_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cy 80 20 30
+- name: parallel_bt_binary_parallel_bt_cy_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cy 80 30 40
+- name: parallel_bt_binary_parallel_bt_cy_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cy 80 40 50
+- name: parallel_bt_binary_parallel_bt_cy_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cy 80 50 60
+- name: parallel_bt_binary_parallel_bt_cy_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cy 80 60 70
+- name: parallel_bt_binary_parallel_bt_cy_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh cy 80 70 80
+- name: parallel_bt_binary_parallel_bt_da_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh da 80 0 10
+- name: parallel_bt_binary_parallel_bt_da_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh da 80 10 20
+- name: parallel_bt_binary_parallel_bt_da_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh da 80 20 30
+- name: parallel_bt_binary_parallel_bt_da_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh da 80 30 40
+- name: parallel_bt_binary_parallel_bt_da_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh da 80 40 50
+- name: parallel_bt_binary_parallel_bt_da_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh da 80 50 60
+- name: parallel_bt_binary_parallel_bt_da_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh da 80 60 70
+- name: parallel_bt_binary_parallel_bt_da_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh da 80 70 80
+- name: parallel_bt_binary_parallel_bt_de_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh de 80 0 10
+- name: parallel_bt_binary_parallel_bt_de_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh de 80 10 20
+- name: parallel_bt_binary_parallel_bt_de_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh de 80 20 30
+- name: parallel_bt_binary_parallel_bt_de_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh de 80 30 40
+- name: parallel_bt_binary_parallel_bt_de_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh de 80 40 50
+- name: parallel_bt_binary_parallel_bt_de_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh de 80 50 60
+- name: parallel_bt_binary_parallel_bt_de_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh de 80 60 70
+- name: parallel_bt_binary_parallel_bt_de_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh de 80 70 80
+- name: parallel_bt_binary_parallel_bt_el_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh el 80 0 10
+- name: parallel_bt_binary_parallel_bt_el_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh el 80 10 20
+- name: parallel_bt_binary_parallel_bt_el_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh el 80 20 30
+- name: parallel_bt_binary_parallel_bt_el_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh el 80 30 40
+- name: parallel_bt_binary_parallel_bt_el_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh el 80 40 50
+- name: parallel_bt_binary_parallel_bt_el_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh el 80 50 60
+- name: parallel_bt_binary_parallel_bt_el_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh el 80 60 70
+- name: parallel_bt_binary_parallel_bt_el_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh el 80 70 80
+- name: parallel_bt_binary_parallel_bt_et_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh et 80 0 10
+- name: parallel_bt_binary_parallel_bt_et_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh et 80 10 20
+- name: parallel_bt_binary_parallel_bt_et_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh et 80 20 30
+- name: parallel_bt_binary_parallel_bt_et_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh et 80 30 40
+- name: parallel_bt_binary_parallel_bt_et_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh et 80 40 50
+- name: parallel_bt_binary_parallel_bt_et_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh et 80 50 60
+- name: parallel_bt_binary_parallel_bt_et_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh et 80 60 70
+- name: parallel_bt_binary_parallel_bt_et_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh et 80 70 80
+- name: parallel_bt_binary_parallel_bt_en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh en 80 0 10
+- name: parallel_bt_binary_parallel_bt_en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh en 80 10 20
+- name: parallel_bt_binary_parallel_bt_en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh en 80 20 30
+- name: parallel_bt_binary_parallel_bt_en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh en 80 30 40
+- name: parallel_bt_binary_parallel_bt_en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh en 80 40 50
+- name: parallel_bt_binary_parallel_bt_en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh en 80 50 60
+- name: parallel_bt_binary_parallel_bt_en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh en 80 60 70
+- name: parallel_bt_binary_parallel_bt_en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh en 80 70 80
+- name: parallel_bt_binary_parallel_bt_fa_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fa 80 0 10
+- name: parallel_bt_binary_parallel_bt_fa_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fa 80 10 20
+- name: parallel_bt_binary_parallel_bt_fa_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fa 80 20 30
+- name: parallel_bt_binary_parallel_bt_fa_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fa 80 30 40
+- name: parallel_bt_binary_parallel_bt_fa_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fa 80 40 50
+- name: parallel_bt_binary_parallel_bt_fa_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fa 80 50 60
+- name: parallel_bt_binary_parallel_bt_fa_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fa 80 60 70
+- name: parallel_bt_binary_parallel_bt_fa_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fa 80 70 80
+- name: parallel_bt_binary_parallel_bt_fi_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fi 80 0 10
+- name: parallel_bt_binary_parallel_bt_fi_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fi 80 10 20
+- name: parallel_bt_binary_parallel_bt_fi_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fi 80 20 30
+- name: parallel_bt_binary_parallel_bt_fi_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fi 80 30 40
+- name: parallel_bt_binary_parallel_bt_fi_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fi 80 40 50
+- name: parallel_bt_binary_parallel_bt_fi_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fi 80 50 60
+- name: parallel_bt_binary_parallel_bt_fi_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fi 80 60 70
+- name: parallel_bt_binary_parallel_bt_fi_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fi 80 70 80
+- name: parallel_bt_binary_parallel_bt_fr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fr 80 0 10
+- name: parallel_bt_binary_parallel_bt_fr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fr 80 10 20
+- name: parallel_bt_binary_parallel_bt_fr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fr 80 20 30
+- name: parallel_bt_binary_parallel_bt_fr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fr 80 30 40
+- name: parallel_bt_binary_parallel_bt_fr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fr 80 40 50
+- name: parallel_bt_binary_parallel_bt_fr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fr 80 50 60
+- name: parallel_bt_binary_parallel_bt_fr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fr 80 60 70
+- name: parallel_bt_binary_parallel_bt_fr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh fr 80 70 80
+- name: parallel_bt_binary_parallel_bt_ga_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ga 80 0 10
+- name: parallel_bt_binary_parallel_bt_ga_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ga 80 10 20
+- name: parallel_bt_binary_parallel_bt_ga_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ga 80 20 30
+- name: parallel_bt_binary_parallel_bt_ga_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ga 80 30 40
+- name: parallel_bt_binary_parallel_bt_ga_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ga 80 40 50
+- name: parallel_bt_binary_parallel_bt_ga_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ga 80 50 60
+- name: parallel_bt_binary_parallel_bt_ga_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ga 80 60 70
+- name: parallel_bt_binary_parallel_bt_ga_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ga 80 70 80
+- name: parallel_bt_binary_parallel_bt_gl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh gl 80 0 10
+- name: parallel_bt_binary_parallel_bt_gl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh gl 80 10 20
+- name: parallel_bt_binary_parallel_bt_gl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh gl 80 20 30
+- name: parallel_bt_binary_parallel_bt_gl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh gl 80 30 40
+- name: parallel_bt_binary_parallel_bt_gl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh gl 80 40 50
+- name: parallel_bt_binary_parallel_bt_gl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh gl 80 50 60
+- name: parallel_bt_binary_parallel_bt_gl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh gl 80 60 70
+- name: parallel_bt_binary_parallel_bt_gl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh gl 80 70 80
+- name: parallel_bt_binary_parallel_bt_he_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh he 80 0 10
+- name: parallel_bt_binary_parallel_bt_he_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh he 80 10 20
+- name: parallel_bt_binary_parallel_bt_he_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh he 80 20 30
+- name: parallel_bt_binary_parallel_bt_he_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh he 80 30 40
+- name: parallel_bt_binary_parallel_bt_he_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh he 80 40 50
+- name: parallel_bt_binary_parallel_bt_he_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh he 80 50 60
+- name: parallel_bt_binary_parallel_bt_he_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh he 80 60 70
+- name: parallel_bt_binary_parallel_bt_he_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh he 80 70 80
+- name: parallel_bt_binary_parallel_bt_hi_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hi 80 0 10
+- name: parallel_bt_binary_parallel_bt_hi_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hi 80 10 20
+- name: parallel_bt_binary_parallel_bt_hi_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hi 80 20 30
+- name: parallel_bt_binary_parallel_bt_hi_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hi 80 30 40
+- name: parallel_bt_binary_parallel_bt_hi_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hi 80 40 50
+- name: parallel_bt_binary_parallel_bt_hi_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hi 80 50 60
+- name: parallel_bt_binary_parallel_bt_hi_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hi 80 60 70
+- name: parallel_bt_binary_parallel_bt_hi_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hi 80 70 80
+- name: parallel_bt_binary_parallel_bt_hr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hr 80 0 10
+- name: parallel_bt_binary_parallel_bt_hr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hr 80 10 20
+- name: parallel_bt_binary_parallel_bt_hr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hr 80 20 30
+- name: parallel_bt_binary_parallel_bt_hr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hr 80 30 40
+- name: parallel_bt_binary_parallel_bt_hr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hr 80 40 50
+- name: parallel_bt_binary_parallel_bt_hr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hr 80 50 60
+- name: parallel_bt_binary_parallel_bt_hr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hr 80 60 70
+- name: parallel_bt_binary_parallel_bt_hr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hr 80 70 80
+- name: parallel_bt_binary_parallel_bt_hu_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hu 80 0 10
+- name: parallel_bt_binary_parallel_bt_hu_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hu 80 10 20
+- name: parallel_bt_binary_parallel_bt_hu_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hu 80 20 30
+- name: parallel_bt_binary_parallel_bt_hu_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hu 80 30 40
+- name: parallel_bt_binary_parallel_bt_hu_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hu 80 40 50
+- name: parallel_bt_binary_parallel_bt_hu_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hu 80 50 60
+- name: parallel_bt_binary_parallel_bt_hu_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hu 80 60 70
+- name: parallel_bt_binary_parallel_bt_hu_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hu 80 70 80
+- name: parallel_bt_binary_parallel_bt_hy_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hy 80 0 10
+- name: parallel_bt_binary_parallel_bt_hy_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hy 80 10 20
+- name: parallel_bt_binary_parallel_bt_hy_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hy 80 20 30
+- name: parallel_bt_binary_parallel_bt_hy_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hy 80 30 40
+- name: parallel_bt_binary_parallel_bt_hy_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hy 80 40 50
+- name: parallel_bt_binary_parallel_bt_hy_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hy 80 50 60
+- name: parallel_bt_binary_parallel_bt_hy_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hy 80 60 70
+- name: parallel_bt_binary_parallel_bt_hy_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh hy 80 70 80
+- name: parallel_bt_binary_parallel_bt_id_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh id 80 0 10
+- name: parallel_bt_binary_parallel_bt_id_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh id 80 10 20
+- name: parallel_bt_binary_parallel_bt_id_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh id 80 20 30
+- name: parallel_bt_binary_parallel_bt_id_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh id 80 30 40
+- name: parallel_bt_binary_parallel_bt_id_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh id 80 40 50
+- name: parallel_bt_binary_parallel_bt_id_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh id 80 50 60
+- name: parallel_bt_binary_parallel_bt_id_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh id 80 60 70
+- name: parallel_bt_binary_parallel_bt_id_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh id 80 70 80
+- name: parallel_bt_binary_parallel_bt_is_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh is 80 0 10
+- name: parallel_bt_binary_parallel_bt_is_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh is 80 10 20
+- name: parallel_bt_binary_parallel_bt_is_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh is 80 20 30
+- name: parallel_bt_binary_parallel_bt_is_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh is 80 30 40
+- name: parallel_bt_binary_parallel_bt_is_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh is 80 40 50
+- name: parallel_bt_binary_parallel_bt_is_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh is 80 50 60
+- name: parallel_bt_binary_parallel_bt_is_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh is 80 60 70
+- name: parallel_bt_binary_parallel_bt_is_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh is 80 70 80
+- name: parallel_bt_binary_parallel_bt_it_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh it 80 0 10
+- name: parallel_bt_binary_parallel_bt_it_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh it 80 10 20
+- name: parallel_bt_binary_parallel_bt_it_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh it 80 20 30
+- name: parallel_bt_binary_parallel_bt_it_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh it 80 30 40
+- name: parallel_bt_binary_parallel_bt_it_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh it 80 40 50
+- name: parallel_bt_binary_parallel_bt_it_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh it 80 50 60
+- name: parallel_bt_binary_parallel_bt_it_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh it 80 60 70
+- name: parallel_bt_binary_parallel_bt_it_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh it 80 70 80
+- name: parallel_bt_binary_parallel_bt_jv_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh jv 80 0 10
+- name: parallel_bt_binary_parallel_bt_jv_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh jv 80 10 20
+- name: parallel_bt_binary_parallel_bt_jv_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh jv 80 20 30
+- name: parallel_bt_binary_parallel_bt_jv_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh jv 80 30 40
+- name: parallel_bt_binary_parallel_bt_jv_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh jv 80 40 50
+- name: parallel_bt_binary_parallel_bt_jv_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh jv 80 50 60
+- name: parallel_bt_binary_parallel_bt_jv_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh jv 80 60 70
+- name: parallel_bt_binary_parallel_bt_jv_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh jv 80 70 80
+- name: parallel_bt_binary_parallel_bt_ja_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ja 80 0 10
+- name: parallel_bt_binary_parallel_bt_ja_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ja 80 10 20
+- name: parallel_bt_binary_parallel_bt_ja_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ja 80 20 30
+- name: parallel_bt_binary_parallel_bt_ja_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ja 80 30 40
+- name: parallel_bt_binary_parallel_bt_ja_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ja 80 40 50
+- name: parallel_bt_binary_parallel_bt_ja_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ja 80 50 60
+- name: parallel_bt_binary_parallel_bt_ja_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ja 80 60 70
+- name: parallel_bt_binary_parallel_bt_ja_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ja 80 70 80
+- name: parallel_bt_binary_parallel_bt_ka_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ka 80 0 10
+- name: parallel_bt_binary_parallel_bt_ka_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ka 80 10 20
+- name: parallel_bt_binary_parallel_bt_ka_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ka 80 20 30
+- name: parallel_bt_binary_parallel_bt_ka_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ka 80 30 40
+- name: parallel_bt_binary_parallel_bt_ka_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ka 80 40 50
+- name: parallel_bt_binary_parallel_bt_ka_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ka 80 50 60
+- name: parallel_bt_binary_parallel_bt_ka_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ka 80 60 70
+- name: parallel_bt_binary_parallel_bt_ka_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ka 80 70 80
+- name: parallel_bt_binary_parallel_bt_km_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh km 80 0 10
+- name: parallel_bt_binary_parallel_bt_km_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh km 80 10 20
+- name: parallel_bt_binary_parallel_bt_km_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh km 80 20 30
+- name: parallel_bt_binary_parallel_bt_km_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh km 80 30 40
+- name: parallel_bt_binary_parallel_bt_km_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh km 80 40 50
+- name: parallel_bt_binary_parallel_bt_km_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh km 80 50 60
+- name: parallel_bt_binary_parallel_bt_km_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh km 80 60 70
+- name: parallel_bt_binary_parallel_bt_km_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh km 80 70 80
+- name: parallel_bt_binary_parallel_bt_ky_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ky 80 0 10
+- name: parallel_bt_binary_parallel_bt_ky_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ky 80 10 20
+- name: parallel_bt_binary_parallel_bt_ky_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ky 80 20 30
+- name: parallel_bt_binary_parallel_bt_ky_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ky 80 30 40
+- name: parallel_bt_binary_parallel_bt_ky_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ky 80 40 50
+- name: parallel_bt_binary_parallel_bt_ky_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ky 80 50 60
+- name: parallel_bt_binary_parallel_bt_ky_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ky 80 60 70
+- name: parallel_bt_binary_parallel_bt_ky_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ky 80 70 80
+- name: parallel_bt_binary_parallel_bt_ko_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ko 80 0 10
+- name: parallel_bt_binary_parallel_bt_ko_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ko 80 10 20
+- name: parallel_bt_binary_parallel_bt_ko_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ko 80 20 30
+- name: parallel_bt_binary_parallel_bt_ko_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ko 80 30 40
+- name: parallel_bt_binary_parallel_bt_ko_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ko 80 40 50
+- name: parallel_bt_binary_parallel_bt_ko_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ko 80 50 60
+- name: parallel_bt_binary_parallel_bt_ko_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ko 80 60 70
+- name: parallel_bt_binary_parallel_bt_ko_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ko 80 70 80
+- name: parallel_bt_binary_parallel_bt_lv_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lv 80 0 10
+- name: parallel_bt_binary_parallel_bt_lv_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lv 80 10 20
+- name: parallel_bt_binary_parallel_bt_lv_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lv 80 20 30
+- name: parallel_bt_binary_parallel_bt_lv_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lv 80 30 40
+- name: parallel_bt_binary_parallel_bt_lv_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lv 80 40 50
+- name: parallel_bt_binary_parallel_bt_lv_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lv 80 50 60
+- name: parallel_bt_binary_parallel_bt_lv_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lv 80 60 70
+- name: parallel_bt_binary_parallel_bt_lv_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lv 80 70 80
+- name: parallel_bt_binary_parallel_bt_lt_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lt 80 0 10
+- name: parallel_bt_binary_parallel_bt_lt_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lt 80 10 20
+- name: parallel_bt_binary_parallel_bt_lt_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lt 80 20 30
+- name: parallel_bt_binary_parallel_bt_lt_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lt 80 30 40
+- name: parallel_bt_binary_parallel_bt_lt_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lt 80 40 50
+- name: parallel_bt_binary_parallel_bt_lt_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lt 80 50 60
+- name: parallel_bt_binary_parallel_bt_lt_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lt 80 60 70
+- name: parallel_bt_binary_parallel_bt_lt_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lt 80 70 80
+- name: parallel_bt_binary_parallel_bt_lb_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lb 80 0 10
+- name: parallel_bt_binary_parallel_bt_lb_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lb 80 10 20
+- name: parallel_bt_binary_parallel_bt_lb_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lb 80 20 30
+- name: parallel_bt_binary_parallel_bt_lb_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lb 80 30 40
+- name: parallel_bt_binary_parallel_bt_lb_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lb 80 40 50
+- name: parallel_bt_binary_parallel_bt_lb_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lb 80 50 60
+- name: parallel_bt_binary_parallel_bt_lb_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lb 80 60 70
+- name: parallel_bt_binary_parallel_bt_lb_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh lb 80 70 80
+- name: parallel_bt_binary_parallel_bt_ml_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ml 80 0 10
+- name: parallel_bt_binary_parallel_bt_ml_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ml 80 10 20
+- name: parallel_bt_binary_parallel_bt_ml_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ml 80 20 30
+- name: parallel_bt_binary_parallel_bt_ml_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ml 80 30 40
+- name: parallel_bt_binary_parallel_bt_ml_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ml 80 40 50
+- name: parallel_bt_binary_parallel_bt_ml_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ml 80 50 60
+- name: parallel_bt_binary_parallel_bt_ml_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ml 80 60 70
+- name: parallel_bt_binary_parallel_bt_ml_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ml 80 70 80
+- name: parallel_bt_binary_parallel_bt_mr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mr 80 0 10
+- name: parallel_bt_binary_parallel_bt_mr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mr 80 10 20
+- name: parallel_bt_binary_parallel_bt_mr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mr 80 20 30
+- name: parallel_bt_binary_parallel_bt_mr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mr 80 30 40
+- name: parallel_bt_binary_parallel_bt_mr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mr 80 40 50
+- name: parallel_bt_binary_parallel_bt_mr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mr 80 50 60
+- name: parallel_bt_binary_parallel_bt_mr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mr 80 60 70
+- name: parallel_bt_binary_parallel_bt_mr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mr 80 70 80
+- name: parallel_bt_binary_parallel_bt_mk_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mk 80 0 10
+- name: parallel_bt_binary_parallel_bt_mk_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mk 80 10 20
+- name: parallel_bt_binary_parallel_bt_mk_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mk 80 20 30
+- name: parallel_bt_binary_parallel_bt_mk_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mk 80 30 40
+- name: parallel_bt_binary_parallel_bt_mk_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mk 80 40 50
+- name: parallel_bt_binary_parallel_bt_mk_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mk 80 50 60
+- name: parallel_bt_binary_parallel_bt_mk_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mk 80 60 70
+- name: parallel_bt_binary_parallel_bt_mk_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mk 80 70 80
+- name: parallel_bt_binary_parallel_bt_mt_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mt 80 0 10
+- name: parallel_bt_binary_parallel_bt_mt_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mt 80 10 20
+- name: parallel_bt_binary_parallel_bt_mt_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mt 80 20 30
+- name: parallel_bt_binary_parallel_bt_mt_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mt 80 30 40
+- name: parallel_bt_binary_parallel_bt_mt_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mt 80 40 50
+- name: parallel_bt_binary_parallel_bt_mt_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mt 80 50 60
+- name: parallel_bt_binary_parallel_bt_mt_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mt 80 60 70
+- name: parallel_bt_binary_parallel_bt_mt_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mt 80 70 80
+- name: parallel_bt_binary_parallel_bt_mn_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mn 80 0 10
+- name: parallel_bt_binary_parallel_bt_mn_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mn 80 10 20
+- name: parallel_bt_binary_parallel_bt_mn_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mn 80 20 30
+- name: parallel_bt_binary_parallel_bt_mn_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mn 80 30 40
+- name: parallel_bt_binary_parallel_bt_mn_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mn 80 40 50
+- name: parallel_bt_binary_parallel_bt_mn_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mn 80 50 60
+- name: parallel_bt_binary_parallel_bt_mn_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mn 80 60 70
+- name: parallel_bt_binary_parallel_bt_mn_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mn 80 70 80
+- name: parallel_bt_binary_parallel_bt_mi_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mi 80 0 10
+- name: parallel_bt_binary_parallel_bt_mi_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mi 80 10 20
+- name: parallel_bt_binary_parallel_bt_mi_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mi 80 20 30
+- name: parallel_bt_binary_parallel_bt_mi_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mi 80 30 40
+- name: parallel_bt_binary_parallel_bt_mi_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mi 80 40 50
+- name: parallel_bt_binary_parallel_bt_mi_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mi 80 50 60
+- name: parallel_bt_binary_parallel_bt_mi_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mi 80 60 70
+- name: parallel_bt_binary_parallel_bt_mi_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh mi 80 70 80
+- name: parallel_bt_binary_parallel_bt_ms_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ms 80 0 10
+- name: parallel_bt_binary_parallel_bt_ms_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ms 80 10 20
+- name: parallel_bt_binary_parallel_bt_ms_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ms 80 20 30
+- name: parallel_bt_binary_parallel_bt_ms_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ms 80 30 40
+- name: parallel_bt_binary_parallel_bt_ms_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ms 80 40 50
+- name: parallel_bt_binary_parallel_bt_ms_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ms 80 50 60
+- name: parallel_bt_binary_parallel_bt_ms_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ms 80 60 70
+- name: parallel_bt_binary_parallel_bt_ms_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ms 80 70 80
+- name: parallel_bt_binary_parallel_bt_nl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh nl 80 0 10
+- name: parallel_bt_binary_parallel_bt_nl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh nl 80 10 20
+- name: parallel_bt_binary_parallel_bt_nl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh nl 80 20 30
+- name: parallel_bt_binary_parallel_bt_nl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh nl 80 30 40
+- name: parallel_bt_binary_parallel_bt_nl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh nl 80 40 50
+- name: parallel_bt_binary_parallel_bt_nl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh nl 80 50 60
+- name: parallel_bt_binary_parallel_bt_nl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh nl 80 60 70
+- name: parallel_bt_binary_parallel_bt_nl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh nl 80 70 80
+- name: parallel_bt_binary_parallel_bt_no_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh no 80 0 10
+- name: parallel_bt_binary_parallel_bt_no_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh no 80 10 20
+- name: parallel_bt_binary_parallel_bt_no_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh no 80 20 30
+- name: parallel_bt_binary_parallel_bt_no_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh no 80 30 40
+- name: parallel_bt_binary_parallel_bt_no_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh no 80 40 50
+- name: parallel_bt_binary_parallel_bt_no_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh no 80 50 60
+- name: parallel_bt_binary_parallel_bt_no_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh no 80 60 70
+- name: parallel_bt_binary_parallel_bt_no_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh no 80 70 80
+- name: parallel_bt_binary_parallel_bt_ny_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ny 80 0 10
+- name: parallel_bt_binary_parallel_bt_ny_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ny 80 10 20
+- name: parallel_bt_binary_parallel_bt_ny_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ny 80 20 30
+- name: parallel_bt_binary_parallel_bt_ny_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ny 80 30 40
+- name: parallel_bt_binary_parallel_bt_ny_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ny 80 40 50
+- name: parallel_bt_binary_parallel_bt_ny_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ny 80 50 60
+- name: parallel_bt_binary_parallel_bt_ny_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ny 80 60 70
+- name: parallel_bt_binary_parallel_bt_ny_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ny 80 70 80
+- name: parallel_bt_binary_parallel_bt_oc_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh oc 80 0 10
+- name: parallel_bt_binary_parallel_bt_oc_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh oc 80 10 20
+- name: parallel_bt_binary_parallel_bt_oc_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh oc 80 20 30
+- name: parallel_bt_binary_parallel_bt_oc_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh oc 80 30 40
+- name: parallel_bt_binary_parallel_bt_oc_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh oc 80 40 50
+- name: parallel_bt_binary_parallel_bt_oc_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh oc 80 50 60
+- name: parallel_bt_binary_parallel_bt_oc_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh oc 80 60 70
+- name: parallel_bt_binary_parallel_bt_oc_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh oc 80 70 80
+- name: parallel_bt_binary_parallel_bt_pl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pl 80 0 10
+- name: parallel_bt_binary_parallel_bt_pl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pl 80 10 20
+- name: parallel_bt_binary_parallel_bt_pl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pl 80 20 30
+- name: parallel_bt_binary_parallel_bt_pl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pl 80 30 40
+- name: parallel_bt_binary_parallel_bt_pl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pl 80 40 50
+- name: parallel_bt_binary_parallel_bt_pl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pl 80 50 60
+- name: parallel_bt_binary_parallel_bt_pl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pl 80 60 70
+- name: parallel_bt_binary_parallel_bt_pl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pl 80 70 80
+- name: parallel_bt_binary_parallel_bt_pt_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pt 80 0 10
+- name: parallel_bt_binary_parallel_bt_pt_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pt 80 10 20
+- name: parallel_bt_binary_parallel_bt_pt_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pt 80 20 30
+- name: parallel_bt_binary_parallel_bt_pt_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pt 80 30 40
+- name: parallel_bt_binary_parallel_bt_pt_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pt 80 40 50
+- name: parallel_bt_binary_parallel_bt_pt_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pt 80 50 60
+- name: parallel_bt_binary_parallel_bt_pt_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pt 80 60 70
+- name: parallel_bt_binary_parallel_bt_pt_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh pt 80 70 80
+- name: parallel_bt_binary_parallel_bt_ps_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ps 80 0 10
+- name: parallel_bt_binary_parallel_bt_ps_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ps 80 10 20
+- name: parallel_bt_binary_parallel_bt_ps_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ps 80 20 30
+- name: parallel_bt_binary_parallel_bt_ps_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ps 80 30 40
+- name: parallel_bt_binary_parallel_bt_ps_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ps 80 40 50
+- name: parallel_bt_binary_parallel_bt_ps_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ps 80 50 60
+- name: parallel_bt_binary_parallel_bt_ps_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ps 80 60 70
+- name: parallel_bt_binary_parallel_bt_ps_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ps 80 70 80
+- name: parallel_bt_binary_parallel_bt_ro_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ro 80 0 10
+- name: parallel_bt_binary_parallel_bt_ro_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ro 80 10 20
+- name: parallel_bt_binary_parallel_bt_ro_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ro 80 20 30
+- name: parallel_bt_binary_parallel_bt_ro_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ro 80 30 40
+- name: parallel_bt_binary_parallel_bt_ro_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ro 80 40 50
+- name: parallel_bt_binary_parallel_bt_ro_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ro 80 50 60
+- name: parallel_bt_binary_parallel_bt_ro_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ro 80 60 70
+- name: parallel_bt_binary_parallel_bt_ro_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ro 80 70 80
+- name: parallel_bt_binary_parallel_bt_ru_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ru 80 0 10
+- name: parallel_bt_binary_parallel_bt_ru_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ru 80 10 20
+- name: parallel_bt_binary_parallel_bt_ru_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ru 80 20 30
+- name: parallel_bt_binary_parallel_bt_ru_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ru 80 30 40
+- name: parallel_bt_binary_parallel_bt_ru_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ru 80 40 50
+- name: parallel_bt_binary_parallel_bt_ru_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ru 80 50 60
+- name: parallel_bt_binary_parallel_bt_ru_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ru 80 60 70
+- name: parallel_bt_binary_parallel_bt_ru_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ru 80 70 80
+- name: parallel_bt_binary_parallel_bt_sk_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sk 80 0 10
+- name: parallel_bt_binary_parallel_bt_sk_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sk 80 10 20
+- name: parallel_bt_binary_parallel_bt_sk_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sk 80 20 30
+- name: parallel_bt_binary_parallel_bt_sk_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sk 80 30 40
+- name: parallel_bt_binary_parallel_bt_sk_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sk 80 40 50
+- name: parallel_bt_binary_parallel_bt_sk_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sk 80 50 60
+- name: parallel_bt_binary_parallel_bt_sk_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sk 80 60 70
+- name: parallel_bt_binary_parallel_bt_sk_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sk 80 70 80
+- name: parallel_bt_binary_parallel_bt_sl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sl 80 0 10
+- name: parallel_bt_binary_parallel_bt_sl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sl 80 10 20
+- name: parallel_bt_binary_parallel_bt_sl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sl 80 20 30
+- name: parallel_bt_binary_parallel_bt_sl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sl 80 30 40
+- name: parallel_bt_binary_parallel_bt_sl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sl 80 40 50
+- name: parallel_bt_binary_parallel_bt_sl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sl 80 50 60
+- name: parallel_bt_binary_parallel_bt_sl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sl 80 60 70
+- name: parallel_bt_binary_parallel_bt_sl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sl 80 70 80
+- name: parallel_bt_binary_parallel_bt_sn_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sn 80 0 10
+- name: parallel_bt_binary_parallel_bt_sn_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sn 80 10 20
+- name: parallel_bt_binary_parallel_bt_sn_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sn 80 20 30
+- name: parallel_bt_binary_parallel_bt_sn_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sn 80 30 40
+- name: parallel_bt_binary_parallel_bt_sn_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sn 80 40 50
+- name: parallel_bt_binary_parallel_bt_sn_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sn 80 50 60
+- name: parallel_bt_binary_parallel_bt_sn_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sn 80 60 70
+- name: parallel_bt_binary_parallel_bt_sn_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sn 80 70 80
+- name: parallel_bt_binary_parallel_bt_so_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh so 80 0 10
+- name: parallel_bt_binary_parallel_bt_so_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh so 80 10 20
+- name: parallel_bt_binary_parallel_bt_so_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh so 80 20 30
+- name: parallel_bt_binary_parallel_bt_so_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh so 80 30 40
+- name: parallel_bt_binary_parallel_bt_so_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh so 80 40 50
+- name: parallel_bt_binary_parallel_bt_so_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh so 80 50 60
+- name: parallel_bt_binary_parallel_bt_so_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh so 80 60 70
+- name: parallel_bt_binary_parallel_bt_so_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh so 80 70 80
+- name: parallel_bt_binary_parallel_bt_es_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh es 80 0 10
+- name: parallel_bt_binary_parallel_bt_es_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh es 80 10 20
+- name: parallel_bt_binary_parallel_bt_es_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh es 80 20 30
+- name: parallel_bt_binary_parallel_bt_es_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh es 80 30 40
+- name: parallel_bt_binary_parallel_bt_es_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh es 80 40 50
+- name: parallel_bt_binary_parallel_bt_es_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh es 80 50 60
+- name: parallel_bt_binary_parallel_bt_es_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh es 80 60 70
+- name: parallel_bt_binary_parallel_bt_es_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh es 80 70 80
+- name: parallel_bt_binary_parallel_bt_sr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sr 80 0 10
+- name: parallel_bt_binary_parallel_bt_sr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sr 80 10 20
+- name: parallel_bt_binary_parallel_bt_sr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sr 80 20 30
+- name: parallel_bt_binary_parallel_bt_sr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sr 80 30 40
+- name: parallel_bt_binary_parallel_bt_sr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sr 80 40 50
+- name: parallel_bt_binary_parallel_bt_sr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sr 80 50 60
+- name: parallel_bt_binary_parallel_bt_sr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sr 80 60 70
+- name: parallel_bt_binary_parallel_bt_sr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sr 80 70 80
+- name: parallel_bt_binary_parallel_bt_sv_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sv 80 0 10
+- name: parallel_bt_binary_parallel_bt_sv_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sv 80 10 20
+- name: parallel_bt_binary_parallel_bt_sv_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sv 80 20 30
+- name: parallel_bt_binary_parallel_bt_sv_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sv 80 30 40
+- name: parallel_bt_binary_parallel_bt_sv_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sv 80 40 50
+- name: parallel_bt_binary_parallel_bt_sv_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sv 80 50 60
+- name: parallel_bt_binary_parallel_bt_sv_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sv 80 60 70
+- name: parallel_bt_binary_parallel_bt_sv_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sv 80 70 80
+- name: parallel_bt_binary_parallel_bt_sw_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sw 80 0 10
+- name: parallel_bt_binary_parallel_bt_sw_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sw 80 10 20
+- name: parallel_bt_binary_parallel_bt_sw_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sw 80 20 30
+- name: parallel_bt_binary_parallel_bt_sw_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sw 80 30 40
+- name: parallel_bt_binary_parallel_bt_sw_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sw 80 40 50
+- name: parallel_bt_binary_parallel_bt_sw_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sw 80 50 60
+- name: parallel_bt_binary_parallel_bt_sw_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sw 80 60 70
+- name: parallel_bt_binary_parallel_bt_sw_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh sw 80 70 80
+- name: parallel_bt_binary_parallel_bt_ta_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ta 80 0 10
+- name: parallel_bt_binary_parallel_bt_ta_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ta 80 10 20
+- name: parallel_bt_binary_parallel_bt_ta_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ta 80 20 30
+- name: parallel_bt_binary_parallel_bt_ta_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ta 80 30 40
+- name: parallel_bt_binary_parallel_bt_ta_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ta 80 40 50
+- name: parallel_bt_binary_parallel_bt_ta_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ta 80 50 60
+- name: parallel_bt_binary_parallel_bt_ta_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ta 80 60 70
+- name: parallel_bt_binary_parallel_bt_ta_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ta 80 70 80
+- name: parallel_bt_binary_parallel_bt_tl_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tl 80 0 10
+- name: parallel_bt_binary_parallel_bt_tl_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tl 80 10 20
+- name: parallel_bt_binary_parallel_bt_tl_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tl 80 20 30
+- name: parallel_bt_binary_parallel_bt_tl_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tl 80 30 40
+- name: parallel_bt_binary_parallel_bt_tl_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tl 80 40 50
+- name: parallel_bt_binary_parallel_bt_tl_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tl 80 50 60
+- name: parallel_bt_binary_parallel_bt_tl_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tl 80 60 70
+- name: parallel_bt_binary_parallel_bt_tl_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tl 80 70 80
+- name: parallel_bt_binary_parallel_bt_th_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh th 80 0 10
+- name: parallel_bt_binary_parallel_bt_th_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh th 80 10 20
+- name: parallel_bt_binary_parallel_bt_th_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh th 80 20 30
+- name: parallel_bt_binary_parallel_bt_th_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh th 80 30 40
+- name: parallel_bt_binary_parallel_bt_th_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh th 80 40 50
+- name: parallel_bt_binary_parallel_bt_th_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh th 80 50 60
+- name: parallel_bt_binary_parallel_bt_th_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh th 80 60 70
+- name: parallel_bt_binary_parallel_bt_th_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh th 80 70 80
+- name: parallel_bt_binary_parallel_bt_tr_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tr 80 0 10
+- name: parallel_bt_binary_parallel_bt_tr_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tr 80 10 20
+- name: parallel_bt_binary_parallel_bt_tr_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tr 80 20 30
+- name: parallel_bt_binary_parallel_bt_tr_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tr 80 30 40
+- name: parallel_bt_binary_parallel_bt_tr_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tr 80 40 50
+- name: parallel_bt_binary_parallel_bt_tr_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tr 80 50 60
+- name: parallel_bt_binary_parallel_bt_tr_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tr 80 60 70
+- name: parallel_bt_binary_parallel_bt_tr_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh tr 80 70 80
+- name: parallel_bt_binary_parallel_bt_uk_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh uk 80 0 10
+- name: parallel_bt_binary_parallel_bt_uk_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh uk 80 10 20
+- name: parallel_bt_binary_parallel_bt_uk_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh uk 80 20 30
+- name: parallel_bt_binary_parallel_bt_uk_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh uk 80 30 40
+- name: parallel_bt_binary_parallel_bt_uk_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh uk 80 40 50
+- name: parallel_bt_binary_parallel_bt_uk_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh uk 80 50 60
+- name: parallel_bt_binary_parallel_bt_uk_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh uk 80 60 70
+- name: parallel_bt_binary_parallel_bt_uk_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh uk 80 70 80
+- name: parallel_bt_binary_parallel_bt_umb_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh umb 80 0 10
+- name: parallel_bt_binary_parallel_bt_umb_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh umb 80 10 20
+- name: parallel_bt_binary_parallel_bt_umb_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh umb 80 20 30
+- name: parallel_bt_binary_parallel_bt_umb_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh umb 80 30 40
+- name: parallel_bt_binary_parallel_bt_umb_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh umb 80 40 50
+- name: parallel_bt_binary_parallel_bt_umb_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh umb 80 50 60
+- name: parallel_bt_binary_parallel_bt_umb_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh umb 80 60 70
+- name: parallel_bt_binary_parallel_bt_umb_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh umb 80 70 80
+- name: parallel_bt_binary_parallel_bt_ur_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ur 80 0 10
+- name: parallel_bt_binary_parallel_bt_ur_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ur 80 10 20
+- name: parallel_bt_binary_parallel_bt_ur_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ur 80 20 30
+- name: parallel_bt_binary_parallel_bt_ur_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ur 80 30 40
+- name: parallel_bt_binary_parallel_bt_ur_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ur 80 40 50
+- name: parallel_bt_binary_parallel_bt_ur_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ur 80 50 60
+- name: parallel_bt_binary_parallel_bt_ur_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ur 80 60 70
+- name: parallel_bt_binary_parallel_bt_ur_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh ur 80 70 80
+- name: parallel_bt_binary_parallel_bt_vi_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh vi 80 0 10
+- name: parallel_bt_binary_parallel_bt_vi_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh vi 80 10 20
+- name: parallel_bt_binary_parallel_bt_vi_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh vi 80 20 30
+- name: parallel_bt_binary_parallel_bt_vi_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh vi 80 30 40
+- name: parallel_bt_binary_parallel_bt_vi_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh vi 80 40 50
+- name: parallel_bt_binary_parallel_bt_vi_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh vi 80 50 60
+- name: parallel_bt_binary_parallel_bt_vi_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh vi 80 60 70
+- name: parallel_bt_binary_parallel_bt_vi_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh vi 80 70 80
+- name: parallel_bt_binary_parallel_bt_zh_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh zh 80 0 10
+- name: parallel_bt_binary_parallel_bt_zh_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh zh 80 10 20
+- name: parallel_bt_binary_parallel_bt_zh_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh zh 80 20 30
+- name: parallel_bt_binary_parallel_bt_zh_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh zh 80 30 40
+- name: parallel_bt_binary_parallel_bt_zh_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh zh 80 40 50
+- name: parallel_bt_binary_parallel_bt_zh_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh zh 80 50 60
+- name: parallel_bt_binary_parallel_bt_zh_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh zh 80 60 70
+- name: parallel_bt_binary_parallel_bt_zh_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_parallel_bt_lang_pair.sh zh 80 70 80
+
+
+
+
+
+
+
+

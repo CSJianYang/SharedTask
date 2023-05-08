@@ -1,0 +1,2100 @@
+- name: id.tsv0000-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0000 id0000.2jv 48
+- name: id.tsv0000-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0000 id0000.2ms 48
+- name: id.tsv0000-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0000 id0000.2ta 48
+- name: id.tsv0000-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0000 id0000.2tl 48
+- name: id.tsv0001-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0001 id0001.2jv 48
+- name: id.tsv0001-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0001 id0001.2ms 48
+- name: id.tsv0001-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0001 id0001.2ta 48
+- name: id.tsv0001-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0001 id0001.2tl 48
+- name: id.tsv0002-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0002 id0002.2jv 48
+- name: id.tsv0002-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0002 id0002.2ms 48
+- name: id.tsv0002-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0002 id0002.2ta 48
+- name: id.tsv0002-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0002 id0002.2tl 48
+- name: id.tsv0003-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0003 id0003.2jv 48
+- name: id.tsv0003-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0003 id0003.2ms 48
+- name: id.tsv0003-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0003 id0003.2ta 48
+- name: id.tsv0003-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0003 id0003.2tl 48
+- name: id.tsv0004-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0004 id0004.2jv 48
+- name: id.tsv0004-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0004 id0004.2ms 48
+- name: id.tsv0004-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0004 id0004.2ta 48
+- name: id.tsv0004-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0004 id0004.2tl 48
+- name: id.tsv0005-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0005 id0005.2jv 48
+- name: id.tsv0005-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0005 id0005.2ms 48
+- name: id.tsv0005-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0005 id0005.2ta 48
+- name: id.tsv0005-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0005 id0005.2tl 48
+- name: id.tsv0006-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0006 id0006.2jv 48
+- name: id.tsv0006-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0006 id0006.2ms 48
+- name: id.tsv0006-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0006 id0006.2ta 48
+- name: id.tsv0006-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0006 id0006.2tl 48
+- name: id.tsv0007-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0007 id0007.2jv 48
+- name: id.tsv0007-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0007 id0007.2ms 48
+- name: id.tsv0007-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0007 id0007.2ta 48
+- name: id.tsv0007-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0007 id0007.2tl 48
+- name: id.tsv0008-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0008 id0008.2jv 48
+- name: id.tsv0008-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0008 id0008.2ms 48
+- name: id.tsv0008-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0008 id0008.2ta 48
+- name: id.tsv0008-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0008 id0008.2tl 48
+- name: id.tsv0009-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0009 id0009.2jv 48
+- name: id.tsv0009-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0009 id0009.2ms 48
+- name: id.tsv0009-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0009 id0009.2ta 48
+- name: id.tsv0009-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0009 id0009.2tl 48
+- name: id.tsv0010-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0010 id0010.2jv 48
+- name: id.tsv0010-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0010 id0010.2ms 48
+- name: id.tsv0010-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0010 id0010.2ta 48
+- name: id.tsv0010-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0010 id0010.2tl 48
+- name: id.tsv0011-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0011 id0011.2jv 48
+- name: id.tsv0011-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0011 id0011.2ms 48
+- name: id.tsv0011-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0011 id0011.2ta 48
+- name: id.tsv0011-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0011 id0011.2tl 48
+- name: id.tsv0012-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0012 id0012.2jv 48
+- name: id.tsv0012-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0012 id0012.2ms 48
+- name: id.tsv0012-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0012 id0012.2ta 48
+- name: id.tsv0012-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0012 id0012.2tl 48
+- name: id.tsv0013-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0013 id0013.2jv 48
+- name: id.tsv0013-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0013 id0013.2ms 48
+- name: id.tsv0013-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0013 id0013.2ta 48
+- name: id.tsv0013-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0013 id0013.2tl 48
+- name: id.tsv0014-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0014 id0014.2jv 48
+- name: id.tsv0014-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0014 id0014.2ms 48
+- name: id.tsv0014-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0014 id0014.2ta 48
+- name: id.tsv0014-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0014 id0014.2tl 48
+- name: id.tsv0015-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0015 id0015.2jv 48
+- name: id.tsv0015-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0015 id0015.2ms 48
+- name: id.tsv0015-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0015 id0015.2ta 48
+- name: id.tsv0015-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0015 id0015.2tl 48
+- name: id.tsv0016-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0016 id0016.2jv 48
+- name: id.tsv0016-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0016 id0016.2ms 48
+- name: id.tsv0016-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0016 id0016.2ta 48
+- name: id.tsv0016-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0016 id0016.2tl 48
+- name: id.tsv0017-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0017 id0017.2jv 48
+- name: id.tsv0017-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0017 id0017.2ms 48
+- name: id.tsv0017-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0017 id0017.2ta 48
+- name: id.tsv0017-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0017 id0017.2tl 48
+- name: id.tsv0018-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0018 id0018.2jv 48
+- name: id.tsv0018-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0018 id0018.2ms 48
+- name: id.tsv0018-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0018 id0018.2ta 48
+- name: id.tsv0018-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0018 id0018.2tl 48
+- name: id.tsv0019-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0019 id0019.2jv 48
+- name: id.tsv0019-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0019 id0019.2ms 48
+- name: id.tsv0019-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0019 id0019.2ta 48
+- name: id.tsv0019-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0019 id0019.2tl 48
+- name: id.tsv0020-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0020 id0020.2jv 48
+- name: id.tsv0020-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0020 id0020.2ms 48
+- name: id.tsv0020-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0020 id0020.2ta 48
+- name: id.tsv0020-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0020 id0020.2tl 48
+- name: id.tsv0021-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0021 id0021.2jv 48
+- name: id.tsv0021-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0021 id0021.2ms 48
+- name: id.tsv0021-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0021 id0021.2ta 48
+- name: id.tsv0021-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0021 id0021.2tl 48
+- name: id.tsv0022-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0022 id0022.2jv 48
+- name: id.tsv0022-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0022 id0022.2ms 48
+- name: id.tsv0022-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0022 id0022.2ta 48
+- name: id.tsv0022-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0022 id0022.2tl 48
+- name: id.tsv0023-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0023 id0023.2jv 48
+- name: id.tsv0023-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0023 id0023.2ms 48
+- name: id.tsv0023-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0023 id0023.2ta 48
+- name: id.tsv0023-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0023 id0023.2tl 48
+- name: id.tsv0024-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0024 id0024.2jv 48
+- name: id.tsv0024-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0024 id0024.2ms 48
+- name: id.tsv0024-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0024 id0024.2ta 48
+- name: id.tsv0024-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0024 id0024.2tl 48
+- name: id.tsv0025-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0025 id0025.2jv 48
+- name: id.tsv0025-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0025 id0025.2ms 48
+- name: id.tsv0025-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0025 id0025.2ta 48
+- name: id.tsv0025-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0025 id0025.2tl 48
+- name: id.tsv0026-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0026 id0026.2jv 48
+- name: id.tsv0026-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0026 id0026.2ms 48
+- name: id.tsv0026-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0026 id0026.2ta 48
+- name: id.tsv0026-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0026 id0026.2tl 48
+- name: id.tsv0027-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0027 id0027.2jv 48
+- name: id.tsv0027-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0027 id0027.2ms 48
+- name: id.tsv0027-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0027 id0027.2ta 48
+- name: id.tsv0027-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0027 id0027.2tl 48
+- name: id.tsv0028-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0028 id0028.2jv 48
+- name: id.tsv0028-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0028 id0028.2ms 48
+- name: id.tsv0028-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0028 id0028.2ta 48
+- name: id.tsv0028-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0028 id0028.2tl 48
+- name: id.tsv0029-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0029 id0029.2jv 48
+- name: id.tsv0029-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0029 id0029.2ms 48
+- name: id.tsv0029-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0029 id0029.2ta 48
+- name: id.tsv0029-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0029 id0029.2tl 48
+- name: id.tsv0030-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0030 id0030.2jv 48
+- name: id.tsv0030-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0030 id0030.2ms 48
+- name: id.tsv0030-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0030 id0030.2ta 48
+- name: id.tsv0030-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0030 id0030.2tl 48
+- name: id.tsv0031-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0031 id0031.2jv 48
+- name: id.tsv0031-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0031 id0031.2ms 48
+- name: id.tsv0031-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0031 id0031.2ta 48
+- name: id.tsv0031-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0031 id0031.2tl 48
+- name: id.tsv0032-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0032 id0032.2jv 48
+- name: id.tsv0032-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0032 id0032.2ms 48
+- name: id.tsv0032-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0032 id0032.2ta 48
+- name: id.tsv0032-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0032 id0032.2tl 48
+- name: id.tsv0033-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0033 id0033.2jv 48
+- name: id.tsv0033-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0033 id0033.2ms 48
+- name: id.tsv0033-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0033 id0033.2ta 48
+- name: id.tsv0033-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0033 id0033.2tl 48
+- name: id.tsv0034-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0034 id0034.2jv 48
+- name: id.tsv0034-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0034 id0034.2ms 48
+- name: id.tsv0034-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0034 id0034.2ta 48
+- name: id.tsv0034-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0034 id0034.2tl 48
+- name: id.tsv0035-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0035 id0035.2jv 48
+- name: id.tsv0035-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0035 id0035.2ms 48
+- name: id.tsv0035-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0035 id0035.2ta 48
+- name: id.tsv0035-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0035 id0035.2tl 48
+- name: id.tsv0036-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0036 id0036.2jv 48
+- name: id.tsv0036-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0036 id0036.2ms 48
+- name: id.tsv0036-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0036 id0036.2ta 48
+- name: id.tsv0036-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0036 id0036.2tl 48
+- name: id.tsv0037-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0037 id0037.2jv 48
+- name: id.tsv0037-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0037 id0037.2ms 48
+- name: id.tsv0037-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0037 id0037.2ta 48
+- name: id.tsv0037-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0037 id0037.2tl 48
+- name: id.tsv0038-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0038 id0038.2jv 48
+- name: id.tsv0038-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0038 id0038.2ms 48
+- name: id.tsv0038-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0038 id0038.2ta 48
+- name: id.tsv0038-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0038 id0038.2tl 48
+- name: id.tsv0039-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0039 id0039.2jv 48
+- name: id.tsv0039-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0039 id0039.2ms 48
+- name: id.tsv0039-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0039 id0039.2ta 48
+- name: id.tsv0039-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0039 id0039.2tl 48
+- name: id.tsv0040-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0040 id0040.2jv 48
+- name: id.tsv0040-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0040 id0040.2ms 48
+- name: id.tsv0040-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0040 id0040.2ta 48
+- name: id.tsv0040-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0040 id0040.2tl 48
+- name: id.tsv0041-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0041 id0041.2jv 48
+- name: id.tsv0041-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0041 id0041.2ms 48
+- name: id.tsv0041-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0041 id0041.2ta 48
+- name: id.tsv0041-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0041 id0041.2tl 48
+- name: id.tsv0042-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0042 id0042.2jv 48
+- name: id.tsv0042-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0042 id0042.2ms 48
+- name: id.tsv0042-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0042 id0042.2ta 48
+- name: id.tsv0042-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0042 id0042.2tl 48
+- name: id.tsv0043-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0043 id0043.2jv 48
+- name: id.tsv0043-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0043 id0043.2ms 48
+- name: id.tsv0043-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0043 id0043.2ta 48
+- name: id.tsv0043-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0043 id0043.2tl 48
+- name: id.tsv0044-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0044 id0044.2jv 48
+- name: id.tsv0044-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0044 id0044.2ms 48
+- name: id.tsv0044-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0044 id0044.2ta 48
+- name: id.tsv0044-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0044 id0044.2tl 48
+- name: id.tsv0045-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0045 id0045.2jv 48
+- name: id.tsv0045-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0045 id0045.2ms 48
+- name: id.tsv0045-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0045 id0045.2ta 48
+- name: id.tsv0045-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0045 id0045.2tl 48
+- name: id.tsv0046-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0046 id0046.2jv 48
+- name: id.tsv0046-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0046 id0046.2ms 48
+- name: id.tsv0046-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0046 id0046.2ta 48
+- name: id.tsv0046-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0046 id0046.2tl 48
+- name: id.tsv0047-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0047 id0047.2jv 48
+- name: id.tsv0047-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0047 id0047.2ms 48
+- name: id.tsv0047-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0047 id0047.2ta 48
+- name: id.tsv0047-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0047 id0047.2tl 48
+- name: id.tsv0048-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0048 id0048.2jv 48
+- name: id.tsv0048-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0048 id0048.2ms 48
+- name: id.tsv0048-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0048 id0048.2ta 48
+- name: id.tsv0048-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0048 id0048.2tl 48
+- name: id.tsv0049-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0049 id0049.2jv 48
+- name: id.tsv0049-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0049 id0049.2ms 48
+- name: id.tsv0049-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0049 id0049.2ta 48
+- name: id.tsv0049-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0049 id0049.2tl 48
+- name: id.tsv0050-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0050 id0050.2jv 48
+- name: id.tsv0050-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0050 id0050.2ms 48
+- name: id.tsv0050-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0050 id0050.2ta 48
+- name: id.tsv0050-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0050 id0050.2tl 48
+- name: id.tsv0051-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0051 id0051.2jv 48
+- name: id.tsv0051-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0051 id0051.2ms 48
+- name: id.tsv0051-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0051 id0051.2ta 48
+- name: id.tsv0051-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0051 id0051.2tl 48
+- name: id.tsv0052-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0052 id0052.2jv 48
+- name: id.tsv0052-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0052 id0052.2ms 48
+- name: id.tsv0052-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0052 id0052.2ta 48
+- name: id.tsv0052-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0052 id0052.2tl 48
+- name: id.tsv0053-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0053 id0053.2jv 48
+- name: id.tsv0053-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0053 id0053.2ms 48
+- name: id.tsv0053-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0053 id0053.2ta 48
+- name: id.tsv0053-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0053 id0053.2tl 48
+- name: id.tsv0054-id2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0054 id0054.2jv 48
+- name: id.tsv0054-id2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0054 id0054.2ms 48
+- name: id.tsv0054-id2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0054 id0054.2ta 48
+- name: id.tsv0054-id2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh id tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt id.tsv0054 id0054.2tl 48
+- name: jv.tsv0000-jv2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0000 jv0000.2id 48
+- name: jv.tsv0000-jv2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0000 jv0000.2ms 48
+- name: jv.tsv0000-jv2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0000 jv0000.2ta 48
+- name: jv.tsv0000-jv2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0000 jv0000.2tl 48
+- name: jv.tsv0001-jv2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0001 jv0001.2id 48
+- name: jv.tsv0001-jv2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0001 jv0001.2ms 48
+- name: jv.tsv0001-jv2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0001 jv0001.2ta 48
+- name: jv.tsv0001-jv2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0001 jv0001.2tl 48
+- name: jv.tsv0002-jv2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0002 jv0002.2id 48
+- name: jv.tsv0002-jv2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0002 jv0002.2ms 48
+- name: jv.tsv0002-jv2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0002 jv0002.2ta 48
+- name: jv.tsv0002-jv2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0002 jv0002.2tl 48
+- name: jv.tsv0003-jv2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0003 jv0003.2id 48
+- name: jv.tsv0003-jv2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0003 jv0003.2ms 48
+- name: jv.tsv0003-jv2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0003 jv0003.2ta 48
+- name: jv.tsv0003-jv2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0003 jv0003.2tl 48
+- name: jv.tsv0004-jv2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0004 jv0004.2id 48
+- name: jv.tsv0004-jv2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0004 jv0004.2ms 48
+- name: jv.tsv0004-jv2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0004 jv0004.2ta 48
+- name: jv.tsv0004-jv2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh jv tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt jv.tsv0004 jv0004.2tl 48
+- name: ms.tsv0000-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0000 ms0000.2id 48
+- name: ms.tsv0000-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0000 ms0000.2jv 48
+- name: ms.tsv0000-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0000 ms0000.2ta 48
+- name: ms.tsv0000-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0000 ms0000.2tl 48
+- name: ms.tsv0001-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0001 ms0001.2id 48
+- name: ms.tsv0001-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0001 ms0001.2jv 48
+- name: ms.tsv0001-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0001 ms0001.2ta 48
+- name: ms.tsv0001-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0001 ms0001.2tl 48
+- name: ms.tsv0002-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0002 ms0002.2id 48
+- name: ms.tsv0002-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0002 ms0002.2jv 48
+- name: ms.tsv0002-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0002 ms0002.2ta 48
+- name: ms.tsv0002-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0002 ms0002.2tl 48
+- name: ms.tsv0003-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0003 ms0003.2id 48
+- name: ms.tsv0003-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0003 ms0003.2jv 48
+- name: ms.tsv0003-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0003 ms0003.2ta 48
+- name: ms.tsv0003-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0003 ms0003.2tl 48
+- name: ms.tsv0004-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0004 ms0004.2id 48
+- name: ms.tsv0004-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0004 ms0004.2jv 48
+- name: ms.tsv0004-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0004 ms0004.2ta 48
+- name: ms.tsv0004-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0004 ms0004.2tl 48
+- name: ms.tsv0005-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0005 ms0005.2id 48
+- name: ms.tsv0005-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0005 ms0005.2jv 48
+- name: ms.tsv0005-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0005 ms0005.2ta 48
+- name: ms.tsv0005-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0005 ms0005.2tl 48
+- name: ms.tsv0006-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0006 ms0006.2id 48
+- name: ms.tsv0006-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0006 ms0006.2jv 48
+- name: ms.tsv0006-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0006 ms0006.2ta 48
+- name: ms.tsv0006-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0006 ms0006.2tl 48
+- name: ms.tsv0007-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0007 ms0007.2id 48
+- name: ms.tsv0007-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0007 ms0007.2jv 48
+- name: ms.tsv0007-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0007 ms0007.2ta 48
+- name: ms.tsv0007-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0007 ms0007.2tl 48
+- name: ms.tsv0008-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0008 ms0008.2id 48
+- name: ms.tsv0008-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0008 ms0008.2jv 48
+- name: ms.tsv0008-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0008 ms0008.2ta 48
+- name: ms.tsv0008-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0008 ms0008.2tl 48
+- name: ms.tsv0009-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0009 ms0009.2id 48
+- name: ms.tsv0009-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0009 ms0009.2jv 48
+- name: ms.tsv0009-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0009 ms0009.2ta 48
+- name: ms.tsv0009-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0009 ms0009.2tl 48
+- name: ms.tsv0010-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0010 ms0010.2id 48
+- name: ms.tsv0010-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0010 ms0010.2jv 48
+- name: ms.tsv0010-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0010 ms0010.2ta 48
+- name: ms.tsv0010-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0010 ms0010.2tl 48
+- name: ms.tsv0011-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0011 ms0011.2id 48
+- name: ms.tsv0011-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0011 ms0011.2jv 48
+- name: ms.tsv0011-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0011 ms0011.2ta 48
+- name: ms.tsv0011-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0011 ms0011.2tl 48
+- name: ms.tsv0012-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0012 ms0012.2id 48
+- name: ms.tsv0012-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0012 ms0012.2jv 48
+- name: ms.tsv0012-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0012 ms0012.2ta 48
+- name: ms.tsv0012-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0012 ms0012.2tl 48
+- name: ms.tsv0013-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0013 ms0013.2id 48
+- name: ms.tsv0013-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0013 ms0013.2jv 48
+- name: ms.tsv0013-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0013 ms0013.2ta 48
+- name: ms.tsv0013-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0013 ms0013.2tl 48
+- name: ms.tsv0014-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0014 ms0014.2id 48
+- name: ms.tsv0014-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0014 ms0014.2jv 48
+- name: ms.tsv0014-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0014 ms0014.2ta 48
+- name: ms.tsv0014-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0014 ms0014.2tl 48
+- name: ms.tsv0015-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0015 ms0015.2id 48
+- name: ms.tsv0015-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0015 ms0015.2jv 48
+- name: ms.tsv0015-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0015 ms0015.2ta 48
+- name: ms.tsv0015-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0015 ms0015.2tl 48
+- name: ms.tsv0016-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0016 ms0016.2id 48
+- name: ms.tsv0016-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0016 ms0016.2jv 48
+- name: ms.tsv0016-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0016 ms0016.2ta 48
+- name: ms.tsv0016-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0016 ms0016.2tl 48
+- name: ms.tsv0017-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0017 ms0017.2id 48
+- name: ms.tsv0017-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0017 ms0017.2jv 48
+- name: ms.tsv0017-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0017 ms0017.2ta 48
+- name: ms.tsv0017-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0017 ms0017.2tl 48
+- name: ms.tsv0018-ms2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0018 ms0018.2id 48
+- name: ms.tsv0018-ms2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0018 ms0018.2jv 48
+- name: ms.tsv0018-ms2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0018 ms0018.2ta 48
+- name: ms.tsv0018-ms2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ms tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ms.tsv0018 ms0018.2tl 48
+- name: ta.tsv0000-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0000 ta0000.2id 48
+- name: ta.tsv0000-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0000 ta0000.2jv 48
+- name: ta.tsv0000-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0000 ta0000.2ms 48
+- name: ta.tsv0000-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0000 ta0000.2tl 48
+- name: ta.tsv0001-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0001 ta0001.2id 48
+- name: ta.tsv0001-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0001 ta0001.2jv 48
+- name: ta.tsv0001-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0001 ta0001.2ms 48
+- name: ta.tsv0001-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0001 ta0001.2tl 48
+- name: ta.tsv0002-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0002 ta0002.2id 48
+- name: ta.tsv0002-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0002 ta0002.2jv 48
+- name: ta.tsv0002-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0002 ta0002.2ms 48
+- name: ta.tsv0002-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0002 ta0002.2tl 48
+- name: ta.tsv0003-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0003 ta0003.2id 48
+- name: ta.tsv0003-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0003 ta0003.2jv 48
+- name: ta.tsv0003-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0003 ta0003.2ms 48
+- name: ta.tsv0003-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0003 ta0003.2tl 48
+- name: ta.tsv0004-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0004 ta0004.2id 48
+- name: ta.tsv0004-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0004 ta0004.2jv 48
+- name: ta.tsv0004-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0004 ta0004.2ms 48
+- name: ta.tsv0004-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0004 ta0004.2tl 48
+- name: ta.tsv0005-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0005 ta0005.2id 48
+- name: ta.tsv0005-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0005 ta0005.2jv 48
+- name: ta.tsv0005-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0005 ta0005.2ms 48
+- name: ta.tsv0005-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0005 ta0005.2tl 48
+- name: ta.tsv0006-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0006 ta0006.2id 48
+- name: ta.tsv0006-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0006 ta0006.2jv 48
+- name: ta.tsv0006-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0006 ta0006.2ms 48
+- name: ta.tsv0006-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0006 ta0006.2tl 48
+- name: ta.tsv0007-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0007 ta0007.2id 48
+- name: ta.tsv0007-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0007 ta0007.2jv 48
+- name: ta.tsv0007-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0007 ta0007.2ms 48
+- name: ta.tsv0007-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0007 ta0007.2tl 48
+- name: ta.tsv0008-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0008 ta0008.2id 48
+- name: ta.tsv0008-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0008 ta0008.2jv 48
+- name: ta.tsv0008-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0008 ta0008.2ms 48
+- name: ta.tsv0008-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0008 ta0008.2tl 48
+- name: ta.tsv0009-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0009 ta0009.2id 48
+- name: ta.tsv0009-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0009 ta0009.2jv 48
+- name: ta.tsv0009-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0009 ta0009.2ms 48
+- name: ta.tsv0009-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0009 ta0009.2tl 48
+- name: ta.tsv0010-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0010 ta0010.2id 48
+- name: ta.tsv0010-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0010 ta0010.2jv 48
+- name: ta.tsv0010-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0010 ta0010.2ms 48
+- name: ta.tsv0010-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0010 ta0010.2tl 48
+- name: ta.tsv0011-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0011 ta0011.2id 48
+- name: ta.tsv0011-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0011 ta0011.2jv 48
+- name: ta.tsv0011-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0011 ta0011.2ms 48
+- name: ta.tsv0011-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0011 ta0011.2tl 48
+- name: ta.tsv0012-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0012 ta0012.2id 48
+- name: ta.tsv0012-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0012 ta0012.2jv 48
+- name: ta.tsv0012-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0012 ta0012.2ms 48
+- name: ta.tsv0012-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0012 ta0012.2tl 48
+- name: ta.tsv0013-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0013 ta0013.2id 48
+- name: ta.tsv0013-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0013 ta0013.2jv 48
+- name: ta.tsv0013-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0013 ta0013.2ms 48
+- name: ta.tsv0013-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0013 ta0013.2tl 48
+- name: ta.tsv0014-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0014 ta0014.2id 48
+- name: ta.tsv0014-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0014 ta0014.2jv 48
+- name: ta.tsv0014-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0014 ta0014.2ms 48
+- name: ta.tsv0014-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0014 ta0014.2tl 48
+- name: ta.tsv0015-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0015 ta0015.2id 48
+- name: ta.tsv0015-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0015 ta0015.2jv 48
+- name: ta.tsv0015-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0015 ta0015.2ms 48
+- name: ta.tsv0015-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0015 ta0015.2tl 48
+- name: ta.tsv0016-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0016 ta0016.2id 48
+- name: ta.tsv0016-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0016 ta0016.2jv 48
+- name: ta.tsv0016-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0016 ta0016.2ms 48
+- name: ta.tsv0016-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0016 ta0016.2tl 48
+- name: ta.tsv0017-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0017 ta0017.2id 48
+- name: ta.tsv0017-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0017 ta0017.2jv 48
+- name: ta.tsv0017-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0017 ta0017.2ms 48
+- name: ta.tsv0017-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0017 ta0017.2tl 48
+- name: ta.tsv0018-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0018 ta0018.2id 48
+- name: ta.tsv0018-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0018 ta0018.2jv 48
+- name: ta.tsv0018-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0018 ta0018.2ms 48
+- name: ta.tsv0018-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0018 ta0018.2tl 48
+- name: ta.tsv0019-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0019 ta0019.2id 48
+- name: ta.tsv0019-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0019 ta0019.2jv 48
+- name: ta.tsv0019-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0019 ta0019.2ms 48
+- name: ta.tsv0019-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0019 ta0019.2tl 48
+- name: ta.tsv0020-ta2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0020 ta0020.2id 48
+- name: ta.tsv0020-ta2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0020 ta0020.2jv 48
+- name: ta.tsv0020-ta2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0020 ta0020.2ms 48
+- name: ta.tsv0020-ta2tl
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh ta tl 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt ta.tsv0020 ta0020.2tl 48
+- name: tl.tsv0000-tl2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0000 tl0000.2id 48
+- name: tl.tsv0000-tl2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0000 tl0000.2jv 48
+- name: tl.tsv0000-tl2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0000 tl0000.2ms 48
+- name: tl.tsv0000-tl2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0000 tl0000.2ta 48
+- name: tl.tsv0001-tl2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0001 tl0001.2id 48
+- name: tl.tsv0001-tl2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0001 tl0001.2jv 48
+- name: tl.tsv0001-tl2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0001 tl0001.2ms 48
+- name: tl.tsv0001-tl2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0001 tl0001.2ta 48
+- name: tl.tsv0002-tl2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0002 tl0002.2id 48
+- name: tl.tsv0002-tl2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0002 tl0002.2jv 48
+- name: tl.tsv0002-tl2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0002 tl0002.2ms 48
+- name: tl.tsv0002-tl2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0002 tl0002.2ta 48
+- name: tl.tsv0003-tl2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0003 tl0003.2id 48
+- name: tl.tsv0003-tl2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0003 tl0003.2jv 48
+- name: tl.tsv0003-tl2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0003 tl0003.2ms 48
+- name: tl.tsv0003-tl2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0003 tl0003.2ta 48
+- name: tl.tsv0004-tl2id
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl id 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0004 tl0004.2id 48
+- name: tl.tsv0004-tl2jv
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl jv 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0004 tl0004.2jv 48
+- name: tl.tsv0004-tl2ms
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ms 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0004 tl0004.2ms 48
+- name: tl.tsv0004-tl2ta
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/translate_our.sh tl ta 4 /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-step2/avg4_8.pt tl.tsv0004 tl0004.2ta 48

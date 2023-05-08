@@ -1,0 +1,49 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  #name: itplabrr1cl1
+  #service: amlk8s
+  #vc: resrchvc
+  name: itpwus2v100cl
+  service: amlk8s
+  vc: gcrprojvc1
+  #vc: resrchvc
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:  
+- name: Filter_v1_36L_12L
+  sku: G8
+  sku_count: 8
+  aml_mpirun:
+    communicator: OpenMpi
+  command:
+    - bash ./shells/aml/multi-node/large_task/Filter_v1/64GPU/V100/FT_36L_12L.sh

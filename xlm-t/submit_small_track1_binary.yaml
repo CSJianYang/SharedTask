@@ -1,0 +1,110 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  #name: itpeastusv100cl
+  name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: binary_en-et
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh en et 
+- name: binary_en-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh en hr 
+- name: binary_en-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh en hu 
+- name: binary_en-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh en mk 
+- name: binary_en-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh en sr 
+- name: binary_et-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh et hr 
+- name: binary_et-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh et hu 
+- name: binary_et-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh et mk 
+- name: binary_et-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh et sr 
+- name: binary_hr-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh hr hu 
+- name: binary_hr-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh hr mk 
+- name: binary_hr-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh hr sr 
+- name: binary_hu-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh hu mk 
+- name: binary_hu-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh hu sr 
+- name: binary_mk-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/small_track1/thunder/binary_lang_pair.sh mk sr 
+

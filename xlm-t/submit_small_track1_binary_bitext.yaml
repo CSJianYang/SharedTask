@@ -1,0 +1,112 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  name: itpeastusv100cl
+  #name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: binary_en-et
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh en et 10
+- name: binary_en-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh en hr 10
+- name: binary_en-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh en hu 10
+- name: binary_en-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh en mk 10
+- name: binary_en-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh en sr 10
+- name: binary_et-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh et hr 10
+- name: binary_et-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh et hu 10
+- name: binary_et-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh et mk 10
+- name: binary_et-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh et sr 10
+- name: binary_hr-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh hr hu 10
+- name: binary_hr-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh hr mk 10
+- name: binary_hr-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh hr sr 10
+- name: binary_hu-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh hu mk 10
+- name: binary_hu-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh hu sr 10
+- name: binary_mk-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track1/binary_bitext.sh mk sr 10
+
+
+

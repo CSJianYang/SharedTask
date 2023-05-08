@@ -1,0 +1,1 @@
+/home/v-jiaya/anaconda3/bin/python /home/v-jiaya/xlm-t/xlm-t/read_binarized.py --dict /home/v-jiaya/xlm-t/data/zcode20/data-bin/dict.en.txt --input test.ar-en.ar

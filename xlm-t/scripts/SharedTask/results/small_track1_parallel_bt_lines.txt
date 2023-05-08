@@ -1,0 +1,6 @@
+2021-08-21 01:21:17    59026541 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/parallel_bt-train2.0/train.en
+2021-08-21 01:21:47    59026541 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/parallel_bt-train2.0/train.et
+2021-08-21 01:22:17    59026541 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/parallel_bt-train2.0/train.hr
+2021-08-21 01:22:50    59026541 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/parallel_bt-train2.0/train.hu
+2021-08-21 01:23:35    59026541 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/parallel_bt-train2.0/train.mk
+2021-08-21 01:24:20    59026541 /mnt/input/SharedTask/thunder/small_task1/Filter_v1/parallel_bt-train2.0/train.sr

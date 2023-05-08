@@ -1,0 +1,557 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTaskTest
+
+target:
+  service: amlk8s
+  #name: itplabrr1cl1
+  #name: itpeastusv100cl
+  #service: amlk8s
+  #vc: resrchvc
+  
+  name: itpeusp40cl
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  - git clone --single-branch --branch adding_spm_tokenized_bleu https://github.com/ngoyal2707/sacrebleu.git && cd sacrebleu && python setup.py install --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:  
+- name: test_af2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 af
+- name: test_am2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 am
+- name: test_ar2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ar
+- name: test_as2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 as
+- name: test_ast2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ast
+- name: test_az2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 az
+- name: test_be2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 be
+- name: test_bn2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 bn
+- name: test_bs2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 bs
+- name: test_bg2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 bg
+- name: test_ca2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ca
+- name: test_ceb2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ceb
+- name: test_cs2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 cs
+- name: test_ku2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ku
+- name: test_cy2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 cy
+- name: test_da2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 da
+- name: test_de2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 de
+- name: test_el2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 el
+- name: test_en2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 en
+- name: test_et2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 et
+- name: test_fa2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 fa
+- name: test_fi2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 fi
+- name: test_fr2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 fr
+- name: test_ff2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ff
+- name: test_ga2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ga
+- name: test_gl2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 gl
+- name: test_gu2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 gu
+- name: test_ha2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ha
+- name: test_he2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 he
+- name: test_hi2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 hi
+- name: test_hr2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 hr
+- name: test_hu2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 hu
+- name: test_hy2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 hy
+- name: test_ig2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ig
+- name: test_id2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 id
+- name: test_is2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 is
+- name: test_it2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 it
+- name: test_jv2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 jv
+- name: test_ja2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ja
+- name: test_kam2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 kam
+- name: test_kn2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 kn
+- name: test_ka2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ka
+- name: test_kk2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 kk
+- name: test_kea2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 kea
+- name: test_km2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 km
+- name: test_ky2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ky
+- name: test_ko2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ko
+- name: test_lo2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 lo
+- name: test_lv2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 lv
+- name: test_ln2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ln
+- name: test_lt2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 lt
+- name: test_lb2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 lb
+- name: test_lg2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 lg
+- name: test_luo2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 luo
+- name: test_ml2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ml
+- name: test_mr2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 mr
+- name: test_mk2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 mk
+- name: test_mt2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 mt
+- name: test_mn2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 mn
+- name: test_mi2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 mi
+- name: test_ms2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ms
+- name: test_my2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 my
+- name: test_nl2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 nl
+- name: test_no2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 no
+- name: test_ne2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ne
+- name: test_ns2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ns
+- name: test_ny2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ny
+- name: test_oc2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 oc
+- name: test_om2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 om
+- name: test_or2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 or
+- name: test_pa2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 pa
+- name: test_pl2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 pl
+- name: test_pt2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 pt
+- name: test_ps2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ps
+- name: test_ro2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ro
+- name: test_ru2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ru
+- name: test_sk2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 sk
+- name: test_sl2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 sl
+- name: test_sn2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 sn
+- name: test_sd2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 sd
+- name: test_so2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 so
+- name: test_es2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 es
+- name: test_sr2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 sr
+- name: test_sv2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 sv
+- name: test_sw2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 sw
+- name: test_ta2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ta
+- name: test_te2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 te
+- name: test_tg2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 tg
+- name: test_tl2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 tl
+- name: test_th2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 th
+- name: test_tr2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 tr
+- name: test_uk2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 uk
+- name: test_umb2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 umb
+- name: test_ur2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 ur
+- name: test_uz2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 uz
+- name: test_vi2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 vi
+- name: test_wo2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 wo
+- name: test_xh2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 xh
+- name: test_yo2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 yo
+- name: test_zh2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 zh
+- name: test_zt2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 zt
+- name: test_zu2x_pivot
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/large_task/deltalm/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/large_track/data/Filter_v1/model/36L-12L/avg26_45.pt 196 4 zu
+
+

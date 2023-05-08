@@ -1,0 +1,358 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  #name: itplabrr1cl1
+  #name: itpeastusv100cl
+  name: itpeusp100cl
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: binary_be-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh be en 80 0 10
+- name: binary_be-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh be en 80 10 20
+- name: binary_be-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh be en 80 20 30
+- name: binary_be-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh be en 80 30 40
+- name: binary_be-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh be en 80 40 50
+- name: binary_be-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh be en 80 50 60
+- name: binary_be-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh be en 80 60 70
+- name: binary_be-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh be en 80 70 80
+- name: binary_ff-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ff en 80 0 10
+- name: binary_ff-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ff en 80 10 20
+- name: binary_ff-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ff en 80 20 30
+- name: binary_ff-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ff en 80 30 40
+- name: binary_ff-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ff en 80 40 50
+- name: binary_ff-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ff en 80 50 60
+- name: binary_ff-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ff en 80 60 70
+- name: binary_ff-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ff en 80 70 80
+- name: binary_ku-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ku en 80 0 10
+- name: binary_ku-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ku en 80 10 20
+- name: binary_ku-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ku en 80 20 30
+- name: binary_ku-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ku en 80 30 40
+- name: binary_ku-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ku en 80 40 50
+- name: binary_ku-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ku en 80 50 60
+- name: binary_ku-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ku en 80 60 70
+- name: binary_ku-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ku en 80 70 80
+- name: binary_lo-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh lo en 80 0 10
+- name: binary_lo-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh lo en 80 10 20
+- name: binary_lo-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh lo en 80 20 30
+- name: binary_lo-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh lo en 80 30 40
+- name: binary_lo-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh lo en 80 40 50
+- name: binary_lo-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh lo en 80 50 60
+- name: binary_lo-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh lo en 80 60 70
+- name: binary_lo-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh lo en 80 70 80
+- name: binary_my-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh my en 80 0 10
+- name: binary_my-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh my en 80 10 20
+- name: binary_my-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh my en 80 20 30
+- name: binary_my-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh my en 80 30 40
+- name: binary_my-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh my en 80 40 50
+- name: binary_my-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh my en 80 50 60
+- name: binary_my-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh my en 80 60 70
+- name: binary_my-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh my en 80 70 80
+- name: binary_ns-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ns en 80 0 10
+- name: binary_ns-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ns en 80 10 20
+- name: binary_ns-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ns en 80 20 30
+- name: binary_ns-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ns en 80 30 40
+- name: binary_ns-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ns en 80 40 50
+- name: binary_ns-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ns en 80 50 60
+- name: binary_ns-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ns en 80 60 70
+- name: binary_ns-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh ns en 80 70 80
+- name: binary_om-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh om en 80 0 10
+- name: binary_om-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh om en 80 10 20
+- name: binary_om-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh om en 80 20 30
+- name: binary_om-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh om en 80 30 40
+- name: binary_om-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh om en 80 40 50
+- name: binary_om-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh om en 80 50 60
+- name: binary_om-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh om en 80 60 70
+- name: binary_om-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh om en 80 70 80
+- name: binary_or-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh or en 80 0 10
+- name: binary_or-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh or en 80 10 20
+- name: binary_or-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh or en 80 20 30
+- name: binary_or-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh or en 80 30 40
+- name: binary_or-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh or en 80 40 50
+- name: binary_or-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh or en 80 50 60
+- name: binary_or-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh or en 80 60 70
+- name: binary_or-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/bt/bt_binary_lang_pair.sh or en 80 70 80
+
+

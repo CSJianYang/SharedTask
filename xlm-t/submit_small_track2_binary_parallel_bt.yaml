@@ -1,0 +1,345 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTask
+
+target:
+  #service: amlk8s
+  #name: itpeastusv100cl
+  #name: itplabrr1cl1
+  #vc: resrchvc
+  name: itpwus2cpucl1     
+  vc: gcrcpu
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs: 
+- name: binary_parallel_bt_en_0-1
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 0 1
+- name: binary_parallel_bt_en_1-2
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 1 2
+- name: binary_parallel_bt_en_2-3
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 2 3
+- name: binary_parallel_bt_en_3-4
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 3 4
+- name: binary_parallel_bt_en_4-5
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 4 5
+- name: binary_parallel_bt_en_5-6
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 5 6
+- name: binary_parallel_bt_en_6-7
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 6 7
+- name: binary_parallel_bt_en_7-8
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 7 8
+- name: binary_parallel_bt_en_8-9
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 8 9
+- name: binary_parallel_bt_en_9-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh en 10 9 10
+- name: binary_parallel_bt_id_0-1
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 0 1
+- name: binary_parallel_bt_id_1-2
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 1 2
+- name: binary_parallel_bt_id_2-3
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 2 3
+- name: binary_parallel_bt_id_3-4
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 3 4
+- name: binary_parallel_bt_id_4-5
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 4 5
+- name: binary_parallel_bt_id_5-6
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 5 6
+- name: binary_parallel_bt_id_6-7
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 6 7
+- name: binary_parallel_bt_id_7-8
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 7 8
+- name: binary_parallel_bt_id_8-9
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 8 9
+- name: binary_parallel_bt_id_9-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh id 10 9 10
+- name: binary_parallel_bt_jv_0-1
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 0 1
+- name: binary_parallel_bt_jv_1-2
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 1 2
+- name: binary_parallel_bt_jv_2-3
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 2 3
+- name: binary_parallel_bt_jv_3-4
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 3 4
+- name: binary_parallel_bt_jv_4-5
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 4 5
+- name: binary_parallel_bt_jv_5-6
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 5 6
+- name: binary_parallel_bt_jv_6-7
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 6 7
+- name: binary_parallel_bt_jv_7-8
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 7 8
+- name: binary_parallel_bt_jv_8-9
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 8 9
+- name: binary_parallel_bt_jv_9-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh jv 10 9 10
+- name: binary_parallel_bt_ms_0-1
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 0 1
+- name: binary_parallel_bt_ms_1-2
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 1 2
+- name: binary_parallel_bt_ms_2-3
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 2 3
+- name: binary_parallel_bt_ms_3-4
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 3 4
+- name: binary_parallel_bt_ms_4-5
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 4 5
+- name: binary_parallel_bt_ms_5-6
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 5 6
+- name: binary_parallel_bt_ms_6-7
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 6 7
+- name: binary_parallel_bt_ms_7-8
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 7 8
+- name: binary_parallel_bt_ms_8-9
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 8 9
+- name: binary_parallel_bt_ms_9-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ms 10 9 10
+- name: binary_parallel_bt_ta_0-1
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 0 1
+- name: binary_parallel_bt_ta_1-2
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 1 2
+- name: binary_parallel_bt_ta_2-3
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 2 3
+- name: binary_parallel_bt_ta_3-4
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 3 4
+- name: binary_parallel_bt_ta_4-5
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 4 5
+- name: binary_parallel_bt_ta_5-6
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 5 6
+- name: binary_parallel_bt_ta_6-7
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 6 7
+- name: binary_parallel_bt_ta_7-8
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 7 8
+- name: binary_parallel_bt_ta_8-9
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 8 9
+- name: binary_parallel_bt_ta_9-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh ta 10 9 10
+- name: binary_parallel_bt_tl_0-1
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 0 1
+- name: binary_parallel_bt_tl_1-2
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 1 2
+- name: binary_parallel_bt_tl_2-3
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 2 3
+- name: binary_parallel_bt_tl_3-4
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 3 4
+- name: binary_parallel_bt_tl_4-5
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 4 5
+- name: binary_parallel_bt_tl_5-6
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 5 6
+- name: binary_parallel_bt_tl_6-7
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 6 7
+- name: binary_parallel_bt_tl_7-8
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 7 8
+- name: binary_parallel_bt_tl_8-9
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 8 9
+- name: binary_parallel_bt_tl_9-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/BT/small_track2/binary_parallel_bt.sh tl 10 9 10
+
+
+

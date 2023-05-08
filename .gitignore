@@ -1,0 +1,12 @@
+/data/
+/model/
+/fairseq/
+/PretrainedModel/
+/xlmt/build/
+/xlm-t/.dynalab
+/xlm-t/.dynalab_submissions
+/xlm-t/*.pt
+/xlm-t/*.dict
+/xlm-t/sentencepiece.bpe.model
+/xlm-t/spm.model
+git_upload.sh

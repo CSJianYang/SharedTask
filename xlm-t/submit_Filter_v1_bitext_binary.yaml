@@ -1,0 +1,2008 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itpeastusv100cl
+  #name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs:  
+- name: bitext_binary_af-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh af en 80
+- name: bitext_binary_af-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh af lb 80
+- name: bitext_binary_am-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh am en 80
+- name: bitext_binary_ar-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ar en 80
+- name: bitext_binary_ar-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ar kk 80
+- name: bitext_binary_ar-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ar lb 80
+- name: bitext_binary_as-da
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as da 80
+- name: bitext_binary_as-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as de 80
+- name: bitext_binary_as-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as en 80
+- name: bitext_binary_as-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as fr 80
+- name: bitext_binary_as-hi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as hi 80
+- name: bitext_binary_as-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as hu 80
+- name: bitext_binary_as-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as it 80
+- name: bitext_binary_as-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as ja 80
+- name: bitext_binary_as-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh as tr 80
+- name: bitext_binary_ast-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ast de 80
+- name: bitext_binary_ast-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ast en 80
+- name: bitext_binary_ast-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ast es 80
+- name: bitext_binary_ast-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ast fr 80
+- name: bitext_binary_ast-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ast ja 80
+- name: bitext_binary_ast-nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ast nl 80
+- name: bitext_binary_ast-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ast pt 80
+- name: bitext_binary_ast-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ast ru 80
+- name: bitext_binary_az-bg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az bg 80
+- name: bitext_binary_az-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az de 80
+- name: bitext_binary_az-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az en 80
+- name: bitext_binary_az-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az es 80
+- name: bitext_binary_az-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az fr 80
+- name: bitext_binary_az-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az it 80
+- name: bitext_binary_az-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az ja 80
+- name: bitext_binary_az-ko
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az ko 80
+- name: bitext_binary_az-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az lt 80
+- name: bitext_binary_az-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az lv 80
+- name: bitext_binary_az-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az pt 80
+- name: bitext_binary_az-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az ru 80
+- name: bitext_binary_az-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az tr 80
+- name: bitext_binary_az-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh az zh 80
+- name: bitext_binary_be-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh be en 80
+- name: bitext_binary_bg-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh bg en 80
+- name: bitext_binary_bn-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh bn en 80
+- name: bitext_binary_bs-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh bs en 80
+- name: bitext_binary_ca-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ca en 80
+- name: bitext_binary_ceb-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ceb en 80
+- name: bitext_binary_cs-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh cs en 80
+- name: bitext_binary_cs-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh cs lb 80
+- name: bitext_binary_cy-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh cy en 80
+- name: bitext_binary_da-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh da en 80
+- name: bitext_binary_da-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh da lb 80
+- name: bitext_binary_de-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de en 80
+- name: bitext_binary_de-hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de hy 80
+- name: bitext_binary_de-jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de jv 80
+- name: bitext_binary_de-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de kk 80
+- name: bitext_binary_de-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de km 80
+- name: bitext_binary_de-ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de ky 80
+- name: bitext_binary_de-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de lb 80
+- name: bitext_binary_de-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de mn 80
+- name: bitext_binary_de-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de oc 80
+- name: bitext_binary_de-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh de tg 80
+- name: bitext_binary_el-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh el en 80
+- name: bitext_binary_en-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh en zh 80
+- name: bitext_binary_es-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh es en 80
+- name: bitext_binary_es-wo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh es wo 80
+- name: bitext_binary_et-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh et en 80
+- name: bitext_binary_et-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh et hr 80
+- name: bitext_binary_et-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh et hu 80
+- name: bitext_binary_et-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh et kk 80
+- name: bitext_binary_et-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh et mk 80
+- name: bitext_binary_et-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh et sr 80
+- name: bitext_binary_fa-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fa en 80
+- name: bitext_binary_ff-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ff en 80
+- name: bitext_binary_ff-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ff es 80
+- name: bitext_binary_ff-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ff it 80
+- name: bitext_binary_fi-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fi en 80
+- name: bitext_binary_fi-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fi km 80
+- name: bitext_binary_fi-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fi lb 80
+- name: bitext_binary_fi-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fi oc 80
+- name: bitext_binary_fr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr en 80
+- name: bitext_binary_fr-ff
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr ff 80
+- name: bitext_binary_fr-hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr hy 80
+- name: bitext_binary_fr-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr kk 80
+- name: bitext_binary_fr-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr km 80
+- name: bitext_binary_fr-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr lb 80
+- name: bitext_binary_fr-ln
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr ln 80
+- name: bitext_binary_fr-lo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr lo 80
+- name: bitext_binary_fr-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr mn 80
+- name: bitext_binary_fr-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr oc 80
+- name: bitext_binary_fr-sn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr sn 80
+- name: bitext_binary_fr-so
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr so 80
+- name: bitext_binary_fr-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr tg 80
+- name: bitext_binary_fr-wo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh fr wo 80
+- name: bitext_binary_ga-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ga en 80
+- name: bitext_binary_gl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh gl en 80
+- name: bitext_binary_gu-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh gu en 80
+- name: bitext_binary_gu-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh gu es 80
+- name: bitext_binary_ha-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ha en 80
+- name: bitext_binary_he-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh he en 80
+- name: bitext_binary_hi-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hi en 80
+- name: bitext_binary_hr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hr en 80
+- name: bitext_binary_hr-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hr hu 80
+- name: bitext_binary_hr-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hr mk 80
+- name: bitext_binary_hr-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hr sr 80
+- name: bitext_binary_hu-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hu en 80
+- name: bitext_binary_hu-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hu lb 80
+- name: bitext_binary_hu-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hu mk 80
+- name: bitext_binary_hu-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hu sr 80
+- name: bitext_binary_hy-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hy en 80
+- name: bitext_binary_hy-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hy es 80
+- name: bitext_binary_hy-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hy ja 80
+- name: bitext_binary_hy-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh hy zh 80
+- name: bitext_binary_id-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh id en 80
+- name: bitext_binary_id-jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh id jv 80
+- name: bitext_binary_id-ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh id ms 80
+- name: bitext_binary_id-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh id ta 80
+- name: bitext_binary_id-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh id tl 80
+- name: bitext_binary_ig-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ig en 80
+- name: bitext_binary_is-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh is en 80
+- name: bitext_binary_it-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh it en 80
+- name: bitext_binary_it-kk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh it kk 80
+- name: bitext_binary_it-lb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh it lb 80
+- name: bitext_binary_it-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh it oc 80
+- name: bitext_binary_ja-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ja en 80
+- name: bitext_binary_ja-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ja km 80
+- name: bitext_binary_ja-ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ja ky 80
+- name: bitext_binary_ja-lo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ja lo 80
+- name: bitext_binary_ja-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ja mn 80
+- name: bitext_binary_ja-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ja oc 80
+- name: bitext_binary_ja-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ja tg 80
+- name: bitext_binary_ja-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ja zh 80
+- name: bitext_binary_jv-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh jv en 80
+- name: bitext_binary_jv-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh jv es 80
+- name: bitext_binary_jv-ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh jv ms 80
+- name: bitext_binary_jv-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh jv ta 80
+- name: bitext_binary_jv-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh jv tl 80
+- name: bitext_binary_ka-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ka en 80
+- name: bitext_binary_kam-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kam en 80
+- name: bitext_binary_kea-af
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea af 80
+- name: bitext_binary_kea-am
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea am 80
+- name: bitext_binary_kea-ar
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ar 80
+- name: bitext_binary_kea-as
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea as 80
+- name: bitext_binary_kea-az
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea az 80
+- name: bitext_binary_kea-bg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea bg 80
+- name: bitext_binary_kea-ceb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ceb 80
+- name: bitext_binary_kea-cs
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea cs 80
+- name: bitext_binary_kea-da
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea da 80
+- name: bitext_binary_kea-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea de 80
+- name: bitext_binary_kea-el
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea el 80
+- name: bitext_binary_kea-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea en 80
+- name: bitext_binary_kea-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea es 80
+- name: bitext_binary_kea-et
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea et 80
+- name: bitext_binary_kea-fa
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea fa 80
+- name: bitext_binary_kea-fi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea fi 80
+- name: bitext_binary_kea-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea fr 80
+- name: bitext_binary_kea-ga
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ga 80
+- name: bitext_binary_kea-gl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea gl 80
+- name: bitext_binary_kea-gu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea gu 80
+- name: bitext_binary_kea-ha
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ha 80
+- name: bitext_binary_kea-he
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea he 80
+- name: bitext_binary_kea-hi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea hi 80
+- name: bitext_binary_kea-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea hr 80
+- name: bitext_binary_kea-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea hu 80
+- name: bitext_binary_kea-hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea hy 80
+- name: bitext_binary_kea-id
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea id 80
+- name: bitext_binary_kea-ig
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ig 80
+- name: bitext_binary_kea-is
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea is 80
+- name: bitext_binary_kea-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea it 80
+- name: bitext_binary_kea-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ja 80
+- name: bitext_binary_kea-ka
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ka 80
+- name: bitext_binary_kea-kam
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea kam 80
+- name: bitext_binary_kea-kn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea kn 80
+- name: bitext_binary_kea-ko
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ko 80
+- name: bitext_binary_kea-ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ky 80
+- name: bitext_binary_kea-lg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea lg 80
+- name: bitext_binary_kea-ln
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ln 80
+- name: bitext_binary_kea-lo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea lo 80
+- name: bitext_binary_kea-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea lt 80
+- name: bitext_binary_kea-luo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea luo 80
+- name: bitext_binary_kea-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea lv 80
+- name: bitext_binary_kea-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea mk 80
+- name: bitext_binary_kea-ml
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ml 80
+- name: bitext_binary_kea-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea mn 80
+- name: bitext_binary_kea-mr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea mr 80
+- name: bitext_binary_kea-my
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea my 80
+- name: bitext_binary_kea-ne
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ne 80
+- name: bitext_binary_kea-nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea nl 80
+- name: bitext_binary_kea-no
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea no 80
+- name: bitext_binary_kea-ny
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ny 80
+- name: bitext_binary_kea-om
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea om 80
+- name: bitext_binary_kea-or
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea or 80
+- name: bitext_binary_kea-pa
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea pa 80
+- name: bitext_binary_kea-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea pl 80
+- name: bitext_binary_kea-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea pt 80
+- name: bitext_binary_kea-ro
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ro 80
+- name: bitext_binary_kea-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ru 80
+- name: bitext_binary_kea-sk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea sk 80
+- name: bitext_binary_kea-sl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea sl 80
+- name: bitext_binary_kea-sn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea sn 80
+- name: bitext_binary_kea-sv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea sv 80
+- name: bitext_binary_kea-sw
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea sw 80
+- name: bitext_binary_kea-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea ta 80
+- name: bitext_binary_kea-te
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea te 80
+- name: bitext_binary_kea-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea tg 80
+- name: bitext_binary_kea-th
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea th 80
+- name: bitext_binary_kea-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea tl 80
+- name: bitext_binary_kea-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea tr 80
+- name: bitext_binary_kea-uk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea uk 80
+- name: bitext_binary_kea-vi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea vi 80
+- name: bitext_binary_kea-xh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea xh 80
+- name: bitext_binary_kea-yo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea yo 80
+- name: bitext_binary_kea-zu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kea zu 80
+- name: bitext_binary_kk-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk en 80
+- name: bitext_binary_kk-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk es 80
+- name: bitext_binary_kk-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk lt 80
+- name: bitext_binary_kk-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk lv 80
+- name: bitext_binary_kk-ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk ms 80
+- name: bitext_binary_kk-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk pl 80
+- name: bitext_binary_kk-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk ru 80
+- name: bitext_binary_kk-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk tr 80
+- name: bitext_binary_kk-uz
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk uz 80
+- name: bitext_binary_kk-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kk zh 80
+- name: bitext_binary_km-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh km en 80
+- name: bitext_binary_km-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh km es 80
+- name: bitext_binary_km-ms
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh km ms 80
+- name: bitext_binary_km-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh km pl 80
+- name: bitext_binary_km-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh km ru 80
+- name: bitext_binary_km-vi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh km vi 80
+- name: bitext_binary_km-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh km zh 80
+- name: bitext_binary_kn-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh kn en 80
+- name: bitext_binary_ko-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ko en 80
+- name: bitext_binary_ko-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ko mn 80
+- name: bitext_binary_ko-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ko zh 80
+- name: bitext_binary_ku-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ku en 80
+- name: bitext_binary_ky-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ky en 80
+- name: bitext_binary_ky-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ky lt 80
+- name: bitext_binary_ky-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ky lv 80
+- name: bitext_binary_ky-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ky ru 80
+- name: bitext_binary_ky-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ky tr 80
+- name: bitext_binary_lb-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lb en 80
+- name: bitext_binary_lb-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lb es 80
+- name: bitext_binary_lb-nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lb nl 80
+- name: bitext_binary_lb-no
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lb no 80
+- name: bitext_binary_lb-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lb pt 80
+- name: bitext_binary_lb-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lb ru 80
+- name: bitext_binary_lb-sv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lb sv 80
+- name: bitext_binary_lb-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lb zh 80
+- name: bitext_binary_lg-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lg en 80
+- name: bitext_binary_ln-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ln en 80
+- name: bitext_binary_ln-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ln es 80
+- name: bitext_binary_ln-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ln zh 80
+- name: bitext_binary_lo-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lo en 80
+- name: bitext_binary_lo-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lo zh 80
+- name: bitext_binary_lt-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lt en 80
+- name: bitext_binary_luo-af
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo af 80
+- name: bitext_binary_luo-am
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo am 80
+- name: bitext_binary_luo-ar
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ar 80
+- name: bitext_binary_luo-az
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo az 80
+- name: bitext_binary_luo-bg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo bg 80
+- name: bitext_binary_luo-bn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo bn 80
+- name: bitext_binary_luo-ceb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ceb 80
+- name: bitext_binary_luo-cs
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo cs 80
+- name: bitext_binary_luo-cy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo cy 80
+- name: bitext_binary_luo-da
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo da 80
+- name: bitext_binary_luo-de
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo de 80
+- name: bitext_binary_luo-el
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo el 80
+- name: bitext_binary_luo-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo en 80
+- name: bitext_binary_luo-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo es 80
+- name: bitext_binary_luo-et
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo et 80
+- name: bitext_binary_luo-fa
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo fa 80
+- name: bitext_binary_luo-fi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo fi 80
+- name: bitext_binary_luo-fr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo fr 80
+- name: bitext_binary_luo-gu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo gu 80
+- name: bitext_binary_luo-ha
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ha 80
+- name: bitext_binary_luo-he
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo he 80
+- name: bitext_binary_luo-hi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo hi 80
+- name: bitext_binary_luo-hr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo hr 80
+- name: bitext_binary_luo-hu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo hu 80
+- name: bitext_binary_luo-hy
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo hy 80
+- name: bitext_binary_luo-id
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo id 80
+- name: bitext_binary_luo-ig
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ig 80
+- name: bitext_binary_luo-is
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo is 80
+- name: bitext_binary_luo-it
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo it 80
+- name: bitext_binary_luo-ja
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ja 80
+- name: bitext_binary_luo-jv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo jv 80
+- name: bitext_binary_luo-ka
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ka 80
+- name: bitext_binary_luo-kam
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo kam 80
+- name: bitext_binary_luo-kea
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo kea 80
+- name: bitext_binary_luo-km
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo km 80
+- name: bitext_binary_luo-kn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo kn 80
+- name: bitext_binary_luo-ko
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ko 80
+- name: bitext_binary_luo-ky
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ky 80
+- name: bitext_binary_luo-lg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo lg 80
+- name: bitext_binary_luo-ln
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ln 80
+- name: bitext_binary_luo-lo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo lo 80
+- name: bitext_binary_luo-lt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo lt 80
+- name: bitext_binary_luo-lv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo lv 80
+- name: bitext_binary_luo-mk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo mk 80
+- name: bitext_binary_luo-ml
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ml 80
+- name: bitext_binary_luo-mn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo mn 80
+- name: bitext_binary_luo-mr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo mr 80
+- name: bitext_binary_luo-mt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo mt 80
+- name: bitext_binary_luo-my
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo my 80
+- name: bitext_binary_luo-ne
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ne 80
+- name: bitext_binary_luo-nl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo nl 80
+- name: bitext_binary_luo-no
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo no 80
+- name: bitext_binary_luo-ny
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ny 80
+- name: bitext_binary_luo-om
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo om 80
+- name: bitext_binary_luo-pa
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo pa 80
+- name: bitext_binary_luo-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo pl 80
+- name: bitext_binary_luo-pt
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo pt 80
+- name: bitext_binary_luo-ro
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ro 80
+- name: bitext_binary_luo-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ru 80
+- name: bitext_binary_luo-sk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo sk 80
+- name: bitext_binary_luo-sl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo sl 80
+- name: bitext_binary_luo-sn
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo sn 80
+- name: bitext_binary_luo-sv
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo sv 80
+- name: bitext_binary_luo-sw
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo sw 80
+- name: bitext_binary_luo-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ta 80
+- name: bitext_binary_luo-te
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo te 80
+- name: bitext_binary_luo-tg
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo tg 80
+- name: bitext_binary_luo-th
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo th 80
+- name: bitext_binary_luo-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo tl 80
+- name: bitext_binary_luo-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo tr 80
+- name: bitext_binary_luo-uk
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo uk 80
+- name: bitext_binary_luo-umb
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo umb 80
+- name: bitext_binary_luo-ur
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo ur 80
+- name: bitext_binary_luo-vi
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo vi 80
+- name: bitext_binary_luo-xh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo xh 80
+- name: bitext_binary_luo-yo
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo yo 80
+- name: bitext_binary_luo-zu
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh luo zu 80
+- name: bitext_binary_lv-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh lv en 80
+- name: bitext_binary_mi-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh mi en 80
+- name: bitext_binary_mk-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh mk en 80
+- name: bitext_binary_mk-sr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh mk sr 80
+- name: bitext_binary_ml-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ml en 80
+- name: bitext_binary_mn-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh mn en 80
+- name: bitext_binary_mn-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh mn zh 80
+- name: bitext_binary_mr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh mr en 80
+- name: bitext_binary_ms-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ms en 80
+- name: bitext_binary_ms-ta
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ms ta 80
+- name: bitext_binary_ms-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ms tl 80
+- name: bitext_binary_mt-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh mt en 80
+- name: bitext_binary_my-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh my en 80
+- name: bitext_binary_ne-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ne en 80
+- name: bitext_binary_nl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh nl en 80
+- name: bitext_binary_nl-oc
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh nl oc 80
+- name: bitext_binary_no-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh no en 80
+- name: bitext_binary_ns-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ns en 80
+- name: bitext_binary_ny-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ny en 80
+- name: bitext_binary_oc-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh oc en 80
+- name: bitext_binary_oc-es
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh oc es 80
+- name: bitext_binary_oc-pl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh oc pl 80
+- name: bitext_binary_oc-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh oc ru 80
+- name: bitext_binary_oc-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh oc tr 80
+- name: bitext_binary_oc-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh oc zh 80
+- name: bitext_binary_om-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh om en 80
+- name: bitext_binary_or-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh or en 80
+- name: bitext_binary_or-ru
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh or ru 80
+- name: bitext_binary_pa-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh pa en 80
+- name: bitext_binary_pl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh pl en 80
+- name: bitext_binary_ps-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ps en 80
+- name: bitext_binary_pt-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh pt en 80
+- name: bitext_binary_ro-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ro en 80
+- name: bitext_binary_ru-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ru en 80
+- name: bitext_binary_ru-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ru zh 80
+- name: bitext_binary_sd-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh sd en 80
+- name: bitext_binary_sk-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh sk en 80
+- name: bitext_binary_sl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh sl en 80
+- name: bitext_binary_sn-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh sn en 80
+- name: bitext_binary_so-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh so en 80
+- name: bitext_binary_so-tr
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh so tr 80
+- name: bitext_binary_sr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh sr en 80
+- name: bitext_binary_sv-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh sv en 80
+- name: bitext_binary_sw-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh sw en 80
+- name: bitext_binary_ta-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ta en 80
+- name: bitext_binary_ta-tl
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ta tl 80
+- name: bitext_binary_te-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh te en 80
+- name: bitext_binary_tg-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh tg en 80
+- name: bitext_binary_tg-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh tg zh 80
+- name: bitext_binary_th-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh th en 80
+- name: bitext_binary_th-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh th zh 80
+- name: bitext_binary_tl-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh tl en 80
+- name: bitext_binary_tr-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh tr en 80
+- name: bitext_binary_uk-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh uk en 80
+- name: bitext_binary_umb-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh umb en 80
+- name: bitext_binary_ur-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh ur en 80
+- name: bitext_binary_uz-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh uz en 80
+- name: bitext_binary_vi-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh vi en 80
+- name: bitext_binary_vi-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh vi zh 80
+- name: bitext_binary_wo-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh wo en 80
+- name: bitext_binary_xh-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh xh en 80
+- name: bitext_binary_yo-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh yo en 80
+- name: bitext_binary_zh-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh zh en 80
+- name: bitext_binary_zt-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh zt en 80
+- name: bitext_binary_zt-zh
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh zt zh 80
+- name: bitext_binary_zu-en
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bitext_lang_pair.sh zu en 80
+
+
+
+

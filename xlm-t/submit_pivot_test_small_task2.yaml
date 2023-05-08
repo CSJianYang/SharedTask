@@ -1,0 +1,74 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: SharedTaskTest
+
+target:
+  service: amlk8s
+  #name: itplabrr1cl1
+  #name: itpeastusv100cl
+  #service: amlk8s
+  #vc: resrchvc
+  vc: language-itp-mtres
+  name: itp-p40-wus2
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 40128
+  - python -m pip install --editable . --user
+  - git clone --single-branch --branch adding_spm_tokenized_bleu https://github.com/ngoyal2707/sacrebleu.git && cd sacrebleu && python setup.py install --user
+  #- python -m pip install pyarrow --user
+  #- python -m pip install fairscale --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+#data:
+#  data_upload: False
+#  local_dir: /home/v-jiaya/DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+#  remote_dir: DeepTransformerModel/data/iwslt17/mTED/data-bin-fp16/
+
+jobs:  
+- name: test_pivot_en2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/small_task2/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-A100/avg5_10.pt 144 3 en
+- name: test_pivot_id2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/small_task2/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-A100/avg5_10.pt 144 3 id
+- name: test_pivot_jv2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/small_task2/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-A100/avg5_10.pt 144 3 jv
+- name: test_pivot_ms2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/small_task2/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-A100/avg5_10.pt 144 3 ms
+- name: test_pivot_ta2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/small_task2/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-A100/avg5_10.pt 144 3 ta
+- name: test_pivot_tl2x
+  sku: G1
+  sku_count: 1
+  command: 
+    - bash ./shells/aml/multi-node/small_task2/test/test_aml_devtest_pivot_all.sh 2x /mnt/input/SharedTask/thunder/small_task2/Filter_v1/model/24L-12L-A100/avg5_10.pt 144 3 tl

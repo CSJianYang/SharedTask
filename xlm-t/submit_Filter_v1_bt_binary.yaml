@@ -1,0 +1,1838 @@
+#docker's key: /r9XLj/sS40pDvIvzamSeWZHApMhEc1r
+description: preprocess
+
+target:
+  name: itpeastusv100cl
+  #name: itplabrr1cl1
+  service: amlk8s
+  vc: resrchvc
+
+
+environment:
+  image: nvidia/20.09:v7.0.2
+  registry: shumingdocker.azurecr.io
+  setup:
+  - ibstat
+  - ulimit -n 4096
+  - python -m pip install --editable . --user
+  username: shumingdocker
+  
+storage:
+  output:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+  input:
+    storage_account_name: yangjianblob
+    container_name: phillytools
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR/
+
+
+jobs: 
+- name: bt_binary_af-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh af en 80 0 10
+- name: bt_binary_af-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh af en 80 10 20
+- name: bt_binary_af-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh af en 80 20 30
+- name: bt_binary_af-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh af en 80 30 40
+- name: bt_binary_af-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh af en 80 40 50
+- name: bt_binary_af-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh af en 80 50 60
+- name: bt_binary_af-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh af en 80 60 70
+- name: bt_binary_af-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh af en 80 70 80
+- name: bt_binary_be-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh be en 80 0 10
+- name: bt_binary_be-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh be en 80 10 20
+- name: bt_binary_be-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh be en 80 20 30
+- name: bt_binary_be-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh be en 80 30 40
+- name: bt_binary_be-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh be en 80 40 50
+- name: bt_binary_be-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh be en 80 50 60
+- name: bt_binary_be-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh be en 80 60 70
+- name: bt_binary_be-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh be en 80 70 80
+- name: bt_binary_bg-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh bg en 80 0 10
+- name: bt_binary_bg-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh bg en 80 10 20
+- name: bt_binary_bg-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh bg en 80 20 30
+- name: bt_binary_bg-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh bg en 80 30 40
+- name: bt_binary_bg-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh bg en 80 40 50
+- name: bt_binary_bg-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh bg en 80 50 60
+- name: bt_binary_bg-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh bg en 80 60 70
+- name: bt_binary_bg-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh bg en 80 70 80
+- name: bt_binary_ca-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ca en 80 0 10
+- name: bt_binary_ca-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ca en 80 10 20
+- name: bt_binary_ca-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ca en 80 20 30
+- name: bt_binary_ca-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ca en 80 30 40
+- name: bt_binary_ca-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ca en 80 40 50
+- name: bt_binary_ca-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ca en 80 50 60
+- name: bt_binary_ca-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ca en 80 60 70
+- name: bt_binary_ca-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ca en 80 70 80
+- name: bt_binary_cs-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cs en 80 0 10
+- name: bt_binary_cs-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cs en 80 10 20
+- name: bt_binary_cs-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cs en 80 20 30
+- name: bt_binary_cs-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cs en 80 30 40
+- name: bt_binary_cs-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cs en 80 40 50
+- name: bt_binary_cs-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cs en 80 50 60
+- name: bt_binary_cs-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cs en 80 60 70
+- name: bt_binary_cs-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cs en 80 70 80
+- name: bt_binary_cy-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cy en 80 0 10
+- name: bt_binary_cy-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cy en 80 10 20
+- name: bt_binary_cy-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cy en 80 20 30
+- name: bt_binary_cy-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cy en 80 30 40
+- name: bt_binary_cy-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cy en 80 40 50
+- name: bt_binary_cy-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cy en 80 50 60
+- name: bt_binary_cy-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cy en 80 60 70
+- name: bt_binary_cy-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh cy en 80 70 80
+- name: bt_binary_da-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh da en 80 0 10
+- name: bt_binary_da-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh da en 80 10 20
+- name: bt_binary_da-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh da en 80 20 30
+- name: bt_binary_da-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh da en 80 30 40
+- name: bt_binary_da-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh da en 80 40 50
+- name: bt_binary_da-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh da en 80 50 60
+- name: bt_binary_da-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh da en 80 60 70
+- name: bt_binary_da-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh da en 80 70 80
+- name: bt_binary_es-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh es en 80 0 10
+- name: bt_binary_es-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh es en 80 10 20
+- name: bt_binary_es-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh es en 80 20 30
+- name: bt_binary_es-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh es en 80 30 40
+- name: bt_binary_es-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh es en 80 40 50
+- name: bt_binary_es-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh es en 80 50 60
+- name: bt_binary_es-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh es en 80 60 70
+- name: bt_binary_es-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh es en 80 70 80
+- name: bt_binary_et-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh et en 80 0 10
+- name: bt_binary_et-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh et en 80 10 20
+- name: bt_binary_et-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh et en 80 20 30
+- name: bt_binary_et-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh et en 80 30 40
+- name: bt_binary_et-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh et en 80 40 50
+- name: bt_binary_et-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh et en 80 50 60
+- name: bt_binary_et-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh et en 80 60 70
+- name: bt_binary_et-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh et en 80 70 80
+- name: bt_binary_ff-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ff en 80 0 10
+- name: bt_binary_ff-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ff en 80 10 20
+- name: bt_binary_ff-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ff en 80 20 30
+- name: bt_binary_ff-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ff en 80 30 40
+- name: bt_binary_ff-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ff en 80 40 50
+- name: bt_binary_ff-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ff en 80 50 60
+- name: bt_binary_ff-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ff en 80 60 70
+- name: bt_binary_ff-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ff en 80 70 80
+- name: bt_binary_fi-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh fi en 80 0 10
+- name: bt_binary_fi-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh fi en 80 10 20
+- name: bt_binary_fi-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh fi en 80 20 30
+- name: bt_binary_fi-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh fi en 80 30 40
+- name: bt_binary_fi-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh fi en 80 40 50
+- name: bt_binary_fi-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh fi en 80 50 60
+- name: bt_binary_fi-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh fi en 80 60 70
+- name: bt_binary_fi-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh fi en 80 70 80
+- name: bt_binary_ga-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ga en 80 0 10
+- name: bt_binary_ga-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ga en 80 10 20
+- name: bt_binary_ga-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ga en 80 20 30
+- name: bt_binary_ga-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ga en 80 30 40
+- name: bt_binary_ga-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ga en 80 40 50
+- name: bt_binary_ga-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ga en 80 50 60
+- name: bt_binary_ga-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ga en 80 60 70
+- name: bt_binary_ga-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ga en 80 70 80
+- name: bt_binary_he-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh he en 80 0 10
+- name: bt_binary_he-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh he en 80 10 20
+- name: bt_binary_he-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh he en 80 20 30
+- name: bt_binary_he-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh he en 80 30 40
+- name: bt_binary_he-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh he en 80 40 50
+- name: bt_binary_he-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh he en 80 50 60
+- name: bt_binary_he-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh he en 80 60 70
+- name: bt_binary_he-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh he en 80 70 80
+- name: bt_binary_hr-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hr en 80 0 10
+- name: bt_binary_hr-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hr en 80 10 20
+- name: bt_binary_hr-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hr en 80 20 30
+- name: bt_binary_hr-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hr en 80 30 40
+- name: bt_binary_hr-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hr en 80 40 50
+- name: bt_binary_hr-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hr en 80 50 60
+- name: bt_binary_hr-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hr en 80 60 70
+- name: bt_binary_hr-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hr en 80 70 80
+- name: bt_binary_hu-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hu en 80 0 10
+- name: bt_binary_hu-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hu en 80 10 20
+- name: bt_binary_hu-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hu en 80 20 30
+- name: bt_binary_hu-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hu en 80 30 40
+- name: bt_binary_hu-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hu en 80 40 50
+- name: bt_binary_hu-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hu en 80 50 60
+- name: bt_binary_hu-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hu en 80 60 70
+- name: bt_binary_hu-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh hu en 80 70 80
+- name: bt_binary_id-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh id en 80 0 10
+- name: bt_binary_id-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh id en 80 10 20
+- name: bt_binary_id-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh id en 80 20 30
+- name: bt_binary_id-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh id en 80 30 40
+- name: bt_binary_id-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh id en 80 40 50
+- name: bt_binary_id-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh id en 80 50 60
+- name: bt_binary_id-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh id en 80 60 70
+- name: bt_binary_id-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh id en 80 70 80
+- name: bt_binary_is-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh is en 80 0 10
+- name: bt_binary_is-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh is en 80 10 20
+- name: bt_binary_is-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh is en 80 20 30
+- name: bt_binary_is-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh is en 80 30 40
+- name: bt_binary_is-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh is en 80 40 50
+- name: bt_binary_is-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh is en 80 50 60
+- name: bt_binary_is-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh is en 80 60 70
+- name: bt_binary_is-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh is en 80 70 80
+- name: bt_binary_ja-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja en 80 0 10
+- name: bt_binary_ja-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja en 80 10 20
+- name: bt_binary_ja-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja en 80 20 30
+- name: bt_binary_ja-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja en 80 30 40
+- name: bt_binary_ja-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja en 80 40 50
+- name: bt_binary_ja-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja en 80 50 60
+- name: bt_binary_ja-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja en 80 60 70
+- name: bt_binary_ja-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja en 80 70 80
+- name: bt_binary_ja-zh_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja zh 80 0 10
+- name: bt_binary_ja-zh_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja zh 80 10 20
+- name: bt_binary_ja-zh_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja zh 80 20 30
+- name: bt_binary_ja-zh_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja zh 80 30 40
+- name: bt_binary_ja-zh_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja zh 80 40 50
+- name: bt_binary_ja-zh_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja zh 80 50 60
+- name: bt_binary_ja-zh_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja zh 80 60 70
+- name: bt_binary_ja-zh_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ja zh 80 70 80
+- name: bt_binary_ko-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko en 80 0 10
+- name: bt_binary_ko-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko en 80 10 20
+- name: bt_binary_ko-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko en 80 20 30
+- name: bt_binary_ko-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko en 80 30 40
+- name: bt_binary_ko-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko en 80 40 50
+- name: bt_binary_ko-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko en 80 50 60
+- name: bt_binary_ko-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko en 80 60 70
+- name: bt_binary_ko-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko en 80 70 80
+- name: bt_binary_ko-zh_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko zh 80 0 10
+- name: bt_binary_ko-zh_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko zh 80 10 20
+- name: bt_binary_ko-zh_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko zh 80 20 30
+- name: bt_binary_ko-zh_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko zh 80 30 40
+- name: bt_binary_ko-zh_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko zh 80 40 50
+- name: bt_binary_ko-zh_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko zh 80 50 60
+- name: bt_binary_ko-zh_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko zh 80 60 70
+- name: bt_binary_ko-zh_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ko zh 80 70 80
+- name: bt_binary_ku-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ku en 80 0 10
+- name: bt_binary_ku-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ku en 80 10 20
+- name: bt_binary_ku-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ku en 80 20 30
+- name: bt_binary_ku-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ku en 80 30 40
+- name: bt_binary_ku-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ku en 80 40 50
+- name: bt_binary_ku-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ku en 80 50 60
+- name: bt_binary_ku-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ku en 80 60 70
+- name: bt_binary_ku-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ku en 80 70 80
+- name: bt_binary_lo-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lo en 80 0 10
+- name: bt_binary_lo-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lo en 80 10 20
+- name: bt_binary_lo-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lo en 80 20 30
+- name: bt_binary_lo-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lo en 80 30 40
+- name: bt_binary_lo-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lo en 80 40 50
+- name: bt_binary_lo-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lo en 80 50 60
+- name: bt_binary_lo-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lo en 80 60 70
+- name: bt_binary_lo-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lo en 80 70 80
+- name: bt_binary_lt-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lt en 80 0 10
+- name: bt_binary_lt-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lt en 80 10 20
+- name: bt_binary_lt-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lt en 80 20 30
+- name: bt_binary_lt-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lt en 80 30 40
+- name: bt_binary_lt-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lt en 80 40 50
+- name: bt_binary_lt-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lt en 80 50 60
+- name: bt_binary_lt-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lt en 80 60 70
+- name: bt_binary_lt-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lt en 80 70 80
+- name: bt_binary_lv-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lv en 80 0 10
+- name: bt_binary_lv-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lv en 80 10 20
+- name: bt_binary_lv-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lv en 80 20 30
+- name: bt_binary_lv-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lv en 80 30 40
+- name: bt_binary_lv-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lv en 80 40 50
+- name: bt_binary_lv-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lv en 80 50 60
+- name: bt_binary_lv-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lv en 80 60 70
+- name: bt_binary_lv-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh lv en 80 70 80
+- name: bt_binary_ms-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ms en 80 0 10
+- name: bt_binary_ms-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ms en 80 10 20
+- name: bt_binary_ms-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ms en 80 20 30
+- name: bt_binary_ms-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ms en 80 30 40
+- name: bt_binary_ms-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ms en 80 40 50
+- name: bt_binary_ms-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ms en 80 50 60
+- name: bt_binary_ms-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ms en 80 60 70
+- name: bt_binary_ms-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ms en 80 70 80
+- name: bt_binary_mt-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh mt en 80 0 10
+- name: bt_binary_mt-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh mt en 80 10 20
+- name: bt_binary_mt-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh mt en 80 20 30
+- name: bt_binary_mt-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh mt en 80 30 40
+- name: bt_binary_mt-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh mt en 80 40 50
+- name: bt_binary_mt-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh mt en 80 50 60
+- name: bt_binary_mt-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh mt en 80 60 70
+- name: bt_binary_mt-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh mt en 80 70 80
+- name: bt_binary_my-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh my en 80 0 10
+- name: bt_binary_my-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh my en 80 10 20
+- name: bt_binary_my-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh my en 80 20 30
+- name: bt_binary_my-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh my en 80 30 40
+- name: bt_binary_my-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh my en 80 40 50
+- name: bt_binary_my-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh my en 80 50 60
+- name: bt_binary_my-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh my en 80 60 70
+- name: bt_binary_my-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh my en 80 70 80
+- name: bt_binary_nl-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh nl en 80 0 10
+- name: bt_binary_nl-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh nl en 80 10 20
+- name: bt_binary_nl-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh nl en 80 20 30
+- name: bt_binary_nl-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh nl en 80 30 40
+- name: bt_binary_nl-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh nl en 80 40 50
+- name: bt_binary_nl-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh nl en 80 50 60
+- name: bt_binary_nl-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh nl en 80 60 70
+- name: bt_binary_nl-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh nl en 80 70 80
+- name: bt_binary_no-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh no en 80 0 10
+- name: bt_binary_no-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh no en 80 10 20
+- name: bt_binary_no-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh no en 80 20 30
+- name: bt_binary_no-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh no en 80 30 40
+- name: bt_binary_no-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh no en 80 40 50
+- name: bt_binary_no-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh no en 80 50 60
+- name: bt_binary_no-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh no en 80 60 70
+- name: bt_binary_no-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh no en 80 70 80
+- name: bt_binary_ns-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ns en 80 0 10
+- name: bt_binary_ns-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ns en 80 10 20
+- name: bt_binary_ns-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ns en 80 20 30
+- name: bt_binary_ns-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ns en 80 30 40
+- name: bt_binary_ns-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ns en 80 40 50
+- name: bt_binary_ns-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ns en 80 50 60
+- name: bt_binary_ns-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ns en 80 60 70
+- name: bt_binary_ns-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ns en 80 70 80
+- name: bt_binary_om-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh om en 80 0 10
+- name: bt_binary_om-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh om en 80 10 20
+- name: bt_binary_om-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh om en 80 20 30
+- name: bt_binary_om-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh om en 80 30 40
+- name: bt_binary_om-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh om en 80 40 50
+- name: bt_binary_om-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh om en 80 50 60
+- name: bt_binary_om-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh om en 80 60 70
+- name: bt_binary_om-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh om en 80 70 80
+- name: bt_binary_or-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh or en 80 0 10
+- name: bt_binary_or-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh or en 80 10 20
+- name: bt_binary_or-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh or en 80 20 30
+- name: bt_binary_or-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh or en 80 30 40
+- name: bt_binary_or-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh or en 80 40 50
+- name: bt_binary_or-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh or en 80 50 60
+- name: bt_binary_or-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh or en 80 60 70
+- name: bt_binary_or-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh or en 80 70 80
+- name: bt_binary_ro-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ro en 80 0 10
+- name: bt_binary_ro-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ro en 80 10 20
+- name: bt_binary_ro-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ro en 80 20 30
+- name: bt_binary_ro-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ro en 80 30 40
+- name: bt_binary_ro-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ro en 80 40 50
+- name: bt_binary_ro-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ro en 80 50 60
+- name: bt_binary_ro-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ro en 80 60 70
+- name: bt_binary_ro-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ro en 80 70 80
+- name: bt_binary_ru-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru en 80 0 10
+- name: bt_binary_ru-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru en 80 10 20
+- name: bt_binary_ru-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru en 80 20 30
+- name: bt_binary_ru-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru en 80 30 40
+- name: bt_binary_ru-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru en 80 40 50
+- name: bt_binary_ru-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru en 80 50 60
+- name: bt_binary_ru-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru en 80 60 70
+- name: bt_binary_ru-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru en 80 70 80
+- name: bt_binary_ru-zh_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru zh 80 0 10
+- name: bt_binary_ru-zh_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru zh 80 10 20
+- name: bt_binary_ru-zh_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru zh 80 20 30
+- name: bt_binary_ru-zh_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru zh 80 30 40
+- name: bt_binary_ru-zh_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru zh 80 40 50
+- name: bt_binary_ru-zh_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru zh 80 50 60
+- name: bt_binary_ru-zh_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru zh 80 60 70
+- name: bt_binary_ru-zh_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh ru zh 80 70 80
+- name: bt_binary_sk-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sk en 80 0 10
+- name: bt_binary_sk-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sk en 80 10 20
+- name: bt_binary_sk-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sk en 80 20 30
+- name: bt_binary_sk-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sk en 80 30 40
+- name: bt_binary_sk-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sk en 80 40 50
+- name: bt_binary_sk-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sk en 80 50 60
+- name: bt_binary_sk-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sk en 80 60 70
+- name: bt_binary_sk-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sk en 80 70 80
+- name: bt_binary_sl-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sl en 80 0 10
+- name: bt_binary_sl-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sl en 80 10 20
+- name: bt_binary_sl-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sl en 80 20 30
+- name: bt_binary_sl-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sl en 80 30 40
+- name: bt_binary_sl-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sl en 80 40 50
+- name: bt_binary_sl-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sl en 80 50 60
+- name: bt_binary_sl-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sl en 80 60 70
+- name: bt_binary_sl-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sl en 80 70 80
+- name: bt_binary_sv-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sv en 80 0 10
+- name: bt_binary_sv-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sv en 80 10 20
+- name: bt_binary_sv-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sv en 80 20 30
+- name: bt_binary_sv-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sv en 80 30 40
+- name: bt_binary_sv-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sv en 80 40 50
+- name: bt_binary_sv-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sv en 80 50 60
+- name: bt_binary_sv-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sv en 80 60 70
+- name: bt_binary_sv-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh sv en 80 70 80
+- name: bt_binary_th-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th en 80 0 10
+- name: bt_binary_th-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th en 80 10 20
+- name: bt_binary_th-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th en 80 20 30
+- name: bt_binary_th-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th en 80 30 40
+- name: bt_binary_th-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th en 80 40 50
+- name: bt_binary_th-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th en 80 50 60
+- name: bt_binary_th-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th en 80 60 70
+- name: bt_binary_th-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th en 80 70 80
+- name: bt_binary_th-zh_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th zh 80 0 10
+- name: bt_binary_th-zh_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th zh 80 10 20
+- name: bt_binary_th-zh_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th zh 80 20 30
+- name: bt_binary_th-zh_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th zh 80 30 40
+- name: bt_binary_th-zh_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th zh 80 40 50
+- name: bt_binary_th-zh_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th zh 80 50 60
+- name: bt_binary_th-zh_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th zh 80 60 70
+- name: bt_binary_th-zh_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh th zh 80 70 80
+- name: bt_binary_tl-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh tl en 80 0 10
+- name: bt_binary_tl-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh tl en 80 10 20
+- name: bt_binary_tl-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh tl en 80 20 30
+- name: bt_binary_tl-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh tl en 80 30 40
+- name: bt_binary_tl-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh tl en 80 40 50
+- name: bt_binary_tl-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh tl en 80 50 60
+- name: bt_binary_tl-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh tl en 80 60 70
+- name: bt_binary_tl-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh tl en 80 70 80
+- name: bt_binary_vi-en_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi en 80 0 10
+- name: bt_binary_vi-en_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi en 80 10 20
+- name: bt_binary_vi-en_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi en 80 20 30
+- name: bt_binary_vi-en_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi en 80 30 40
+- name: bt_binary_vi-en_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi en 80 40 50
+- name: bt_binary_vi-en_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi en 80 50 60
+- name: bt_binary_vi-en_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi en 80 60 70
+- name: bt_binary_vi-en_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi en 80 70 80
+- name: bt_binary_vi-zh_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi zh 80 0 10
+- name: bt_binary_vi-zh_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi zh 80 10 20
+- name: bt_binary_vi-zh_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi zh 80 20 30
+- name: bt_binary_vi-zh_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi zh 80 30 40
+- name: bt_binary_vi-zh_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi zh 80 40 50
+- name: bt_binary_vi-zh_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi zh 80 50 60
+- name: bt_binary_vi-zh_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi zh 80 60 70
+- name: bt_binary_vi-zh_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh vi zh 80 70 80
+- name: bt_binary_zt-zh_0-10
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh zt zh 80 0 10
+- name: bt_binary_zt-zh_10-20
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh zt zh 80 10 20
+- name: bt_binary_zt-zh_20-30
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh zt zh 80 20 30
+- name: bt_binary_zt-zh_30-40
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh zt zh 80 30 40
+- name: bt_binary_zt-zh_40-50
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh zt zh 80 40 50
+- name: bt_binary_zt-zh_50-60
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh zt zh 80 50 60
+- name: bt_binary_zt-zh_60-70
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh zt zh 80 60 70
+- name: bt_binary_zt-zh_70-80
+  sku: G0
+  sku_count: 1
+  command: 
+    - bash ./shells/preprocess/large_task/Filter_v1/binary_bt_lang_pair.sh zt zh 80 70 80
+
+
+
+
