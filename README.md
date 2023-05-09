@@ -203,7 +203,7 @@ fi
 
 ## License
 
-Please refer to the [LICENSE](./LICENSE) file for more details.
+Please refer to the [LICENSE](./xlm-t/LICENSE) file for more details.
 
 
 ## Contact
