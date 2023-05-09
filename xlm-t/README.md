@@ -10,12 +10,12 @@ evaluation metric.
 
 ## Models
 * **Download Multilingual Pre-trained Models**
-  * [Pre-norm Pre-trained Models](https://github.com/google/sentencepiece)
-  * [Post-norm Pre-trained Models](https://github.com/google/sentencepiece)
+  * [Pre-norm Pre-trained Models](https://pan.baidu.com/s/19whE0DgyWFxRqZwQpmQCqg?pwd=qyhp)
+  * [Post-norm Pre-trained Models](https://pan.baidu.com/s/1n8ag4aMqwiBEEGpov556iA?pwd=c23c)
 * **Download Multilingual Translation Models**
-  * [36 encoder layers - 12 decoder layers](https://github.com/google/sentencepiece)
-  * [24 encoder layers - 12 decoder layers](https://github.com/google/sentencepiece)
-  * [24 encoder layers - 6 decoder layers](https://github.com/google/sentencepiece)
+  * [36 encoder layers - 12 decoder layers](https://pan.baidu.com/s/1fLs1F14Fc_Z-2V-H2kITxA?pwd=2u8c)
+  * [24 encoder layers - 12 decoder layers](https://pan.baidu.com/s/1xRSm4ww_VvDJKfPBwh39Ig?pwd=f4kp)
+  * [24 encoder layers - 6 decoder layers](https://pan.baidu.com/s/1ZDdtlbh-sEydNeqRzPWQag?pwd=y4f0)
 
 
 ## Environment
@@ -39,7 +39,8 @@ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cud
   --global-option="--deprecated_fused_adam" --global-option="--xentropy" \
   --global-option="--fast_multihead_attn" ./
 ```
-
+## Supported Languages
+Our multilingual translation model supports 100 languages: af,am,ar,as,ast,az,be,bn,bs,bg,ca,ceb,cs,ku,cy,da,de,el,en,et,fa,fi,fr,ff,ga,gl,gu,ha,he,hi,hr,hu,hy,ig,id,is,it,jv,ja,kam,kn,ka,kk,kea,km,ky,ko,lo,lv,ln,lt,lb,lg,luo,ml,mr,mk,mt,mn,mi,ms,my,nl,no,ne,ns,ny,oc,om,or,pa,pl,pt,ps,ro,ru,sk,sl,sn,sd,so,es,sr,sv,sw,ta,te,tg,tl,th,tr,uk,umb,ur,uz,vi,wo,xh,yo,zh (Simplified Chinese),zt (Traditional Chinese),zu
 
 ## Multilingual Fine-tuning from the Multilingual Pre-trained Model
 
@@ -205,6 +206,3 @@ fi
 Please refer to the [LICENSE](./LICENSE) file for more details.
 
 
-## Contact
-
-If there is any question, feel free to create a GitHub issue or contact us by [Email](mailto:seckexyin@gmail.com).

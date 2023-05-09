@@ -206,6 +206,4 @@ fi
 Please refer to the [LICENSE](./xlm-t/LICENSE) file for more details.
 
 
-## Contact
 
-If there is any question, feel free to create a GitHub issue or contact us by [Email](mailto:seckexyin@gmail.com).
